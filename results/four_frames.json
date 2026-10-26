@@ -1,0 +1,83 @@
+{
+  "metrics": {
+    "M": {
+      "correct_counts": [
+        403,
+        400,
+        415
+      ],
+      "mean_accuracy": 50.75
+    },
+    "temporal_mean": {
+      "correct_counts": [
+        411,
+        411,
+        419
+      ],
+      "mean_accuracy": 51.708333333333336
+    },
+    "ordered_states": {
+      "correct_counts": [
+        418,
+        397,
+        423
+      ],
+      "mean_accuracy": 51.583333333333336
+    }
+  },
+  "comparisons": {
+    "states_vs_M": {
+      "delta_pp": 0.8333333333333335,
+      "video_cluster_ci95_pp": [
+        -1.2362305843922792,
+        2.932129629629629
+      ]
+    },
+    "states_vs_temporal_mean": {
+      "delta_pp": -0.125,
+      "video_cluster_ci95_pp": [
+        -1.0147163139527837,
+        0.943478485677486
+      ]
+    }
+  },
+  "integrity": {
+    "temporal_mean_17": {
+      "checkpoint_sha256": "43d34260ce81726d781c5e169adc15b2aaddb7dec902db07ec4153625680022d",
+      "replay16_max_feature_error": 0.0,
+      "epoch": 2
+    },
+    "temporal_mean_29": {
+      "checkpoint_sha256": "c5abd888bc47ffc35c0b700c8071f0fbeba49230e1cc2d9271e45b049cc18bd0",
+      "replay16_max_feature_error": 0.0,
+      "epoch": 4
+    },
+    "temporal_mean_43": {
+      "checkpoint_sha256": "c25d5bb83d9f55b7152234c21afc7a8e29d0c2ba53adec7d7a38bb0e44647d63",
+      "replay16_max_feature_error": 0.0,
+      "epoch": 4
+    },
+    "ordered_states_17": {
+      "checkpoint_sha256": "4697ec8051f53f1c7d342ed0cffa4808256124f96f0d326791a63f2c69dcdce0",
+      "replay16_max_feature_error": 0.0,
+      "epoch": 4
+    },
+    "ordered_states_29": {
+      "checkpoint_sha256": "091b86e61217edf923c39cd12bf186e981406fcb43eab6ca1fc6adc0981788c3",
+      "replay16_max_feature_error": 0.0,
+      "epoch": 3
+    },
+    "ordered_states_43": {
+      "checkpoint_sha256": "df504c4646d5240b02a02b28afa37bfca39eadeda93656cfe54f5eeb183c3de6",
+      "replay16_max_feature_error": 0.0,
+      "epoch": 4
+    }
+  },
+  "frames": 4,
+  "training_frames": 16,
+  "trained_new_weights": false,
+  "position_adaptation": "Linear interpolate learned16 temporal positions to4, align_corners=False; no repeat padding",
+  "sampling": "Same existing historical bounded4-frame prefix cache and actual PTS masks",
+  "score": "dot of normalized embeddings == cosine; M baseline cosine",
+  "TEST_access": false
+}

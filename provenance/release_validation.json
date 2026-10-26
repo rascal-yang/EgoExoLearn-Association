@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "One real validation clip, seed17, each method at4/16frames; compare portable raw-video inference with historical FP16 prefix and original head forward; NOT a complete benchmark rerun",
+  "checks": {
+    "M_4": {
+      "native_prefix_max_error": 0.0,
+      "historical_prefix_max_error": 0.046875,
+      "historical_embedding_max_error": 0.000349193811416626,
+      "historical_embedding_cosine": 1.0
+    },
+    "M_16": {
+      "native_prefix_max_error": 0.0,
+      "historical_prefix_max_error": 0.109375,
+      "historical_embedding_max_error": 0.00038951635360717773,
+      "historical_embedding_cosine": 1.0
+    },
+    "temporal_mean_4": {
+      "native_prefix_max_error": 0.0,
+      "historical_prefix_max_error": 0.046875,
+      "historical_embedding_max_error": 1.619011163711548e-05,
+      "historical_embedding_cosine": 1.0
+    },
+    "temporal_mean_16": {
+      "native_prefix_max_error": 0.0,
+      "historical_prefix_max_error": 0.109375,
+      "historical_embedding_max_error": 2.218782901763916e-05,
+      "historical_embedding_cosine": 1.0
+    },
+    "ordered_states_4": {
+      "native_prefix_max_error": 0.0,
+      "historical_prefix_max_error": 0.046875,
+      "historical_embedding_max_error": 2.345442771911621e-05,
+      "historical_embedding_cosine": 1.0
+    },
+    "ordered_states_16": {
+      "native_prefix_max_error": 0.0,
+      "historical_prefix_max_error": 0.109375,
+      "historical_embedding_max_error": 2.3793429136276245e-05,
+      "historical_embedding_cosine": 1.0
+    }
+  }
+}

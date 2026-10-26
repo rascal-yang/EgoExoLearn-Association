@@ -1,0 +1,63 @@
+diff --git a/association_benchmark/models/openai_model.py b/association_benchmark/models/openai_model.py
+index 21db45a..0d95986 100644
+--- a/association_benchmark/models/openai_model.py
++++ b/association_benchmark/models/openai_model.py
+@@ -211,7 +211,7 @@ class ResidualAttentionBlock(nn.Module):
+ 
+     def forward(self, x: torch.Tensor, use_checkpoint=False, attn_mask=None):
+         if use_checkpoint:
+-            x = x + checkpoint.checkpoint(self.forward_part1, x, attn_mask=attn_mask)
++            x = x + checkpoint.checkpoint(self.forward_part1, x, attn_mask=attn_mask, use_reentrant=False)
+         else:
+             x = x + self.forward_part1(x, attn_mask=attn_mask)
+ 
+@@ -232,7 +232,7 @@ class Transformer(nn.Module):
+     def forward(self, x: torch.Tensor, use_checkpoint=False, attn_mask=None):
+         if use_checkpoint:
+             for i in range(self.layers):
+-                x = checkpoint.checkpoint(self.resblocks[i], x, attn_mask=attn_mask)
++                x = checkpoint.checkpoint(self.resblocks[i], x, attn_mask=attn_mask, use_reentrant=False)
+             return x
+         else:
+             if attn_mask is None:
+diff --git a/association_benchmark/models/timesformer.py b/association_benchmark/models/timesformer.py
+index 8a566ac..45c202f 100644
+--- a/association_benchmark/models/timesformer.py
++++ b/association_benchmark/models/timesformer.py
+@@ -183,7 +183,7 @@ class SpaceTimeBlock(nn.Module):
+                 time_n, space_f, use_checkpoint=False):
+         if use_checkpoint:
+             time_output = checkpoint.checkpoint(
+-                self.timeattn, self.norm3(x), einops_from_time, einops_to_time, {"n": time_n}
++                self.timeattn, self.norm3(x), einops_from_time, einops_to_time, {"n": time_n}, use_reentrant=False
+             )
+         else:
+             time_output = self.timeattn(self.norm3(x), einops_from_time, einops_to_time, {"n": time_n})
+@@ -192,7 +192,7 @@ class SpaceTimeBlock(nn.Module):
+         time_residual = x + time_output
+         if use_checkpoint:
+             space_output = checkpoint.checkpoint(
+-                self.attn, self.norm1(time_residual), einops_from_space, einops_to_space, {"f": space_f}
++                self.attn, self.norm1(time_residual), einops_from_space, einops_to_space, {"f": space_f}, use_reentrant=False
+             )
+         else:
+             space_output = self.attn(self.norm1(time_residual), einops_from_space,
+@@ -401,9 +401,15 @@ class SpaceTimeTransformer(nn.Module):
+         f = curr_frames
+ 
+         for blk in self.blocks:
+-            x = blk(x, self.einops_from_space, self.einops_to_space, self.einops_from_time,
+-                    self.einops_to_time,
+-                    time_n=n, space_f=f, use_checkpoint=use_checkpoint)
++            if use_checkpoint:
++                x = checkpoint.checkpoint(
++                    blk, x, self.einops_from_space, self.einops_to_space,
++                    self.einops_from_time, self.einops_to_time,
++                    time_n=n, space_f=f, use_checkpoint=False, use_reentrant=False)
++            else:
++                x = blk(x, self.einops_from_space, self.einops_to_space,
++                        self.einops_from_time, self.einops_to_time,
++                        time_n=n, space_f=f, use_checkpoint=False)
+ 
+         if cls_at_last and not self.output_tokens:
+             x = self.norm(x)[:, 0]

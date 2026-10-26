@@ -1,0 +1,332 @@
+[
+  {
+    "path": "scripts/egoexo_textalign/backend.py",
+    "original_sha256": "b9e6957566210e8e0f8aafbdbcc226c319f2f49ff47b619191c3343404714061",
+    "export_sha256": "b9e6957566210e8e0f8aafbdbcc226c319f2f49ff47b619191c3343404714061"
+  },
+  {
+    "path": "scripts/egoexo_textalign/common.py",
+    "original_sha256": "e887b83df507786aea8e34708390dbe62a838625c13a36f41f07745f8d46f921",
+    "export_sha256": "551596eb544f5e17e418b692885882dbe891d2260b1916a4821655afea53d602"
+  },
+  {
+    "path": "scripts/egoexo_textalign/data.py",
+    "original_sha256": "c3f05226fe50de2d5ee6a7748f5a812f396bbdc2f72db3ffa6c865156a1886f7",
+    "export_sha256": "c3f05226fe50de2d5ee6a7748f5a812f396bbdc2f72db3ffa6c865156a1886f7"
+  },
+  {
+    "path": "scripts/egoexo_textalign/evaluate.py",
+    "original_sha256": "78fc2b47c4c32943239079d66403a601fb242ae2e746041f1977752a21a318cf",
+    "export_sha256": "78fc2b47c4c32943239079d66403a601fb242ae2e746041f1977752a21a318cf"
+  },
+  {
+    "path": "scripts/egoexo_textalign/extract.py",
+    "original_sha256": "b45f0fa29fdcaf4fe746ccd902647f6f621ac5015ff1ccfce30eec6914b3128a",
+    "export_sha256": "b45f0fa29fdcaf4fe746ccd902647f6f621ac5015ff1ccfce30eec6914b3128a"
+  },
+  {
+    "path": "scripts/egoexo_textalign/extraction_pipeline.py",
+    "original_sha256": "4dc37ca02313a42344719abb88bc6c67916d9791e8439d7e4fb17b6e8cc9b888",
+    "export_sha256": "4dc37ca02313a42344719abb88bc6c67916d9791e8439d7e4fb17b6e8cc9b888"
+  },
+  {
+    "path": "scripts/egoexo_textalign/model.py",
+    "original_sha256": "013776c160bf1d9a731962fc6011fbc758cc49e5c5966f959df9a35fc65d641e",
+    "export_sha256": "013776c160bf1d9a731962fc6011fbc758cc49e5c5966f959df9a35fc65d641e"
+  },
+  {
+    "path": "scripts/egoexo_textalign/pipeline.py",
+    "original_sha256": "920c3c097c0389913f0c66976686afa686b8b9ecaf3ad790be2d601e2583ba83",
+    "export_sha256": "920c3c097c0389913f0c66976686afa686b8b9ecaf3ad790be2d601e2583ba83"
+  },
+  {
+    "path": "scripts/egoexo_textalign/preflight.py",
+    "original_sha256": "bb1daf5ae8803b07d169949a00ca771b6f17e2071f9aef9dbc238f0c6ee53405",
+    "export_sha256": "bb1daf5ae8803b07d169949a00ca771b6f17e2071f9aef9dbc238f0c6ee53405"
+  },
+  {
+    "path": "scripts/egoexo_textalign/prepare.py",
+    "original_sha256": "15a0068d61378860fc1042fd4c2cf7de7a67feb8c13d66bca45eb334cd937ac2",
+    "export_sha256": "15a0068d61378860fc1042fd4c2cf7de7a67feb8c13d66bca45eb334cd937ac2"
+  },
+  {
+    "path": "scripts/egoexo_textalign/text_teacher.py",
+    "original_sha256": "5f11f190bc4b69c25345524291c118490b94dca613514052d0cb90af2cf30a80",
+    "export_sha256": "5f11f190bc4b69c25345524291c118490b94dca613514052d0cb90af2cf30a80"
+  },
+  {
+    "path": "scripts/egoexo_textalign/train.py",
+    "original_sha256": "c3012ea53e5b44a433bc4b0ac06d22fc636de1ec83678a8fc120d9dba8886537",
+    "export_sha256": "c3012ea53e5b44a433bc4b0ac06d22fc636de1ec83678a8fc120d9dba8886537"
+  },
+  {
+    "path": "scripts/egoexo_mechanism/mech_common.py",
+    "original_sha256": "54e610554dc50b6fa85d68fa3f4c2b63a916a0acdd17d9534fcbc476ec1db982",
+    "export_sha256": "54e610554dc50b6fa85d68fa3f4c2b63a916a0acdd17d9534fcbc476ec1db982"
+  },
+  {
+    "path": "scripts/egoexo_mechanism/mech_loss.py",
+    "original_sha256": "f6434409183512cd87f3a2992981a34002e6653cd8274a466b8cae01b174b201",
+    "export_sha256": "f6434409183512cd87f3a2992981a34002e6653cd8274a466b8cae01b174b201"
+  },
+  {
+    "path": "scripts/egoexo_mechanism/pipeline.py",
+    "original_sha256": "9bd9dfc5fc61d548fad34f57aee3ba9f0591a8b923e331c8138c823b80d8da73",
+    "export_sha256": "9bd9dfc5fc61d548fad34f57aee3ba9f0591a8b923e331c8138c823b80d8da73"
+  },
+  {
+    "path": "scripts/egoexo_mechanism/preflight.py",
+    "original_sha256": "f5e749bae286960efed917222d6d3eaeacd4a0cb229df3d08d52843ee58b4d5a",
+    "export_sha256": "f5e749bae286960efed917222d6d3eaeacd4a0cb229df3d08d52843ee58b4d5a"
+  },
+  {
+    "path": "scripts/egoexo_mechanism/temporal.py",
+    "original_sha256": "f84190be8c4d6a661f518124de9429f74e69bc4ad3d2d2d7f9e78a632562ad02",
+    "export_sha256": "f84190be8c4d6a661f518124de9429f74e69bc4ad3d2d2d7f9e78a632562ad02"
+  },
+  {
+    "path": "scripts/egoexo_mechanism/train_ablation.py",
+    "original_sha256": "211a03f34229472cc1620c17664e5b57420bbdb76de8b2954113396ff00b15df",
+    "export_sha256": "211a03f34229472cc1620c17664e5b57420bbdb76de8b2954113396ff00b15df"
+  },
+  {
+    "path": "scripts/egoexo_states/cache.py",
+    "original_sha256": "2ac6f31de3dcfad84296e392c8a1162d1dc144fc22e2c64b816d241a895f403c",
+    "export_sha256": "2ac6f31de3dcfad84296e392c8a1162d1dc144fc22e2c64b816d241a895f403c"
+  },
+  {
+    "path": "scripts/egoexo_states/evaluate.py",
+    "original_sha256": "085db786acccc8f03ad9eaedab8744dcb21d4dffedebdc496e971c22c7d5ae89",
+    "export_sha256": "085db786acccc8f03ad9eaedab8744dcb21d4dffedebdc496e971c22c7d5ae89"
+  },
+  {
+    "path": "scripts/egoexo_states/interventions.py",
+    "original_sha256": "fec114e9c45630f57f1ba2523948337a083292e93325b24fc4420a5baf7cffa7",
+    "export_sha256": "fec114e9c45630f57f1ba2523948337a083292e93325b24fc4420a5baf7cffa7"
+  },
+  {
+    "path": "scripts/egoexo_states/pipeline.py",
+    "original_sha256": "c3be0abdfc848ae589dafcc366a485206512e5b763252fc64d5d31e05f6e3b26",
+    "export_sha256": "c3be0abdfc848ae589dafcc366a485206512e5b763252fc64d5d31e05f6e3b26"
+  },
+  {
+    "path": "scripts/egoexo_states/preflight.py",
+    "original_sha256": "e792e0426d1056c1b18a82b2e9f9491f703920acba86c0a18912522ef3d63b13",
+    "export_sha256": "e792e0426d1056c1b18a82b2e9f9491f703920acba86c0a18912522ef3d63b13"
+  },
+  {
+    "path": "scripts/egoexo_states/prepare.py",
+    "original_sha256": "f02dc361c86676ec0dc9e6f24da852074a87adf2dceba6062187b3567dc7ca7a",
+    "export_sha256": "f02dc361c86676ec0dc9e6f24da852074a87adf2dceba6062187b3567dc7ca7a"
+  },
+  {
+    "path": "scripts/egoexo_states/report.py",
+    "original_sha256": "17f201d44182c302351ece9f222003382312896b72715a7190a8b9aa03743993",
+    "export_sha256": "17f201d44182c302351ece9f222003382312896b72715a7190a8b9aa03743993"
+  },
+  {
+    "path": "scripts/egoexo_states/state_common.py",
+    "original_sha256": "76096e9273cac767fcb8e3c23d78b4a065911b3b9b8574974ef526935b66d5f4",
+    "export_sha256": "76096e9273cac767fcb8e3c23d78b4a065911b3b9b8574974ef526935b66d5f4"
+  },
+  {
+    "path": "scripts/egoexo_states/state_data.py",
+    "original_sha256": "433f7a75eb0e46c3a391338f56b712fa56939a871bda4ee667f00eae4176d1c5",
+    "export_sha256": "433f7a75eb0e46c3a391338f56b712fa56939a871bda4ee667f00eae4176d1c5"
+  },
+  {
+    "path": "scripts/egoexo_states/state_model.py",
+    "original_sha256": "8edb5dfef732d2aebb8fa3a3918f2763379018c979770b6b026798700462afe8",
+    "export_sha256": "d4da72b135c000787c61229db034235a3d30e182626e901d9518362d96026ebe"
+  },
+  {
+    "path": "scripts/egoexo_states/train.py",
+    "original_sha256": "976bdd2b0aab91b7241be6271716162a4886bae3fe229d82c8afbf1f6a29eb6e",
+    "export_sha256": "976bdd2b0aab91b7241be6271716162a4886bae3fe229d82c8afbf1f6a29eb6e"
+  },
+  {
+    "path": "scripts/evaluate_states_fourframes.py",
+    "original_sha256": "4482b27c690dd859c44c45c4aaf42d85d32124741bd857bc2335d63ed23df187",
+    "export_sha256": "4482b27c690dd859c44c45c4aaf42d85d32124741bd857bc2335d63ed23df187"
+  },
+  {
+    "path": "scripts/sampling_corrected/bounded_decode.py",
+    "original_sha256": "1125cb4346154e6653b7973ec458ce8fd22e3de736d154296be713dcd508d7cc",
+    "export_sha256": "1125cb4346154e6653b7973ec458ce8fd22e3de736d154296be713dcd508d7cc"
+  },
+  {
+    "path": "scripts/time_origin_reeval/run.py",
+    "original_sha256": "56afd08b5f72e933b61f2377c31f5e81b97eab85eb6c3c60378a5e11d6173ae4",
+    "export_sha256": "bad3457ecdd0f222d027626d5cd6f2632e586500a581a24c3c24f6320c856c40"
+  },
+  {
+    "path": "scripts/time_origin_reeval/decoder.py",
+    "original_sha256": "a213c440da8069f3a51bc66ef407d9ab4b2329719aee452fdf7304f3ef7299ce",
+    "export_sha256": "a213c440da8069f3a51bc66ef407d9ab4b2329719aee452fdf7304f3ef7299ce"
+  },
+  {
+    "path": "scripts/sampling_study/policies.py",
+    "original_sha256": "505a8b2b88ffa04dda4b95aecb9370c78d7c567978789cb2bb18edee85e5ca0a",
+    "export_sha256": "505a8b2b88ffa04dda4b95aecb9370c78d7c567978789cb2bb18edee85e5ca0a"
+  },
+  {
+    "path": "scripts/complementary_fusion/training_inventory.py",
+    "original_sha256": "2cd3a86b51fca30d6e5797e5394b16707d0f39bda709909c5eaae4556f2ad1d3",
+    "export_sha256": "2cd3a86b51fca30d6e5797e5394b16707d0f39bda709909c5eaae4556f2ad1d3"
+  },
+  {
+    "path": "scripts/complementary_fusion/weak_episodes.py",
+    "original_sha256": "55f6a4d969534899651ac633eba8f7d2a6a9b7720fc85f741b4fea0828ffaae3",
+    "export_sha256": "55f6a4d969534899651ac633eba8f7d2a6a9b7720fc85f741b4fea0828ffaae3"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/README.md",
+    "original_sha256": "15bb1e035633683cb28b7b79810ca21d2d5174e6ca227b58d4a69128dded996b",
+    "export_sha256": "15bb1e035633683cb28b7b79810ca21d2d5174e6ca227b58d4a69128dded996b"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/configs/our_default.yml",
+    "original_sha256": "1538e1535bd0a3cb16d46e961225f8c2f33f7bc892953a039ff24f5ea1c2692d",
+    "export_sha256": "1538e1535bd0a3cb16d46e961225f8c2f33f7bc892953a039ff24f5ea1c2692d"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/configs/test.yml",
+    "original_sha256": "5b7548385012c08b66e61440e0b21c62babd2dc20280d6a9dcbd295e92d55e26",
+    "export_sha256": "5b7548385012c08b66e61440e0b21c62babd2dc20280d6a9dcbd295e92d55e26"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/configs/train_egoexo.yml",
+    "original_sha256": "04f97f248c04e456376d61b26ce03856c17d8535733d381fdcc7af6d7b6ba2ff",
+    "export_sha256": "04f97f248c04e456376d61b26ce03856c17d8535733d381fdcc7af6d7b6ba2ff"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/configs/train_egoonly.yml",
+    "original_sha256": "32f7b241405731c9e4d34f444d114eeb237ce8d22f1b9d4884c98682618835af",
+    "export_sha256": "32f7b241405731c9e4d34f444d114eeb237ce8d22f1b9d4884c98682618835af"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/configs/train_exoonly.yml",
+    "original_sha256": "c37295249d32cae5e52df53f808ed18899fc1561fd276da4467211118119a789",
+    "export_sha256": "c37295249d32cae5e52df53f808ed18899fc1561fd276da4467211118119a789"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/data/__init__.py",
+    "original_sha256": "be069cc73e4e627a88e4edc9717e71b196daa8ab36edc61b3a030b4f661360dd",
+    "export_sha256": "be069cc73e4e627a88e4edc9717e71b196daa8ab36edc61b3a030b4f661360dd"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/data/data_utils.py",
+    "original_sha256": "5e11dc26ea05b938cacc6187db465292a94136acd8e8078c8c471d992d255c0e",
+    "export_sha256": "5e11dc26ea05b938cacc6187db465292a94136acd8e8078c8c471d992d255c0e"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/data/ourdata_dataset.py",
+    "original_sha256": "0fde322be5be5188fa912eab9fd5566ae36565fdf6b776a2a59950e2208076a6",
+    "export_sha256": "0fde322be5be5188fa912eab9fd5566ae36565fdf6b776a2a59950e2208076a6"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/data/ourdata_train_dataset.py",
+    "original_sha256": "7d97114693c7673163f691a8227f198bfa6278d1f2806dc7fbd3823252715517",
+    "export_sha256": "7d97114693c7673163f691a8227f198bfa6278d1f2806dc7fbd3823252715517"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/data/video_transforms.py",
+    "original_sha256": "da61a8afcfebe16a4dfeca7fe57c5ed03bec3297aed1281953c5999a2d0f5e5a",
+    "export_sha256": "da61a8afcfebe16a4dfeca7fe57c5ed03bec3297aed1281953c5999a2d0f5e5a"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/config.py",
+    "original_sha256": "5ad16b6e3d257a09d4ef7b2b98476d0868f03d4634fdc04a3efe39d95ea630a1",
+    "export_sha256": "5ad16b6e3d257a09d4ef7b2b98476d0868f03d4634fdc04a3efe39d95ea630a1"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/distributed.py",
+    "original_sha256": "9199f16b80bbc736fff69bac6a2174a13e58eb3f8f4053353c0a02a6a1abbd6d",
+    "export_sha256": "9199f16b80bbc736fff69bac6a2174a13e58eb3f8f4053353c0a02a6a1abbd6d"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/logger.py",
+    "original_sha256": "fcd683ef01f0c5a0efb506cd66880f8bd68d04740915c22fb732c2998e01d010",
+    "export_sha256": "fcd683ef01f0c5a0efb506cd66880f8bd68d04740915c22fb732c2998e01d010"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/meter.py",
+    "original_sha256": "7f9226c6d9b130234b5412a0841a95473fe95052bb1951857daa241c34133b04",
+    "export_sha256": "7f9226c6d9b130234b5412a0841a95473fe95052bb1951857daa241c34133b04"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/random.py",
+    "original_sha256": "91cb774b79112cca9dfc2778cda77750febc9bb0bb96b766b6448dccf19ee213",
+    "export_sha256": "91cb774b79112cca9dfc2778cda77750febc9bb0bb96b766b6448dccf19ee213"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/scheduler.py",
+    "original_sha256": "39aaa8a3cffcd119be786f37157b0839e71889d91b72cbefce0f223c1e16e7fe",
+    "export_sha256": "39aaa8a3cffcd119be786f37157b0839e71889d91b72cbefce0f223c1e16e7fe"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/function/utils.py",
+    "original_sha256": "bae9cdf1b1931b6bd88a066bf551c04a8321827475da5fa72735ae7bd58fcf51",
+    "export_sha256": "bae9cdf1b1931b6bd88a066bf551c04a8321827475da5fa72735ae7bd58fcf51"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/main.py",
+    "original_sha256": "bc7313e4ab5f23304226166e07f7fba30cd54d5dbffa3989263fe3f3ed49d7e6",
+    "export_sha256": "bc7313e4ab5f23304226166e07f7fba30cd54d5dbffa3989263fe3f3ed49d7e6"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/bpe_simple_vocab_16e6.txt.gz",
+    "original_sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+    "export_sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/builder.py",
+    "original_sha256": "3a7dcd674d213f63ae59342b1db73e4dbcd666d9910a0ed5146fb1fb30017fa6",
+    "export_sha256": "3a7dcd674d213f63ae59342b1db73e4dbcd666d9910a0ed5146fb1fb30017fa6"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/loss.py",
+    "original_sha256": "a7acd233381a3e2ab891b95ac8950841e555caa322eb224cccd10734859d5ac2",
+    "export_sha256": "a7acd233381a3e2ab891b95ac8950841e555caa322eb224cccd10734859d5ac2"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/model_utils.py",
+    "original_sha256": "726db23dda75c6d3369130ff65218e6aa42ee47c9afd65c15c10f24defd01bf3",
+    "export_sha256": "726db23dda75c6d3369130ff65218e6aa42ee47c9afd65c15c10f24defd01bf3"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/openai_clip.py",
+    "original_sha256": "d3aad97eeaae7bd540baa7d61ff226ee334c788e1fcbc3d506f979179bde0602",
+    "export_sha256": "d3aad97eeaae7bd540baa7d61ff226ee334c788e1fcbc3d506f979179bde0602"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/openai_model.py",
+    "original_sha256": "b16190ef6a2127150767ec025aaf39e4e3dca78ad1ba09f140bca21204f86e75",
+    "export_sha256": "b16190ef6a2127150767ec025aaf39e4e3dca78ad1ba09f140bca21204f86e75"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/retriever.py",
+    "original_sha256": "7b87e8da6435b493ebe0a5a7a09be09394ce1a0877ff68a994167ad5009cd9e5",
+    "export_sha256": "7b87e8da6435b493ebe0a5a7a09be09394ce1a0877ff68a994167ad5009cd9e5"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/timesformer.py",
+    "original_sha256": "d969ee544ced34db39b8d09cb4cea5659064fb2c0427143cca52320ae1cce159",
+    "export_sha256": "d969ee544ced34db39b8d09cb4cea5659064fb2c0427143cca52320ae1cce159"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/models/tokenizer.py",
+    "original_sha256": "14294837220641429339e81f44bb19efe177b0e713e1a60a5cf0690abcfda409",
+    "export_sha256": "14294837220641429339e81f44bb19efe177b0e713e1a60a5cf0690abcfda409"
+  },
+  {
+    "path": "repos/EgoExoLearn/association_benchmark/requirements.txt",
+    "original_sha256": "d51485ab2e05e8744a2aa17aa9162d289ae1a8f6f4b64e51f76099f02fe2f862",
+    "export_sha256": "d51485ab2e05e8744a2aa17aa9162d289ae1a8f6f4b64e51f76099f02fe2f862"
+  },
+  {
+    "path": "repos/EgoExoLearn/LICENSE",
+    "original_sha256": "5905baf1159b1ae2231dc382d30cf7fce4ecf18a019fd3b7eb8a2a7b21abbe89",
+    "export_sha256": "5905baf1159b1ae2231dc382d30cf7fce4ecf18a019fd3b7eb8a2a7b21abbe89"
+  }
+]

@@ -1,0 +1,13 @@
+# Recorded Python 3.9 environment. Install PyTorch CUDA wheels separately;
+# see README. These versions reproduce the historical runtime, not latest APIs.
+numpy==1.26.4
+av==14.2.0
+timm==0.6.12
+einops==0.7.0
+ftfy==6.2.0
+regex==2023.12.25
+tqdm==4.65.2
+opencv-python==4.9.0.80
+ipdb==0.13.13
+omegaconf==2.3.0
+decord==0.6.0

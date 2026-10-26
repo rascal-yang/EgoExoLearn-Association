@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/OpenGVLab/EgoExoLearn",
+  "revision": "e1f11b1ab1e9735634bfe5b457de1d8ff379e4a6",
+  "included": "association_benchmark source/configuration/tokenizer; annotations/assets excluded",
+  "local_changes": "upstream-local.patch",
+  "license": "repos/EgoExoLearn/LICENSE"
+}

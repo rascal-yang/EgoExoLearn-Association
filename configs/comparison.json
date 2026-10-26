@@ -1,0 +1,18 @@
+{
+  "dataset": "EgoExoLearn Cross-view Association",
+  "split": "validation",
+  "questions": 800,
+  "candidates_per_question": 20,
+  "seeds": [17, 29, 43],
+  "inference_frames": [4, 16],
+  "methods": ["M", "temporal_mean", "ordered_states"],
+  "sampling": "uniform bin midpoints bounded by annotated interval, corrected playback PTS",
+  "score": "cosine",
+  "prefix_cache_dtype": "float16",
+  "M_training_frames": 4,
+  "temporal_mean_training_frames": 16,
+  "ordered_states_training_frames": 16,
+  "four_frame_adaptation": "same 16-frame-trained state/temporal checkpoint; interpolate learned temporal positions to4",
+  "human_stage_labels": false,
+  "test_accuracy_reported": false
+}

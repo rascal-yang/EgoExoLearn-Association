@@ -1,0 +1,112 @@
+{
+  "metrics": {
+    "temporal_mean": {
+      "normal": {
+        "counts": [
+          435,
+          428,
+          414
+        ],
+        "mean_accuracy": 53.208333333333336
+      },
+      "reverse": {
+        "counts": [
+          433,
+          424,
+          415
+        ],
+        "mean_accuracy": 53.0
+      },
+      "shuffle": {
+        "counts": [
+          434,
+          426,
+          415
+        ],
+        "mean_accuracy": 53.125
+      },
+      "repeat": {
+        "counts": [
+          419,
+          418,
+          397
+        ],
+        "mean_accuracy": 51.416666666666664
+      }
+    },
+    "ordered_states": {
+      "normal": {
+        "counts": [
+          443,
+          420,
+          415
+        ],
+        "mean_accuracy": 53.25
+      },
+      "reverse": {
+        "counts": [
+          443,
+          420,
+          415
+        ],
+        "mean_accuracy": 53.25
+      },
+      "shuffle": {
+        "counts": [
+          441,
+          422,
+          418
+        ],
+        "mean_accuracy": 53.375
+      },
+      "repeat": {
+        "counts": [
+          417,
+          408,
+          411
+        ],
+        "mean_accuracy": 51.5
+      }
+    },
+    "M16": {
+      "normal": {
+        "counts": [
+          430,
+          418,
+          431
+        ],
+        "mean_accuracy": 53.291666666666664
+      }
+    }
+  },
+  "heads": {
+    "temporal_mean_17": {
+      "epoch": 2,
+      "gate": 0.04914458841085434
+    },
+    "temporal_mean_29": {
+      "epoch": 4,
+      "gate": 0.05507047101855278
+    },
+    "temporal_mean_43": {
+      "epoch": 4,
+      "gate": 0.056176841259002686
+    },
+    "ordered_states_17": {
+      "epoch": 4,
+      "gate": 0.06353649497032166
+    },
+    "ordered_states_29": {
+      "epoch": 3,
+      "gate": 0.060475271195173264
+    },
+    "ordered_states_43": {
+      "epoch": 4,
+      "gate": 0.06489545851945877
+    }
+  },
+  "TEST_access": false,
+  "stage_labels": "latent only, not human ground truth",
+  "direction_labels": "caption rule weak labels",
+  "score": "dot of normalized final embeddings; M16 cosine for matched scoring, raw saved separately"
+}
