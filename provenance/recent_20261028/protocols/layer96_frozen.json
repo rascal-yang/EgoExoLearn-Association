@@ -1,0 +1,332 @@
+{
+  "version": "1.0",
+  "status": "frozen_before_task_scores",
+  "frozen_at": 1793156440.1442437,
+  "scope": "Stage1: all12 single-layer interventions at96 spatial patch KV slots, plus exact RGB FP32 dense baseline",
+  "conditions": [
+    {
+      "name": "dense",
+      "operator": "dense",
+      "layer": -1,
+      "budget": 196
+    },
+    {
+      "name": "random_b00_m96",
+      "operator": "random",
+      "layer": 0,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b00_m96",
+      "operator": "similarity",
+      "layer": 0,
+      "budget": 96
+    },
+    {
+      "name": "random_b01_m96",
+      "operator": "random",
+      "layer": 1,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b01_m96",
+      "operator": "similarity",
+      "layer": 1,
+      "budget": 96
+    },
+    {
+      "name": "random_b02_m96",
+      "operator": "random",
+      "layer": 2,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b02_m96",
+      "operator": "similarity",
+      "layer": 2,
+      "budget": 96
+    },
+    {
+      "name": "random_b03_m96",
+      "operator": "random",
+      "layer": 3,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b03_m96",
+      "operator": "similarity",
+      "layer": 3,
+      "budget": 96
+    },
+    {
+      "name": "random_b04_m96",
+      "operator": "random",
+      "layer": 4,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b04_m96",
+      "operator": "similarity",
+      "layer": 4,
+      "budget": 96
+    },
+    {
+      "name": "random_b05_m96",
+      "operator": "random",
+      "layer": 5,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b05_m96",
+      "operator": "similarity",
+      "layer": 5,
+      "budget": 96
+    },
+    {
+      "name": "random_b06_m96",
+      "operator": "random",
+      "layer": 6,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b06_m96",
+      "operator": "similarity",
+      "layer": 6,
+      "budget": 96
+    },
+    {
+      "name": "random_b07_m96",
+      "operator": "random",
+      "layer": 7,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b07_m96",
+      "operator": "similarity",
+      "layer": 7,
+      "budget": 96
+    },
+    {
+      "name": "random_b08_m96",
+      "operator": "random",
+      "layer": 8,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b08_m96",
+      "operator": "similarity",
+      "layer": 8,
+      "budget": 96
+    },
+    {
+      "name": "random_b09_m96",
+      "operator": "random",
+      "layer": 9,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b09_m96",
+      "operator": "similarity",
+      "layer": 9,
+      "budget": 96
+    },
+    {
+      "name": "random_b10_m96",
+      "operator": "random",
+      "layer": 10,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b10_m96",
+      "operator": "similarity",
+      "layer": 10,
+      "budget": 96
+    },
+    {
+      "name": "random_b11_m96",
+      "operator": "random",
+      "layer": 11,
+      "budget": 96
+    },
+    {
+      "name": "similarity_b11_m96",
+      "operator": "similarity",
+      "layer": 11,
+      "budget": 96
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "questions": 256,
+  "unique_clips": 3510,
+  "all_query_and20_candidates": true,
+  "training": false,
+  "TEST_access": false,
+  "precision": "FP32; TF32 disabled; dense and compressed use identical newly decoded RGB path",
+  "random": "Per-global-clip/frame stateless32bit integer hash rank;80 singleton evidence+16 same-frame4x4 cells",
+  "similarity": "Even/odd bipartite cosine grouping on current normalized pre-spatial features; stable sort; multiple passes to96; exact count conservation",
+  "invariants": "All3137 queries,16 temporal frames,residuals,MLPs,CLS retained; only spatial KV memory changes",
+  "scan_batch": 32,
+  "decode_workers_per_gpu": 6,
+  "sharding": "sorted unique global clip IDs sliced shard::2;25 configs×3 seeds each",
+  "scan_acceleration": "Shared clean first10 weights/prefixes verified equal; every modified suffix recomputed; no block9 FP16 cache used",
+  "timing": {
+    "batches": [
+      1,
+      8
+    ],
+    "warmups_per_config": 3,
+    "paired_rounds": 12,
+    "repeats_per_measurement": 2,
+    "order_seed": 20261028,
+    "balanced_order": "Random permutation each round and random baseline/candidate pair order",
+    "input": "first8 sorted cohort clip IDs; identical per condition; no prefetch or writes in timed interval",
+    "includes": "stem+all12 blocks+selector/matching+aggregation+mass correction+norm/projection/normalization",
+    "extra": "Native temporal/spatial/MLP CUDA profiling; batch8 decode+transfer+encoder representative dense/random_b05/similarity_b05;3 warm-cache repeats"
+  },
+  "screen": {
+    "min_gain_pp": -1.0,
+    "min_per_seed_gain_pp": -2.0,
+    "min_margin_change": -0.005,
+    "speed": "batch8 paired mean candidate/baseline latency<1 AND descriptive within-run95% bootstrap upper<1",
+    "rank": "Descending mean accuracy gain, descending margin change, ascending batch8 paired median ratio, layer, operator",
+    "maximum_distinct_layers": 3,
+    "interpretation": "Exploratory screening, not noninferiority proof"
+  },
+  "later_stages": "Only if joint quality/speed screen passes: freeze a separate finite budget-curve/combination protocol before those new task scores; block11 retained as sensitive control. No automatic training or TEST.",
+  "statistics": "Per-seed accuracy, correct-minus-hardest-wrong cosine margin, paired source-cluster20000 bootstrap; seeds joint; all scan intervals descriptive, no multiplicity-adjusted significance claim",
+  "resources": {
+    "gpus": [
+      2,
+      3
+    ],
+    "memory_cap_GiB": 20,
+    "thermal_stop_above_C": 83,
+    "auto_thermal_restart": false,
+    "combined_old_semantic_block10_new_artifact_cap_GiB": 12
+  },
+  "sources": {
+    "scripts/egoexo_layer_compressibility/benchmark.py": "935df9ebb9f64832fb4143e085aee3d798bfa74eee9a7a68b4a6b540654e69c2",
+    "scripts/egoexo_layer_compressibility/freeze.py": "bae12614458b4b26ae5ee704c727d5d6e056d8f27f9055cffa0abb4907c12189",
+    "scripts/egoexo_layer_compressibility/lc_common.py": "5295a2399b0e4d8fa8f1a40d92c4b83d3ffee30c5d6babc0ba889be1e84c1be0",
+    "scripts/egoexo_layer_compressibility/lc_model.py": "5abb6db46318ed08021f170e4f349e9c56ed264fe5f4c27ac65b717ee8d8e819",
+    "scripts/egoexo_layer_compressibility/pipeline.py": "0eaf24f73d352bb330fe927ed0ccced3cef32b597ee5da62d8075ab63d29d263",
+    "scripts/egoexo_layer_compressibility/preflight.py": "9de1963275fb7642f629b39159b3c6d7610fb4867f3a32c8dd7c01a7b14d149c",
+    "scripts/egoexo_layer_compressibility/report.py": "05b21513865b0a11b8d46aaad08033e1d409711c91d83ff5ef1b767c3ddbc436",
+    "scripts/egoexo_layer_compressibility/scan.py": "4d906e70f851d1a908ab00bee05d0d692b2da19e54fe5a84f7770cf4f5a2f317",
+    "scripts/egoexo_semantic_processing/posthoc_core.py": "c3e3192d89b693d39c0d0f3755b1bbe5dab119a213609fded2afc4f9c6ea534e",
+    "scripts/egoexo_semantic_processing/rgb_gpu_prefetch.py": "b45f8cd2573ba3d563c615bfe8ec91e2369ebc6248112051802ff24f25fc8eb0",
+    "scripts/egoexo_semantic_processing/sp_common.py": "a59bc6a4692ccf69261c9eacb6f07013c745eb9cb6f29a2fdf313dbe23f1e039",
+    "scripts/egoexo_semantic_processing/sp_model.py": "5ef6038db994961c3b0d560d1353862d312b6ac5a17544015b3c8c20789c9c4f",
+    "scripts/egoexo_semantic_processing/memory_attention.py": "ac33afcb14556f7e0c0a80b5e04464f7285afad8150ec975c0163cef4a5da392",
+    "scripts/egoexo_semantic_processing/summarize.py": "a351be456f283ccfcbcdf1b2c180ef2fb67e0d6acfef984410b41089a9f016ad",
+    "scripts/egoexo_textalign/model.py": "013776c160bf1d9a731962fc6011fbc758cc49e5c5966f959df9a35fc65d641e",
+    "scripts/egoexo_textalign/backend.py": "b9e6957566210e8e0f8aafbdbcc226c319f2f49ff47b619191c3343404714061",
+    "scripts/egoexo_textalign/common.py": "e887b83df507786aea8e34708390dbe62a838625c13a36f41f07745f8d46f921"
+  },
+  "inputs": {
+    "experiments/egoexo_semantic_processing_20261027/protocol_v2_frozen.json": "76601f9c3e1432b72ca053f0b701b845c13adf580d6f6a18a5d003204caf9b0d",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendment.json": "61a274ee47cd12879d92ea9c716ceb6b0ec17f704cc3176129d672557c71fb1a",
+    "reports/egoexo_semantic_processing_20261027/v2_固定256题诊断队列.json": "cbb2d1f4aab40769a07174d4f0558d6a66789728724dd72bcab1e4a55ce7546a",
+    "experiments/egoexo_textalign_20261025/plan.json": "575cc5268ef70a1f174119b5033344887c21c829cfab491be8d8eea6709d1d39",
+    "experiments/egoexo_textalign_20261025/val_episodes.npz": "a3c0359449dd8b3423bc913e8e52daa979a81ffbca1f571e2d443df3b3724eca",
+    "experiments/egoexo_layer_compressibility_20261028/preflight_gpu2_b32.json": "32e7d4b5ac06dc2a801e561ffffe2e928606a35c800408c23d6db50cf6e2c3a6",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed17/final.pt": "dbdad45ce1a46cf2f72249876c816b612773928991e8faae61b305eb0d682ed7",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed17/complete.json": "dab696c06512376c94574c3e9af7c35d1700d77e0f29bdf935f728a04589e694",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed29/final.pt": "ed2632c6d5b06762f47880f246b19af9b2df592a3ebfa998a8ed39654f8f15d6",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed29/complete.json": "47e9a4857df71fb09233deb48a9c4b09d1a07dd077785b011aa7d0ccdc6850c4",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed43/final.pt": "103d751efba88f02bf56aac70cb1bcd7a45217eb1d965fec7e3784a2244d4db4",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed43/complete.json": "4e4ee74c8ceb15e39331b3a54eff1ab5a79568d4b9eae446bc9eaf8ccc9d980d"
+  },
+  "preflight_summary": {
+    "passed": true,
+    "training": false,
+    "TEST_access": false,
+    "task_scores_computed": false,
+    "gpu": "2",
+    "seconds": 42.803126096725464,
+    "stem_max_abs": 0.0,
+    "dense_descriptor_max_abs": 0.0,
+    "identity_block_relative_L2": [
+      2.394850184828101e-07,
+      2.819898838879453e-07,
+      3.733669018401997e-07,
+      4.4215175876161084e-07,
+      4.7078538045752794e-07,
+      4.594761264797853e-07,
+      2.9731288009315904e-07,
+      1.4648247770310263e-07,
+      1.6319019380262034e-07,
+      1.7730010881678027e-07,
+      2.213102163750591e-07,
+      1.9845596455070336e-07
+    ],
+    "invariants": [
+      {
+        "operator": "random",
+        "budget": 128,
+        "min_mass": 0.0,
+        "max_mass": 11.0
+      },
+      {
+        "operator": "similarity",
+        "budget": 128,
+        "min_mass": 1.0,
+        "max_mass": 7.0
+      },
+      {
+        "operator": "random",
+        "budget": 96,
+        "min_mass": 1.0,
+        "max_mass": 14.0
+      },
+      {
+        "operator": "similarity",
+        "budget": 96,
+        "min_mass": 1.0,
+        "max_mass": 13.0
+      },
+      {
+        "operator": "random",
+        "budget": 64,
+        "min_mass": 1.0,
+        "max_mass": 15.0
+      },
+      {
+        "operator": "similarity",
+        "budget": 64,
+        "min_mass": 1.0,
+        "max_mass": 27.0
+      },
+      {
+        "operator": "random",
+        "budget": 48,
+        "min_mass": 1.0,
+        "max_mass": 16.0
+      },
+      {
+        "operator": "similarity",
+        "budget": 48,
+        "min_mass": 1.0,
+        "max_mass": 38.0
+      }
+    ],
+    "shared_vs_full_max_abs": {
+      "dense": 0.0,
+      "random_b00_m96": 0.0,
+      "similarity_b05_m96": 0.0,
+      "similarity_b11_m96": 0.0
+    },
+    "common_first10_weights_equal": true,
+    "precision": "FP32_TF32_disabled",
+    "batch": 32,
+    "conditions": 25,
+    "complete_scan_batch_seconds": 21.988363332115114,
+    "clips_per_second": 1.4553152281808253,
+    "peak_allocated_GiB": 12.061956882476807,
+    "peak_reserved_GiB": 19.638671875
+  }
+}

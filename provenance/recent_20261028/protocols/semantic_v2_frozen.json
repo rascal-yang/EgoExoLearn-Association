@@ -1,0 +1,626 @@
+{
+  "design_version": "2.0_design_review",
+  "status": "frozen_for_execution",
+  "created_date": "2026-10-27",
+  "full_plan": "reports/egoexo_semantic_processing_20261027/深入实验方案_v2.txt",
+  "supersedes_for_future_execution_only": "1.0_attention_memory",
+  "original_protocol_modified": false,
+  "question": "Does explicit video-predicted semantic affinity improve cross-view association beyond matched continued M and semantically supervised content routing, at a fixed four-epoch endpoint?",
+  "groups": [
+    {
+      "id": "R0",
+      "memory": "native_dense",
+      "route_loss": false,
+      "semantic_affinity": false,
+      "evidence": 196,
+      "context_slots": 0,
+      "represented_patch_mass_per_frame": 196
+    },
+    {
+      "id": "R1",
+      "memory": "evidence_and_context",
+      "route_loss": "correct",
+      "semantic_affinity": false,
+      "evidence": 32,
+      "context_slots": 16,
+      "redundancy": 0.25,
+      "represented_patch_mass_per_frame": 196
+    },
+    {
+      "id": "R2",
+      "memory": "evidence_and_context",
+      "route_loss": "correct",
+      "semantic_affinity": true,
+      "evidence": 32,
+      "context_slots": 16,
+      "redundancy": 0.25,
+      "represented_patch_mass_per_frame": 196,
+      "fixed_primary_method": true
+    },
+    {
+      "id": "R3",
+      "memory": "evidence_and_context",
+      "route_loss": "permuted_train_bags",
+      "semantic_affinity": true,
+      "evidence": 32,
+      "context_slots": 16,
+      "redundancy": 0.25,
+      "represented_patch_mass_per_frame": 196,
+      "original_M_supervision": "correct"
+    },
+    {
+      "id": "R4",
+      "memory": "evidence_and_context",
+      "route_loss": "correct",
+      "semantic_affinity": true,
+      "evidence": 32,
+      "context_slots": 16,
+      "redundancy": 0.0,
+      "represented_patch_mass_per_frame": 196
+    },
+    {
+      "id": "R5",
+      "memory": "evidence_only",
+      "route_loss": "correct_first32_evidence",
+      "semantic_affinity": true,
+      "evidence": 48,
+      "context_slots": 0,
+      "redundancy": 0.25,
+      "represented_patch_mass_per_frame": 48,
+      "interpretation": "Allocation comparison at the same maximum slot budget; evidence count and represented mass also change."
+    }
+  ],
+  "training": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "fits": 18,
+    "train_clips": 32079,
+    "epochs": 4,
+    "clip_exposures_per_fit": 128316,
+    "batch": 48,
+    "batch_candidates_in_order": [
+      48,
+      32
+    ],
+    "batch_decision": "Common batch determined by engineering memory checks only; stop and repair if neither fits.",
+    "drop_last": false,
+    "optimizer": "AdamW",
+    "trunk_lr": 1e-05,
+    "router_lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "lr_schedule": "constant",
+    "gradient_clip_trunk": 1.0,
+    "gradient_clip_router_separately": 1.0,
+    "primary_checkpoint": "epoch4_final",
+    "secondary_checkpoint": "minimum internal caption loss among epochs0_to4; earliest tie",
+    "internal_holdout_clips": 1171,
+    "internal_evaluation_batch": 32,
+    "independent_rng_streams": [
+      "sample_order",
+      "trunk",
+      "router_gumbel",
+      "label_permutation"
+    ],
+    "nonfinite_retry": "restore step RNG and reuse identical routing noise; count exposure only after a successful update"
+  },
+  "loss": {
+    "M": {
+      "caption": 1.0,
+      "global_phrase": 0.1,
+      "local_mean_phrase": 0.1,
+      "neutral_slot_and_valid_plus_one": "unchanged"
+    },
+    "route_weight_R1_to_R5": 0.1,
+    "route_prefix_fraction": 0.5,
+    "route_evidence_fraction": 0.5,
+    "route_temperature": 0.07,
+    "route_loss": "positive-normalized softmax cross-entropy, separate nouns/verbs, missing types skipped",
+    "weak_label_limit": "Unmentioned classes still compete in the softmax denominator; absence of a mention is not verified absence.",
+    "R0_dense_bypass_check": "Auxiliary prefix-only route loss has no direct trunk path; verify isolation with independent RNG and separate clipping, not a new full fit."
+  },
+  "router": {
+    "source": "frozen block9",
+    "head": "independent copied M LayerNorm and 768x256 projection plus 256-to-1 content score",
+    "content_initialization": {
+      "weight_std": 0.02,
+      "bias": 0
+    },
+    "global_concept_input": "projected prefix CLS",
+    "train_vocab": {
+      "verbs": 80,
+      "nouns": 235
+    },
+    "top_nouns": 4,
+    "top_verbs": 2,
+    "semantic_temperature": 0.07,
+    "semantic_coefficient": 1.0,
+    "score_standardization": "separate per frame; standard deviation below1e-4 maps to zero",
+    "standardization_epsilon": 0.0001,
+    "similarity_penalty_source": "frozen normalized block9 raw features within the same frame",
+    "redundancy_lambda": 0.25,
+    "tie_break": "smaller original patch index",
+    "training_hard_noise": "gamma=1-r within epoch1, then0",
+    "training_soft_temperature": "tau=1-0.8r within epoch1, then0.2",
+    "straight_through": "A_hard-stopgrad(A_soft)+A_soft; column-conserving soft partition for R1_to_R4",
+    "counts_and_logmass": "detached exact hard forward values",
+    "checkpoint_randomness": "materialized once per batch, explicitly passed, never resampled on backward",
+    "inference_text_tower": false
+  },
+  "attention": {
+    "modified_blocks_zero_indexed": [
+      10,
+      11
+    ],
+    "modified_branch": "spatial K/V only",
+    "native_residual": "space_residual=x+drop_path(space_output), not time_residual+space_output",
+    "query_patch_count": 3136,
+    "global_cls_count": 1,
+    "maximum_patch_memory": 768,
+    "frame_patch_queries": 196,
+    "frame_memory_with_CLS_max": 49,
+    "grid_cell": "floor(4*r/14),floor(4*c/14)",
+    "normalization": "original norm1 before averaging",
+    "bias": "log represented_count",
+    "membership": "reuse block9 assignments, recompute values from each layer input",
+    "frame_query_scope": "same frame memory plus CLS",
+    "global_CLS_scope": "all frame memory plus one CLS",
+    "conservation_required_groups": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "R5_conservation_exception": "Only48 selected source positions represented per frame"
+  },
+  "permutation": {
+    "scope": "TRAIN only; additional route targets only",
+    "strata": [
+      "view",
+      "has_verb_label",
+      "has_noun_label"
+    ],
+    "unit": "joint noun_and_verb label bag",
+    "fixed_across_epochs": true,
+    "preserve": [
+      "within-stratum label marginals",
+      "within-bag cooccurrence"
+    ],
+    "minimum_effectively_changed_labeled_bags": 0.8,
+    "prefer_different_source_video_donor": true,
+    "if_infeasible": "record before freezing; revise implementation protocol or weaken negative-control interpretation"
+  },
+  "evaluation": {
+    "annotation": "data/association_annotations/association_val_hard.json",
+    "questions": 800,
+    "annotation_sha256": "e16caacbeb192c8171b14e45cde0777c18a14076e820a39465f0b26130c2c336",
+    "direction_and_task_source": "repos/EgoExoLearn/video_meta_downsampled.json",
+    "precision": "FP32",
+    "score": "cosine_20way",
+    "primary_endpoint": "epoch4_final",
+    "primary_comparisons": [
+      [
+        "R2",
+        "R0"
+      ],
+      [
+        "R2",
+        "R1"
+      ]
+    ],
+    "bootstrap": {
+      "iterations": 20000,
+      "seed": 20261027,
+      "cluster": "query_source_video",
+      "retain_seeds_jointly": true,
+      "estimand": "question-weighted gain averaged across three fixed paired seeds",
+      "interval": 0.975,
+      "percentiles": [
+        0.0125,
+        0.9875
+      ]
+    },
+    "scope_of_intervals": "Conditional on the fixed candidate pool and three seeds; incomplete treatment of candidate reuse and historical selection bias.",
+    "sensitivity": [
+      "macro_video",
+      "macro_metadata_task",
+      "correct_candidate_video_clusters",
+      "shared_physical_video_Poisson_weights_product_for_query_and_correct",
+      "delete_largest_query_video",
+      "leave_one_source_video_out",
+      "task_stratified_source_bootstrap",
+      "dish_alternative_grouping",
+      "internal_best_secondary_endpoint"
+    ],
+    "duration_bins_seconds": [
+      5,
+      15
+    ],
+    "secondary_arm_comparison_correction": "Holm for R2_vs_R3_R4_R5 if significance claims are made",
+    "official_test": "R0/R1/R2 x3 seeds once after protocol freeze; historical exposure disclosed; no TEST read in planning"
+  },
+  "diagnostics": {
+    "queries": 256,
+    "sampling_seed": 20261027,
+    "per_direction": 128,
+    "stratify_within_direction": "capacity_constrained_task_proportions_then_largest_remainder; report original_and_realized_quotas",
+    "max_questions_per_source_video": 4,
+    "diagnostic_distribution": "Not an exact replica of the official task mix; report strata and population-weighted mechanism summaries, never replace full800 accuracy.",
+    "internal_interventions": [
+      "semantic_off",
+      "random_32_plus_context",
+      "donor_video_concepts",
+      "restore_dense_block10",
+      "restore_dense_block11",
+      "restore_dense_both",
+      "mask_context",
+      "common_context_value_within_frame",
+      "permute_context_values_across_frames"
+    ],
+    "pixel_intervention": {
+      "primary_target": "query_only_candidates_unchanged",
+      "distinct_PTS_frames_max": 4,
+      "window_patches": [
+        3,
+        3
+      ],
+      "window_pixels": [
+        48,
+        48
+      ],
+      "gaussian_kernel": 49,
+      "gaussian_sigma_pixels": 8,
+      "matched_controls": 3,
+      "control_iou_max": 0.2,
+      "appearance_matching": "brightness_quartile_and_gradient_energy_quartile; fallback levels reported separately",
+      "primary": "redecode_full_encoder_recompute_router",
+      "secondary": "redecode_full_encoder_freeze_clean_assignments",
+      "clean_baseline": "same full-encoder numeric path as perturbed condition"
+    },
+    "human_regions": {
+      "clips": 200,
+      "distinct_frames_per_clip_max": 4,
+      "raters": 2,
+      "status": "not_started"
+    },
+    "human_action_triplets_max": 100,
+    "human_evidence_required_for": [
+      "precise_object_localization",
+      "same_object_different_action_discrimination"
+    ]
+  },
+  "resources": {
+    "allowed_gpus": [
+      2,
+      3
+    ],
+    "training_launched_by_design_task": false,
+    "temperature_stop_above_celsius": 83,
+    "save_on_thermal_or_guard_stop": true,
+    "automatic_thermal_restart": false,
+    "training_and_primary_eval_gpu_hours_reference": [
+      24,
+      36
+    ],
+    "additional_intervention_budget": "measure separately; not guaranteed within the reference",
+    "new_storage_gib_limit": 12,
+    "new_prefix_copy": false,
+    "checkpoints_per_fit": [
+      "final.pt",
+      "best.pt",
+      "resume.pt"
+    ],
+    "efficiency_claim_requires": "whole_encoder_plus_router timing and memory at matched precision, not KV counts alone",
+    "training_authorized_by_user": "2026-10-27: 可以开始实验了"
+  },
+  "success_target": {
+    "R2_R0_mean_gain_pp_min": 1.0,
+    "R2_R0_all_three_seed_gains_positive": true,
+    "both_primary_adjusted_intervals_positive": true,
+    "robustness_limits_disclosed": true,
+    "guaranteed": false
+  },
+  "freeze_gates_pending": [],
+  "known_limits": [
+    "Existing M internal-holdout selection exposure",
+    "Historical VAL and TEST exposure",
+    "289 shared train and validation long videos despite no overlapping intervals",
+    "Candidate reuse beyond source clustering",
+    "Only three fixed training seeds",
+    "Narration-derived weak labels",
+    "FP16 prefix cache boundary",
+    "R5 changes represented mass and evidence count",
+    "No human grounding or fine-action evidence yet"
+  ],
+  "primary_sources": {
+    "ToMe": "https://arxiv.org/html/2210.09461v3",
+    "TC_CLIP": "https://arxiv.org/html/2404.09490v2",
+    "PRISM": "https://arxiv.org/abs/2608.30388",
+    "subset_relaxations": "https://arxiv.org/abs/1901.10517"
+  },
+  "frozen_time": "2026-10-27 12:23:55 +0800",
+  "implementation_version": "v2_native_memory_1",
+  "execution_scope": {
+    "automatic_pipeline": "18 full fits plus final and internal-best full800 VAL and paired statistics; evaluate each fit when ready, scheduling never reads accuracy",
+    "remaining_stages": "Internal/pixel interventions, official TEST confirmation and human review remain explicitly tracked; no fabricated completion.",
+    "future_stage_code": "Separately hash before that stage, keep frozen method/hyperparameters/endpoints/diagnostic IDs; disclose implementation amendments."
+  },
+  "runtime_choices": {
+    "AMP": "FP16 autocast with FP32 routing and reductions",
+    "TF32": false,
+    "route_noise_stream_seed": "70000+seed; draw48 slots per batch for all processing arms",
+    "trunk_RNG_seed": "seed, model initialization isolated in fork_rng",
+    "foreign_GPU_process_threshold_mib": 1024,
+    "required_free_mib_at_launch": 20000,
+    "staging": "Reuse existing hash-verified immutable SSD prefix copies via exact read-only row reads; no new copy"
+  },
+  "preparation_result": {
+    "passed": true,
+    "train_clips": 32079,
+    "vocabulary": 315,
+    "vocabulary_by_type": {
+      "noun": 235,
+      "verb": 80
+    },
+    "active_clips": 32043,
+    "changed_labeled_bag_fraction": 0.9982211403426645,
+    "type_changed_fraction": {
+      "verb": 0.8033604538794851,
+      "noun": 0.9890582624146638
+    },
+    "jaccard_mean": 0.07220622843497708,
+    "strata": [
+      {
+        "stratum": [
+          "ego",
+          false,
+          false
+        ],
+        "samples": 35,
+        "changed_fraction": 0.0,
+        "different_video_donor_fraction": 1.0
+      },
+      {
+        "stratum": [
+          "ego",
+          false,
+          true
+        ],
+        "samples": 4203,
+        "changed_fraction": 0.9971448965024983,
+        "different_video_donor_fraction": 0.9964311206281228
+      },
+      {
+        "stratum": [
+          "ego",
+          true,
+          false
+        ],
+        "samples": 173,
+        "changed_fraction": 0.8034682080924855,
+        "different_video_donor_fraction": 0.9942196531791907
+      },
+      {
+        "stratum": [
+          "ego",
+          true,
+          true
+        ],
+        "samples": 22796,
+        "changed_fraction": 0.999517459203369,
+        "different_video_donor_fraction": 0.9950868573433935
+      },
+      {
+        "stratum": [
+          "exo",
+          false,
+          false
+        ],
+        "samples": 1,
+        "changed_fraction": 0.0,
+        "different_video_donor_fraction": 0.0
+      },
+      {
+        "stratum": [
+          "exo",
+          false,
+          true
+        ],
+        "samples": 256,
+        "changed_fraction": 1.0,
+        "different_video_donor_fraction": 0.9765625
+      },
+      {
+        "stratum": [
+          "exo",
+          true,
+          false
+        ],
+        "samples": 24,
+        "changed_fraction": 1.0,
+        "different_video_donor_fraction": 1.0
+      },
+      {
+        "stratum": [
+          "exo",
+          true,
+          true
+        ],
+        "samples": 4591,
+        "changed_fraction": 1.0,
+        "different_video_donor_fraction": 0.9908516663036375
+      }
+    ],
+    "original_M_targets_changed": false,
+    "TEST_access": false
+  },
+  "schedule": [
+    {
+      "arm": "R3",
+      "seed": 17
+    },
+    {
+      "arm": "R2",
+      "seed": 17
+    },
+    {
+      "arm": "R4",
+      "seed": 17
+    },
+    {
+      "arm": "R5",
+      "seed": 17
+    },
+    {
+      "arm": "R0",
+      "seed": 17
+    },
+    {
+      "arm": "R1",
+      "seed": 17
+    },
+    {
+      "arm": "R5",
+      "seed": 29
+    },
+    {
+      "arm": "R2",
+      "seed": 29
+    },
+    {
+      "arm": "R4",
+      "seed": 29
+    },
+    {
+      "arm": "R1",
+      "seed": 29
+    },
+    {
+      "arm": "R0",
+      "seed": 29
+    },
+    {
+      "arm": "R3",
+      "seed": 29
+    },
+    {
+      "arm": "R1",
+      "seed": 43
+    },
+    {
+      "arm": "R0",
+      "seed": 43
+    },
+    {
+      "arm": "R2",
+      "seed": 43
+    },
+    {
+      "arm": "R4",
+      "seed": 43
+    },
+    {
+      "arm": "R5",
+      "seed": 43
+    },
+    {
+      "arm": "R3",
+      "seed": 43
+    }
+  ],
+  "frozen_sources": {
+    "data/association_annotations/association_val_hard.json": "e16caacbeb192c8171b14e45cde0777c18a14076e820a39465f0b26130c2c336",
+    "experiments/egoexo_mechanism_20261025/heads/M/seed17/best.pt": "7d5ae84afa513bb815a4b6184b2a3aed4c17136894e6d08ca33d92537e2d3b06",
+    "experiments/egoexo_mechanism_20261025/heads/M/seed29/best.pt": "f4cd223b12f723a7fbe8e2bf879e4c3e17a92ca87d056e761c94dd60df521dc9",
+    "experiments/egoexo_mechanism_20261025/heads/M/seed43/best.pt": "90386f67211a4782f66ce5ce2ae784733c23767c4f751d863fd8481e2e515a4b",
+    "experiments/egoexo_relations_20261026/selection_holdout.npy": "da273a124d6b09bdb78a178f2f1fc608e4e5d574379aa42b1fba4469cfae4c07",
+    "experiments/egoexo_relations_20261026/ssd_ready.json": "e1e1d2c5fc38433d2384f16a3090b1a06c34f243fa9f52ec8427a6d4134b344b",
+    "experiments/egoexo_semantic_processing_20261027/cache_replay.json": "31f35c9b3b23ad6959064d7f9fc5b311b0c707086f64e2ee3239d0c04a8df6f3",
+    "experiments/egoexo_semantic_processing_20261027/control_audit.json": "e3380fb880032ea85e76158a63607f918d1c959ba277e4c4ac973a5406c582f8",
+    "experiments/egoexo_semantic_processing_20261027/design_protocol_v2_draft.json": "07ac97a1c91c20f41f21862122296b10d9f726ee42cc0b0875b2199684ef635c",
+    "experiments/egoexo_semantic_processing_20261027/preflight_dense.json": "5dd0726874102907991148c68f6b02349d92bbc9410b95c7a982af50e7be7267",
+    "experiments/egoexo_semantic_processing_20261027/preflight_main.json": "33d8eaf0036e2c0e2b6cd30148dbe9eea968d8e3d71ece01e6ec8db2535c2d1f",
+    "experiments/egoexo_semantic_processing_20261027/preparation.json": "330e69bd4fef6c736d16ab6ab214c1e6ea4f0f0751d033af72b2ce7da84dac51",
+    "experiments/egoexo_semantic_processing_20261027/route_donors.npy": "9ffcf8d647c872d83f4b8f04e1c5a63585b652d6bd82cf6e8959518f881276d0",
+    "experiments/egoexo_semantic_processing_20261027/route_labels.npy": "dc45224238e06a11c40e16f748e489ff6367e4bda894154660173be1cd548b76",
+    "experiments/egoexo_semantic_processing_20261027/route_prototypes.npy": "92d4af33232ac2575efce780bc8f2e77a3eff72938698d4ab515ef866ec0f711",
+    "experiments/egoexo_semantic_processing_20261027/route_vocabulary.json": "c916429f5e71711c9bcbe0b880da88aa0b19d138036d4ac59965d7f72ef554b9",
+    "experiments/egoexo_semantic_processing_20261027/trainer_engineering.json": "f96a7668f241042ff70886489cb074241649f8711840108c4b711f73f1dc1cc6",
+    "experiments/egoexo_states_20261025/cache2/ids.npy": "66b15fbebd7c999946bd41f1d036c2f6a19b1e500b81585f91e5a968d7473b87",
+    "experiments/egoexo_states_20261025/cache2/pts.npy": "110763758e015248fbb71e5dc84cf871aac35c1cdb3fa8aa6b83ca3e3c9b7c40",
+    "experiments/egoexo_states_20261025/cache3/ids.npy": "c84586db03038b1272a2c12cbd51c102e87f6cd21c63a9ba6b6d8edfcca3f03f",
+    "experiments/egoexo_states_20261025/cache3/pts.npy": "79aab990733a07e6225b2e8a0d948bfea1cb870fb9e7ee131fb7834cbab127b9",
+    "experiments/egoexo_textalign_20261025/phrases.json": "49e71b8aedf30230053eb2919274c9376a56389508577c28e87702321954586d",
+    "experiments/egoexo_textalign_20261025/plan.json": "575cc5268ef70a1f174119b5033344887c21c829cfab491be8d8eea6709d1d39",
+    "experiments/egoexo_textalign_20261025/records.json": "d046bb0baa923251e0f13ec7177bc1af745ab4aded71230a1e29d887a83dad27",
+    "experiments/egoexo_textalign_20261025/splits.npz": "a39519651a4e9ac657fe37f3097e018af302e143dfcf09a9989d163bd6d0e0ae",
+    "experiments/egoexo_textalign_20261025/text_features.npy": "27d2e83dfb6b162e17b319d079f690cfd53b9397ded3bacd572f8637b52a1add",
+    "experiments/egoexo_textalign_20261025/val_episodes.npz": "a3c0359449dd8b3423bc913e8e52daa979a81ffbca1f571e2d443df3b3724eca",
+    "reports/egoexo_semantic_processing_20261027/v2_固定256题诊断队列.json": "cbb2d1f4aab40769a07174d4f0558d6a66789728724dd72bcab1e4a55ce7546a",
+    "reports/egoexo_semantic_processing_20261027/深入实验方案_v2.txt": "bef503ba6559ad0b9946cc2d56b37a8b6ff737fc49b702a26d1a4a4e6d282543",
+    "repos/EgoExoLearn/association_benchmark/models/builder.py": "3a7dcd674d213f63ae59342b1db73e4dbcd666d9910a0ed5146fb1fb30017fa6",
+    "repos/EgoExoLearn/association_benchmark/models/loss.py": "a7acd233381a3e2ab891b95ac8950841e555caa322eb224cccd10734859d5ac2",
+    "repos/EgoExoLearn/association_benchmark/models/model_utils.py": "726db23dda75c6d3369130ff65218e6aa42ee47c9afd65c15c10f24defd01bf3",
+    "repos/EgoExoLearn/association_benchmark/models/openai_clip.py": "d3aad97eeaae7bd540baa7d61ff226ee334c788e1fcbc3d506f979179bde0602",
+    "repos/EgoExoLearn/association_benchmark/models/openai_model.py": "b16190ef6a2127150767ec025aaf39e4e3dca78ad1ba09f140bca21204f86e75",
+    "repos/EgoExoLearn/association_benchmark/models/retriever.py": "7b87e8da6435b493ebe0a5a7a09be09394ce1a0877ff68a994167ad5009cd9e5",
+    "repos/EgoExoLearn/association_benchmark/models/timesformer.py": "d969ee544ced34db39b8d09cb4cea5659064fb2c0427143cca52320ae1cce159",
+    "repos/EgoExoLearn/association_benchmark/models/tokenizer.py": "14294837220641429339e81f44bb19efe177b0e713e1a60a5cf0690abcfda409",
+    "repos/EgoExoLearn/video_meta_downsampled.json": "0138ff22628345e489aee0259a4f31a116c4117d730f3928f717b5129356edce",
+    "scripts/egoexo_semantic_processing/cache_replay.py": "6eb0e06001c820de52f51bca95cdf59b544cad67cb00832c2de5bea659f0edd2",
+    "scripts/egoexo_semantic_processing/control_audit.py": "9612fa9d578d063531bf5907dd2c32cf7bea4ec9ed106f4ffc5978076bbbb3da",
+    "scripts/egoexo_semantic_processing/design_audit.py": "c5b0f983d901b24ee0243716b0ae0ea23196ea28cbb5fc768a8ca24251a82497",
+    "scripts/egoexo_semantic_processing/evaluate.py": "fe70596a6cef5a41aaeda798047e41309d26ec1f6b3daf4413d20abe585c3a0a",
+    "scripts/egoexo_semantic_processing/freeze.py": "cfa7872b907012407b762625bde380316158c915a4766c63bdefc45e99906227",
+    "scripts/egoexo_semantic_processing/memory_attention.py": "e1dc73dc732ba70654ce4ae246e0671e8013970d53d9f51da962399768a3b08b",
+    "scripts/egoexo_semantic_processing/pipeline.py": "6b532d77817e1b54bcc6519bc8a09d133741a3bb7e9a84de5909325525e9828e",
+    "scripts/egoexo_semantic_processing/plan_v2_audit.py": "c910ed9b2397546dde3cadd383ce2103372cf4cc358e46da141ba97fe7fdbc54",
+    "scripts/egoexo_semantic_processing/preflight.py": "306e24add420064f6dcc5f0a6be112937b3cd31b63842ac36f1141250359cf7d",
+    "scripts/egoexo_semantic_processing/prepare.py": "f06c11b96ddad5093dbb3f66001b758fffb0291cfe3ad49f68a053222660d889",
+    "scripts/egoexo_semantic_processing/route_loss.py": "41d5e0e4b8de79dddcf1a0bcf54a696e0d69f0c788deadcdb594495732f185df",
+    "scripts/egoexo_semantic_processing/router.py": "6f9e6b5fd8902134ba4773d023baf9e300b97feb9b597a40b6846be691471dfb",
+    "scripts/egoexo_semantic_processing/sp_common.py": "fff6ce4987f129d7341e6e91d851ffb2934a7f7b94adc1763e32485e0f9f4316",
+    "scripts/egoexo_semantic_processing/sp_data.py": "9500d81d3ef745c5b504ded9bfeedb8fa41f9d9deba09b5b13ff3e194d359078",
+    "scripts/egoexo_semantic_processing/sp_model.py": "bc5d99eb35ace0b76f9852088784a2714629b91b53cbd1657940db921a39753b",
+    "scripts/egoexo_semantic_processing/summarize.py": "a351be456f283ccfcbcdf1b2c180ef2fb67e0d6acfef984410b41089a9f016ad",
+    "scripts/egoexo_semantic_processing/train.py": "e04b46134fe13e7a6767fd4f5aabea2b99c94c518b36a9760c43a66479f768ec",
+    "scripts/egoexo_textalign/backend.py": "b9e6957566210e8e0f8aafbdbcc226c319f2f49ff47b619191c3343404714061",
+    "scripts/egoexo_textalign/common.py": "e887b83df507786aea8e34708390dbe62a838625c13a36f41f07745f8d46f921",
+    "scripts/egoexo_textalign/model.py": "013776c160bf1d9a731962fc6011fbc758cc49e5c5966f959df9a35fc65d641e",
+    "scripts/time_origin_reeval/run.py": "56afd08b5f72e933b61f2377c31f5e81b97eab85eb6c3c60378a5e11d6173ae4"
+  },
+  "external_base_checkpoint": {
+    "path": "/data2_8t/user/wrt/projects/association_benchmark/exps/baseline/checkpoint_best.pt",
+    "bytes": 2132441709,
+    "mtime_ns": 1776674243261595666,
+    "sha256": "d0be0f12df901f8baa240934f2ef51cfd94e9d300fc79416b5a511ce91483d82",
+    "subsequent_verification": "Read-only source stat identity checked before every worker; whole-file hash recorded at freeze"
+  },
+  "runtime_versions": {
+    "python": "3.9.23 (main, Jun  5 2025, 13:40:20) \n[GCC 11.2.0]",
+    "torch": "1.13.1+cu117",
+    "CUDA": "11.7",
+    "numpy": "1.26.4"
+  },
+  "prefix_cache_source_signatures": [
+    {
+      "path": "/var/tmp/yzj-egoexo-relations-20261026/cache2_prefix.npy",
+      "bytes": 102854249600,
+      "mtime_ns": 1793017375220506580,
+      "prior_whole_file_sha256": "5b35cca1867ad240732561b5b49dbdb3ab61978482506422c6b2f4f35ef5e1ff"
+    },
+    {
+      "path": "/var/tmp/yzj-egoexo-relations-20261026/cache3_prefix.npy",
+      "bytes": 102849431168,
+      "mtime_ns": 1793018940846972568,
+      "prior_whole_file_sha256": "7a62230800b93a327bfdb837f9776f557cdac0ccf71cf060c91f7e4967fbcc6d"
+    }
+  ]
+}

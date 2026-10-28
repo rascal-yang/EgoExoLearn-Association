@@ -1,0 +1,13 @@
+block10单层压缩：6次新训练与复用R0的完整800题VAL结果
+仅block10空间K/V压缩；block11原生稠密。主终点epoch4，三种子整体报告。
+
+R0: seed17 54.375%, seed29 55.125%, seed43 53.375%；均值 54.292%
+S1: seed17 55.500%, seed29 54.250%, seed43 54.125%；均值 54.625%
+S2: seed17 54.250%, seed29 54.375%, seed43 53.500%；均值 54.042%
+S2-R0: -0.250pp；97.5%源视频聚类区间 [-1.559470489676439, 1.199862245480185]
+S2-S1: -0.583pp；97.5%源视频聚类区间 [-1.6211941034330213, 0.7539041464728056]
+S1-R0: +0.333pp；95.0%源视频聚类区间 [-0.8785798880275623, 1.3698756976154225]
+
+预定提升目标满足：False
+Known VAL used for exploratory development; fixed candidate pool and three seeds; source clustering incompletely treats candidate reuse. Historical TEST was not reused for tuning this run.
+未新增TEST评测；未完成的人工核验不作为真值。

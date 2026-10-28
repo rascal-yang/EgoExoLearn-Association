@@ -1,0 +1,847 @@
+{
+  "exported_at": "2026-10-28T08:45:46.229226+00:00",
+  "purpose": "Historical source archive with aggregate results; not a fresh training rerun",
+  "source_files": 77,
+  "exports": [
+    {
+      "path": "scripts/egoexo_relations/cache_copy.py",
+      "source_path": "scripts/egoexo_relations/cache_copy.py",
+      "original_sha256": "52a0cfda54c6c98afb222347719bf10ed4182ddb65cb411c80f458a849276ee4",
+      "export_sha256": "52a0cfda54c6c98afb222347719bf10ed4182ddb65cb411c80f458a849276ee4",
+      "bytes": 2397,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/evaluate.py",
+      "source_path": "scripts/egoexo_relations/evaluate.py",
+      "original_sha256": "b0e024b75f1939cc3ab274f81c871f53efb61c39314b4664162d9b776e27be21",
+      "export_sha256": "b0e024b75f1939cc3ab274f81c871f53efb61c39314b4664162d9b776e27be21",
+      "bytes": 3209,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/fit_eval.py",
+      "source_path": "scripts/egoexo_relations/fit_eval.py",
+      "original_sha256": "6f8d63a08ab0bb436971cc0d252afb7ba6de6fb9d2ba3dd9a8c66898d6d5313d",
+      "export_sha256": "6f8d63a08ab0bb436971cc0d252afb7ba6de6fb9d2ba3dd9a8c66898d6d5313d",
+      "bytes": 393,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/pipeline.py",
+      "source_path": "scripts/egoexo_relations/pipeline.py",
+      "original_sha256": "8c29e26320613de6f16b6dc4b1d52408da342eb8f6d4f653e027674b123f56b5",
+      "export_sha256": "8c29e26320613de6f16b6dc4b1d52408da342eb8f6d4f653e027674b123f56b5",
+      "bytes": 6007,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/preflight.py",
+      "source_path": "scripts/egoexo_relations/preflight.py",
+      "original_sha256": "bc9334e89f065a1bb9df2b1f7309ae69b1034007b481f8a4d8da2d073d9ffa8d",
+      "export_sha256": "bc9334e89f065a1bb9df2b1f7309ae69b1034007b481f8a4d8da2d073d9ffa8d",
+      "bytes": 5503,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/prepare_relations.py",
+      "source_path": "scripts/egoexo_relations/prepare_relations.py",
+      "original_sha256": "918696a4bd18ee0b62a0e56e0ce4151c8a138cf3f12ab28594c3edeca8786471",
+      "export_sha256": "918696a4bd18ee0b62a0e56e0ce4151c8a138cf3f12ab28594c3edeca8786471",
+      "bytes": 8613,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/prepare_review.py",
+      "source_path": "scripts/egoexo_relations/prepare_review.py",
+      "original_sha256": "34144defe4e00e471301b71e105ba0d406a8cb5b56463e35e79a0456de91d69c",
+      "export_sha256": "34144defe4e00e471301b71e105ba0d406a8cb5b56463e35e79a0456de91d69c",
+      "bytes": 3935,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/rel_common.py",
+      "source_path": "scripts/egoexo_relations/rel_common.py",
+      "original_sha256": "e0ec669e6073dcc0b65437c635961f5ccaf6bbaf3bdbc23a8a6cd43fc73a01c1",
+      "export_sha256": "e0ec669e6073dcc0b65437c635961f5ccaf6bbaf3bdbc23a8a6cd43fc73a01c1",
+      "bytes": 1870,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/rel_data.py",
+      "source_path": "scripts/egoexo_relations/rel_data.py",
+      "original_sha256": "e8785e274807b140dcbf2bf234d69f8d045cc63c81e4cb936f2e3d42ae550b50",
+      "export_sha256": "e8785e274807b140dcbf2bf234d69f8d045cc63c81e4cb936f2e3d42ae550b50",
+      "bytes": 5618,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/rel_model.py",
+      "source_path": "scripts/egoexo_relations/rel_model.py",
+      "original_sha256": "c4395a3a3d7a42eb4c81073401e0332250eb652d5365615e49dcc6743204c471",
+      "export_sha256": "c4395a3a3d7a42eb4c81073401e0332250eb652d5365615e49dcc6743204c471",
+      "bytes": 5435,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/report.py",
+      "source_path": "scripts/egoexo_relations/report.py",
+      "original_sha256": "80cdebb9d11488337f2bb77d841369fcee97ee0ea1813dc9820dde2cb7b84635",
+      "export_sha256": "80cdebb9d11488337f2bb77d841369fcee97ee0ea1813dc9820dde2cb7b84635",
+      "bytes": 3212,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/text_teacher.py",
+      "source_path": "scripts/egoexo_relations/text_teacher.py",
+      "original_sha256": "5fd94a2ff2a29c02aacd9cab8db51238e9064560d0e370b5cbf46ec05dc8e6e4",
+      "export_sha256": "5fd94a2ff2a29c02aacd9cab8db51238e9064560d0e370b5cbf46ec05dc8e6e4",
+      "bytes": 1501,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_relations/train.py",
+      "source_path": "scripts/egoexo_relations/train.py",
+      "original_sha256": "fc2f7ea9b5ac078daeb89549772ad5b6ce4ba4947b7fd9e405261d14e9ce78e0",
+      "export_sha256": "fc2f7ea9b5ac078daeb89549772ad5b6ce4ba4947b7fd9e405261d14e9ce78e0",
+      "bytes": 8927,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/check_exact.py",
+      "source_path": "scripts/egoexo_tokenmerge/check_exact.py",
+      "original_sha256": "31ba11902400db035e729c79283642c63e04ffa45c1db574e904c89891cbccdc",
+      "export_sha256": "31ba11902400db035e729c79283642c63e04ffa45c1db574e904c89891cbccdc",
+      "bytes": 3289,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/evaluate_worker.py",
+      "source_path": "scripts/egoexo_tokenmerge/evaluate_worker.py",
+      "original_sha256": "b33e6dcae66f88fd08d425a0bd1ae9e203a67c8adb4e5141f5bd27431d2fca98",
+      "export_sha256": "b33e6dcae66f88fd08d425a0bd1ae9e203a67c8adb4e5141f5bd27431d2fca98",
+      "bytes": 4746,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/pipeline.py",
+      "source_path": "scripts/egoexo_tokenmerge/pipeline.py",
+      "original_sha256": "38c732f1743c139dd1e73dd3573e6cda82c17effdabb7059af7479226451d784",
+      "export_sha256": "38c732f1743c139dd1e73dd3573e6cda82c17effdabb7059af7479226451d784",
+      "bytes": 1784,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/preflight.py",
+      "source_path": "scripts/egoexo_tokenmerge/preflight.py",
+      "original_sha256": "9bf9ce11068ce26511486fa9d47ee23dabf47e4a12e6ee8e7b340da645aa17a9",
+      "export_sha256": "9bf9ce11068ce26511486fa9d47ee23dabf47e4a12e6ee8e7b340da645aa17a9",
+      "bytes": 5671,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/report.py",
+      "source_path": "scripts/egoexo_tokenmerge/report.py",
+      "original_sha256": "62080bc09942029009be365b9d23f371366ede18256a6050b06a6accf3283b71",
+      "export_sha256": "62080bc09942029009be365b9d23f371366ede18256a6050b06a6accf3283b71",
+      "bytes": 6094,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/tm_common.py",
+      "source_path": "scripts/egoexo_tokenmerge/tm_common.py",
+      "original_sha256": "cc4bc26e88f84158c9bc3f47d060ef6314013085ce219472d78b520e41585674",
+      "export_sha256": "cc4bc26e88f84158c9bc3f47d060ef6314013085ce219472d78b520e41585674",
+      "bytes": 1321,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_tokenmerge/tm_model.py",
+      "source_path": "scripts/egoexo_tokenmerge/tm_model.py",
+      "original_sha256": "c9ea18b0d27eebe75ee57bd29841e85a961bafb46ecf519c22c495e74572041c",
+      "export_sha256": "c9ea18b0d27eebe75ee57bd29841e85a961bafb46ecf519c22c495e74572041c",
+      "bytes": 6129,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/cache_replay.py",
+      "source_path": "scripts/egoexo_semantic_processing/cache_replay.py",
+      "original_sha256": "6eb0e06001c820de52f51bca95cdf59b544cad67cb00832c2de5bea659f0edd2",
+      "export_sha256": "6eb0e06001c820de52f51bca95cdf59b544cad67cb00832c2de5bea659f0edd2",
+      "bytes": 2283,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/control_audit.py",
+      "source_path": "scripts/egoexo_semantic_processing/control_audit.py",
+      "original_sha256": "9612fa9d578d063531bf5907dd2c32cf7bea4ec9ed106f4ffc5978076bbbb3da",
+      "export_sha256": "9612fa9d578d063531bf5907dd2c32cf7bea4ec9ed106f4ffc5978076bbbb3da",
+      "bytes": 3247,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/degradation_core.py",
+      "source_path": "scripts/egoexo_semantic_processing/degradation_core.py",
+      "original_sha256": "c14732617babce5d7270279b7b5656d6ee56124f2e459a5785e0b0e31dfb92f9",
+      "export_sha256": "c14732617babce5d7270279b7b5656d6ee56124f2e459a5785e0b0e31dfb92f9",
+      "bytes": 7074,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/degradation_figures.py",
+      "source_path": "scripts/egoexo_semantic_processing/degradation_figures.py",
+      "original_sha256": "0d4587ecb7c70f0caf5855ee5aa94544ea977601305fc1fd09f7e9680025ab3e",
+      "export_sha256": "0d4587ecb7c70f0caf5855ee5aa94544ea977601305fc1fd09f7e9680025ab3e",
+      "bytes": 4912,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/degradation_pipeline.py",
+      "source_path": "scripts/egoexo_semantic_processing/degradation_pipeline.py",
+      "original_sha256": "a41914dd7538f9c4db4704d46ed5c9be4b70ce6710d192c647fa0e57f5e33eee",
+      "export_sha256": "a41914dd7538f9c4db4704d46ed5c9be4b70ce6710d192c647fa0e57f5e33eee",
+      "bytes": 675,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/degradation_prefetch.py",
+      "source_path": "scripts/egoexo_semantic_processing/degradation_prefetch.py",
+      "original_sha256": "49f0efa2ce156e68b4e42b084ea241e218db9b3442685d06d8a14b0f65357270",
+      "export_sha256": "49f0efa2ce156e68b4e42b084ea241e218db9b3442685d06d8a14b0f65357270",
+      "bytes": 2690,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/degradation_run.py",
+      "source_path": "scripts/egoexo_semantic_processing/degradation_run.py",
+      "original_sha256": "9f17cb6353df00efb98a695ed0fa640c0aebc54b20464a85eee35cf0e7f5c305",
+      "export_sha256": "9f17cb6353df00efb98a695ed0fa640c0aebc54b20464a85eee35cf0e7f5c305",
+      "bytes": 6689,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/degradation_summary.py",
+      "source_path": "scripts/egoexo_semantic_processing/degradation_summary.py",
+      "original_sha256": "e36da3779240e6ca3016502312c039b386babbc7d3d3cfb5d674aa6f196c49e9",
+      "export_sha256": "e36da3779240e6ca3016502312c039b386babbc7d3d3cfb5d674aa6f196c49e9",
+      "bytes": 11460,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/design_audit.py",
+      "source_path": "scripts/egoexo_semantic_processing/design_audit.py",
+      "original_sha256": "c5b0f983d901b24ee0243716b0ae0ea23196ea28cbb5fc768a8ca24251a82497",
+      "export_sha256": "c5b0f983d901b24ee0243716b0ae0ea23196ea28cbb5fc768a8ca24251a82497",
+      "bytes": 3713,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/evaluate.py",
+      "source_path": "scripts/egoexo_semantic_processing/evaluate.py",
+      "original_sha256": "5d34f8ecb2b807d0efe1ece974567a1d3942b2321fb104660ffc1c8a121b770f",
+      "export_sha256": "5d34f8ecb2b807d0efe1ece974567a1d3942b2321fb104660ffc1c8a121b770f",
+      "bytes": 5081,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/final_report.py",
+      "source_path": "scripts/egoexo_semantic_processing/final_report.py",
+      "original_sha256": "308764d18758632feca3087f43142a6d1a50a700871c9dce5c92e00d9bd89612",
+      "export_sha256": "308764d18758632feca3087f43142a6d1a50a700871c9dce5c92e00d9bd89612",
+      "bytes": 9684,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/finish_evaluations.py",
+      "source_path": "scripts/egoexo_semantic_processing/finish_evaluations.py",
+      "original_sha256": "2e566347f6015f88445e5afcb5575e1986aec182a32784b1cd632d7140cbcf05",
+      "export_sha256": "2e566347f6015f88445e5afcb5575e1986aec182a32784b1cd632d7140cbcf05",
+      "bytes": 2224,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/freeze.py",
+      "source_path": "scripts/egoexo_semantic_processing/freeze.py",
+      "original_sha256": "cfa7872b907012407b762625bde380316158c915a4766c63bdefc45e99906227",
+      "export_sha256": "cfa7872b907012407b762625bde380316158c915a4766c63bdefc45e99906227",
+      "bytes": 5263,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/gpu_prefetch.py",
+      "source_path": "scripts/egoexo_semantic_processing/gpu_prefetch.py",
+      "original_sha256": "4015d7a37473c253cfd01a7f7b76910284b43c8e72b96514fe93b7bcb7f92ec3",
+      "export_sha256": "4015d7a37473c253cfd01a7f7b76910284b43c8e72b96514fe93b7bcb7f92ec3",
+      "bytes": 2547,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/internal_interventions.py",
+      "source_path": "scripts/egoexo_semantic_processing/internal_interventions.py",
+      "original_sha256": "312c9b6f3742299a8b52597a90a40c1de58b6ef0ae9af7a956d3bcaefaa69ee0",
+      "export_sha256": "312c9b6f3742299a8b52597a90a40c1de58b6ef0ae9af7a956d3bcaefaa69ee0",
+      "bytes": 4244,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/memory20_probe.py",
+      "source_path": "scripts/egoexo_semantic_processing/memory20_probe.py",
+      "original_sha256": "163259b123ffe0bf7771a640b29478e422ef0b88d923a8a1dd6bde9974f8f417",
+      "export_sha256": "163259b123ffe0bf7771a640b29478e422ef0b88d923a8a1dd6bde9974f8f417",
+      "bytes": 6273,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/memory_attention.py",
+      "source_path": "scripts/egoexo_semantic_processing/memory_attention.py",
+      "original_sha256": "ac33afcb14556f7e0c0a80b5e04464f7285afad8150ec975c0163cef4a5da392",
+      "export_sha256": "ac33afcb14556f7e0c0a80b5e04464f7285afad8150ec975c0163cef4a5da392",
+      "bytes": 3744,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/pipeline.py",
+      "source_path": "scripts/egoexo_semantic_processing/pipeline.py",
+      "original_sha256": "64d3fa41e36643cc0839addf7d6cbca5caad2c28efab9fb883b4c20a73af5b4b",
+      "export_sha256": "64d3fa41e36643cc0839addf7d6cbca5caad2c28efab9fb883b4c20a73af5b4b",
+      "bytes": 5528,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/pixel_interventions.py",
+      "source_path": "scripts/egoexo_semantic_processing/pixel_interventions.py",
+      "original_sha256": "c033bbf2ea32d63bf2da699d7458093069b623e2bc177b4b207615ac3049b83a",
+      "export_sha256": "c033bbf2ea32d63bf2da699d7458093069b623e2bc177b4b207615ac3049b83a",
+      "bytes": 8282,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/pixel_summary.py",
+      "source_path": "scripts/egoexo_semantic_processing/pixel_summary.py",
+      "original_sha256": "1e8b23b2aca15e8d79074fb31e89f215b42b495e530b3ba6d4e406278c72985e",
+      "export_sha256": "1e8b23b2aca15e8d79074fb31e89f215b42b495e530b3ba6d4e406278c72985e",
+      "bytes": 4898,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/plan_v2_audit.py",
+      "source_path": "scripts/egoexo_semantic_processing/plan_v2_audit.py",
+      "original_sha256": "c910ed9b2397546dde3cadd383ce2103372cf4cc358e46da141ba97fe7fdbc54",
+      "export_sha256": "c910ed9b2397546dde3cadd383ce2103372cf4cc358e46da141ba97fe7fdbc54",
+      "bytes": 11326,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/post_pipeline.py",
+      "source_path": "scripts/egoexo_semantic_processing/post_pipeline.py",
+      "original_sha256": "922aa693fd4e9342b919e8d47d7438d4f7b4e26f8414870938ea4cb4c3d3cd17",
+      "export_sha256": "922aa693fd4e9342b919e8d47d7438d4f7b4e26f8414870938ea4cb4c3d3cd17",
+      "bytes": 3840,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/post_preflight.py",
+      "source_path": "scripts/egoexo_semantic_processing/post_preflight.py",
+      "original_sha256": "b1c33e7445f97bc6c280208509d8a730dd0e153ff43b695985076c43a7f67ac0",
+      "export_sha256": "b1c33e7445f97bc6c280208509d8a730dd0e153ff43b695985076c43a7f67ac0",
+      "bytes": 3872,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/post_summary.py",
+      "source_path": "scripts/egoexo_semantic_processing/post_summary.py",
+      "original_sha256": "c633ca6a08543577bd2552895b20ff9dbeb32fcfe7e23ea31a3245bcfa7f6cc1",
+      "export_sha256": "c633ca6a08543577bd2552895b20ff9dbeb32fcfe7e23ea31a3245bcfa7f6cc1",
+      "bytes": 4600,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/posthoc_core.py",
+      "source_path": "scripts/egoexo_semantic_processing/posthoc_core.py",
+      "original_sha256": "c3e3192d89b693d39c0d0f3755b1bbe5dab119a213609fded2afc4f9c6ea534e",
+      "export_sha256": "c3e3192d89b693d39c0d0f3755b1bbe5dab119a213609fded2afc4f9c6ea534e",
+      "bytes": 8606,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/prefetch20_probe.py",
+      "source_path": "scripts/egoexo_semantic_processing/prefetch20_probe.py",
+      "original_sha256": "4822b32b53ae0dd0cff61780202e229e5b079954178d793b77243d4c829bc5e9",
+      "export_sha256": "4822b32b53ae0dd0cff61780202e229e5b079954178d793b77243d4c829bc5e9",
+      "bytes": 3586,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/preflight.py",
+      "source_path": "scripts/egoexo_semantic_processing/preflight.py",
+      "original_sha256": "306e24add420064f6dcc5f0a6be112937b3cd31b63842ac36f1141250359cf7d",
+      "export_sha256": "306e24add420064f6dcc5f0a6be112937b3cd31b63842ac36f1141250359cf7d",
+      "bytes": 10826,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/prepare.py",
+      "source_path": "scripts/egoexo_semantic_processing/prepare.py",
+      "original_sha256": "f06c11b96ddad5093dbb3f66001b758fffb0291cfe3ad49f68a053222660d889",
+      "export_sha256": "f06c11b96ddad5093dbb3f66001b758fffb0291cfe3ad49f68a053222660d889",
+      "bytes": 3847,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/prepare_human_review.py",
+      "source_path": "scripts/egoexo_semantic_processing/prepare_human_review.py",
+      "original_sha256": "702c46c7777b51bd41b5496e81346b76151572cb6f6749d10ad6297979e60396",
+      "export_sha256": "702c46c7777b51bd41b5496e81346b76151572cb6f6749d10ad6297979e60396",
+      "bytes": 6520,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/rgb_gpu_prefetch.py",
+      "source_path": "scripts/egoexo_semantic_processing/rgb_gpu_prefetch.py",
+      "original_sha256": "b45f8cd2573ba3d563c615bfe8ec91e2369ebc6248112051802ff24f25fc8eb0",
+      "export_sha256": "b45f8cd2573ba3d563c615bfe8ec91e2369ebc6248112051802ff24f25fc8eb0",
+      "bytes": 4559,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/route_loss.py",
+      "source_path": "scripts/egoexo_semantic_processing/route_loss.py",
+      "original_sha256": "41d5e0e4b8de79dddcf1a0bcf54a696e0d69f0c788deadcdb594495732f185df",
+      "export_sha256": "41d5e0e4b8de79dddcf1a0bcf54a696e0d69f0c788deadcdb594495732f185df",
+      "bytes": 2670,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/router.py",
+      "source_path": "scripts/egoexo_semantic_processing/router.py",
+      "original_sha256": "6f9e6b5fd8902134ba4773d023baf9e300b97feb9b597a40b6846be691471dfb",
+      "export_sha256": "6f9e6b5fd8902134ba4773d023baf9e300b97feb9b597a40b6846be691471dfb",
+      "bytes": 5778,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/routing_diagnostics.py",
+      "source_path": "scripts/egoexo_semantic_processing/routing_diagnostics.py",
+      "original_sha256": "c26387132a29c54440d10ed455eb77c61fe5be96ea924f73b41bb95cb9640388",
+      "export_sha256": "c26387132a29c54440d10ed455eb77c61fe5be96ea924f73b41bb95cb9640388",
+      "bytes": 8659,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/sp_common.py",
+      "source_path": "scripts/egoexo_semantic_processing/sp_common.py",
+      "original_sha256": "a59bc6a4692ccf69261c9eacb6f07013c745eb9cb6f29a2fdf313dbe23f1e039",
+      "export_sha256": "a59bc6a4692ccf69261c9eacb6f07013c745eb9cb6f29a2fdf313dbe23f1e039",
+      "bytes": 4425,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/sp_data.py",
+      "source_path": "scripts/egoexo_semantic_processing/sp_data.py",
+      "original_sha256": "6334c710951b754272eae00801e33e66d779b7b7caa9a780bbe4f5b0a1e3dda3",
+      "export_sha256": "6334c710951b754272eae00801e33e66d779b7b7caa9a780bbe4f5b0a1e3dda3",
+      "bytes": 4130,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/sp_model.py",
+      "source_path": "scripts/egoexo_semantic_processing/sp_model.py",
+      "original_sha256": "5ef6038db994961c3b0d560d1353862d312b6ac5a17544015b3c8c20789c9c4f",
+      "export_sha256": "5ef6038db994961c3b0d560d1353862d312b6ac5a17544015b3c8c20789c9c4f",
+      "bytes": 3366,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/summarize.py",
+      "source_path": "scripts/egoexo_semantic_processing/summarize.py",
+      "original_sha256": "a351be456f283ccfcbcdf1b2c180ef2fb67e0d6acfef984410b41089a9f016ad",
+      "export_sha256": "a351be456f283ccfcbcdf1b2c180ef2fb67e0d6acfef984410b41089a9f016ad",
+      "bytes": 7357,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/test_confirmation.py",
+      "source_path": "scripts/egoexo_semantic_processing/test_confirmation.py",
+      "original_sha256": "3d00736bcb8c644e68f0481139aa476d4e42d8e6ecf20a04bb3a9d8abfa0c35a",
+      "export_sha256": "3d00736bcb8c644e68f0481139aa476d4e42d8e6ecf20a04bb3a9d8abfa0c35a",
+      "bytes": 9465,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/test_decoder20_probe.py",
+      "source_path": "scripts/egoexo_semantic_processing/test_decoder20_probe.py",
+      "original_sha256": "0be787f83c8f9d8b7c1fd114b534ae0a305dca0cbcce27eb07d40da00e14926b",
+      "export_sha256": "0be787f83c8f9d8b7c1fd114b534ae0a305dca0cbcce27eb07d40da00e14926b",
+      "bytes": 1014,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/test_memory20_probe.py",
+      "source_path": "scripts/egoexo_semantic_processing/test_memory20_probe.py",
+      "original_sha256": "31e44f7e0e32933ddfb790584dc84e429a7020f4c335d7e88ab0fbd35db90334",
+      "export_sha256": "31e44f7e0e32933ddfb790584dc84e429a7020f4c335d7e88ab0fbd35db90334",
+      "bytes": 3058,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_semantic_processing/train.py",
+      "source_path": "scripts/egoexo_semantic_processing/train.py",
+      "original_sha256": "5ea95eee817074fc09045761ca0d75fd912cbd5ca07421555d97f9c8f92774ec",
+      "export_sha256": "5ea95eee817074fc09045761ca0d75fd912cbd5ca07421555d97f9c8f92774ec",
+      "bytes": 15529,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_common.py",
+      "source_path": "scripts/egoexo_block10/b10_common.py",
+      "original_sha256": "8f93b214febd8e2ab8f3b36c41cd0213668e7183e1a0917d90286b8474fe8d53",
+      "export_sha256": "8f93b214febd8e2ab8f3b36c41cd0213668e7183e1a0917d90286b8474fe8d53",
+      "bytes": 3060,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_evaluate.py",
+      "source_path": "scripts/egoexo_block10/b10_evaluate.py",
+      "original_sha256": "f00aa01598104017beb7b305d67b97f14eea67b45fa648022fceb61aa10faa50",
+      "export_sha256": "f00aa01598104017beb7b305d67b97f14eea67b45fa648022fceb61aa10faa50",
+      "bytes": 541,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_freeze.py",
+      "source_path": "scripts/egoexo_block10/b10_freeze.py",
+      "original_sha256": "80eb3398d1265dd709aa289b63dd0f9a6425fdd896629d339f5a440f260fc682",
+      "export_sha256": "80eb3398d1265dd709aa289b63dd0f9a6425fdd896629d339f5a440f260fc682",
+      "bytes": 7798,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_model.py",
+      "source_path": "scripts/egoexo_block10/b10_model.py",
+      "original_sha256": "8244cc47f5e0e8b0bb7e370f3feadc9937d6673be7b248aa9e168a9664bc6acf",
+      "export_sha256": "8244cc47f5e0e8b0bb7e370f3feadc9937d6673be7b248aa9e168a9664bc6acf",
+      "bytes": 1994,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_pipeline.py",
+      "source_path": "scripts/egoexo_block10/b10_pipeline.py",
+      "original_sha256": "8236a06a72c8427215248021b0626c593a4606f2693cddc861d053af1abce57f",
+      "export_sha256": "8236a06a72c8427215248021b0626c593a4606f2693cddc861d053af1abce57f",
+      "bytes": 5054,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_preflight.py",
+      "source_path": "scripts/egoexo_block10/b10_preflight.py",
+      "original_sha256": "f7825baf387ec66c987b0baab361aa722ba87ad723caca5282943ffcf58e412f",
+      "export_sha256": "f7825baf387ec66c987b0baab361aa722ba87ad723caca5282943ffcf58e412f",
+      "bytes": 10465,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_summary.py",
+      "source_path": "scripts/egoexo_block10/b10_summary.py",
+      "original_sha256": "2bd9939a56862681c21ab852062cb6b123292f53e5d5ba1d449ceace4d16b13f",
+      "export_sha256": "2bd9939a56862681c21ab852062cb6b123292f53e5d5ba1d449ceace4d16b13f",
+      "bytes": 6431,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_block10/b10_train.py",
+      "source_path": "scripts/egoexo_block10/b10_train.py",
+      "original_sha256": "3e980b1ce856e2428ae4ec461fa262ca2adcc11f3983a21fabc10f66c7bc39f6",
+      "export_sha256": "3e980b1ce856e2428ae4ec461fa262ca2adcc11f3983a21fabc10f66c7bc39f6",
+      "bytes": 562,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/benchmark.py",
+      "source_path": "scripts/egoexo_layer_compressibility/benchmark.py",
+      "original_sha256": "935df9ebb9f64832fb4143e085aee3d798bfa74eee9a7a68b4a6b540654e69c2",
+      "export_sha256": "935df9ebb9f64832fb4143e085aee3d798bfa74eee9a7a68b4a6b540654e69c2",
+      "bytes": 7103,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/freeze.py",
+      "source_path": "scripts/egoexo_layer_compressibility/freeze.py",
+      "original_sha256": "bae12614458b4b26ae5ee704c727d5d6e056d8f27f9055cffa0abb4907c12189",
+      "export_sha256": "bae12614458b4b26ae5ee704c727d5d6e056d8f27f9055cffa0abb4907c12189",
+      "bytes": 5682,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/lc_common.py",
+      "source_path": "scripts/egoexo_layer_compressibility/lc_common.py",
+      "original_sha256": "5295a2399b0e4d8fa8f1a40d92c4b83d3ffee30c5d6babc0ba889be1e84c1be0",
+      "export_sha256": "5295a2399b0e4d8fa8f1a40d92c4b83d3ffee30c5d6babc0ba889be1e84c1be0",
+      "bytes": 3201,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/lc_model.py",
+      "source_path": "scripts/egoexo_layer_compressibility/lc_model.py",
+      "original_sha256": "5abb6db46318ed08021f170e4f349e9c56ed264fe5f4c27ac65b717ee8d8e819",
+      "export_sha256": "5abb6db46318ed08021f170e4f349e9c56ed264fe5f4c27ac65b717ee8d8e819",
+      "bytes": 6114,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/pipeline.py",
+      "source_path": "scripts/egoexo_layer_compressibility/pipeline.py",
+      "original_sha256": "0eaf24f73d352bb330fe927ed0ccced3cef32b597ee5da62d8075ab63d29d263",
+      "export_sha256": "0eaf24f73d352bb330fe927ed0ccced3cef32b597ee5da62d8075ab63d29d263",
+      "bytes": 3286,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/preflight.py",
+      "source_path": "scripts/egoexo_layer_compressibility/preflight.py",
+      "original_sha256": "9de1963275fb7642f629b39159b3c6d7610fb4867f3a32c8dd7c01a7b14d149c",
+      "export_sha256": "9de1963275fb7642f629b39159b3c6d7610fb4867f3a32c8dd7c01a7b14d149c",
+      "bytes": 4611,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/report.py",
+      "source_path": "scripts/egoexo_layer_compressibility/report.py",
+      "original_sha256": "05b21513865b0a11b8d46aaad08033e1d409711c91d83ff5ef1b767c3ddbc436",
+      "export_sha256": "05b21513865b0a11b8d46aaad08033e1d409711c91d83ff5ef1b767c3ddbc436",
+      "bytes": 9307,
+      "kind": "historical_source"
+    },
+    {
+      "path": "scripts/egoexo_layer_compressibility/scan.py",
+      "source_path": "scripts/egoexo_layer_compressibility/scan.py",
+      "original_sha256": "4d906e70f851d1a908ab00bee05d0d692b2da19e54fe5a84f7770cf4f5a2f317",
+      "export_sha256": "4d906e70f851d1a908ab00bee05d0d692b2da19e54fe5a84f7770cf4f5a2f317",
+      "bytes": 4173,
+      "kind": "historical_source"
+    },
+    {
+      "path": "results/recent_20261028/relations_seed17.json",
+      "source_path": "reports/egoexo_relations_20261026/seed17_results.json",
+      "original_sha256": "b83194716e37e442ea61e6192e415690a8f259259dbd81ddc835fda260ec045f",
+      "export_sha256": "b83194716e37e442ea61e6192e415690a8f259259dbd81ddc835fda260ec045f",
+      "bytes": 3947,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/relations_conclusion.txt",
+      "source_path": "reports/egoexo_relations_20261026/seed17_结论与机制核查.txt",
+      "original_sha256": "01d8f2ad881ada0ec326e299d873902907e3953fe3df86e36362c4ec26436263",
+      "export_sha256": "01d8f2ad881ada0ec326e299d873902907e3953fe3df86e36362c4ec26436263",
+      "bytes": 1885,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/tokenmerge.json",
+      "source_path": "reports/egoexo_tokenmerge_20261026/results.json",
+      "original_sha256": "b24230f09988856448e17bf22503c0c3d65135ff8c9057bd7a35090d35d6e269",
+      "export_sha256": "b24230f09988856448e17bf22503c0c3d65135ff8c9057bd7a35090d35d6e269",
+      "bytes": 6504,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/tokenmerge_conclusion.txt",
+      "source_path": "reports/egoexo_tokenmerge_20261026/本轮结论.txt",
+      "original_sha256": "a4b6423d2ded3d63d19d97aecc82d55140b2153b84fb0e153daf544b1142c096",
+      "export_sha256": "a4b6423d2ded3d63d19d97aecc82d55140b2153b84fb0e153daf544b1142c096",
+      "bytes": 3555,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/semantic_val.json",
+      "source_path": "reports/egoexo_semantic_processing_20261027/v2_VAL结果.json",
+      "original_sha256": "2a43624732ccdb992709defe9f31487ac050285c3a89cbb172fd266be4310f47",
+      "export_sha256": "2a43624732ccdb992709defe9f31487ac050285c3a89cbb172fd266be4310f47",
+      "bytes": 46887,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/semantic_test.json",
+      "source_path": "reports/egoexo_semantic_processing_20261027/v2_TEST确认结果.json",
+      "original_sha256": "2becfa1037785b8b300f891f7e679a0ce31f72e5076a65f80e50fca0d4930f99",
+      "export_sha256": "2becfa1037785b8b300f891f7e679a0ce31f72e5076a65f80e50fca0d4930f99",
+      "bytes": 3066,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/semantic_report.txt",
+      "source_path": "reports/egoexo_semantic_processing_20261027/v2最终实验报告.txt",
+      "original_sha256": "e6195976a9e798ec5e020530413e95ee45db58646f887aaf8ff8dabf2628fa54",
+      "export_sha256": "e6195976a9e798ec5e020530413e95ee45db58646f887aaf8ff8dabf2628fa54",
+      "bytes": 6173,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/degradation.json",
+      "source_path": "reports/egoexo_semantic_processing_20261027/退化原因诊断.json",
+      "original_sha256": "c1e4f1c0471d7675ebc5452ffcbe023099e60f7f86b3529854aebdfba2512c85",
+      "export_sha256": "c1e4f1c0471d7675ebc5452ffcbe023099e60f7f86b3529854aebdfba2512c85",
+      "bytes": 96597,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/degradation_conclusion.txt",
+      "source_path": "reports/egoexo_semantic_processing_20261027/退化原因_结论.txt",
+      "original_sha256": "f76cd284e6bde6cc92c854ef47eb43d94824b2a199021a61c2cbe4a627ccfe3c",
+      "export_sha256": "f76cd284e6bde6cc92c854ef47eb43d94824b2a199021a61c2cbe4a627ccfe3c",
+      "bytes": 7467,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/block10_val.json",
+      "source_path": "reports/egoexo_block10_20261028/结果汇总.json",
+      "original_sha256": "d1d9b1e81cd0316f77bf9fddfc8551bc626a798bafca6cec285accf69c99e4b1",
+      "export_sha256": "d1d9b1e81cd0316f77bf9fddfc8551bc626a798bafca6cec285accf69c99e4b1",
+      "bytes": 7510,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/block10_report.txt",
+      "source_path": "reports/egoexo_block10_20261028/结果汇总.txt",
+      "original_sha256": "0c612f5cabdc1dc9b2d9041e8d347f24debe4586b606737f63c279663969ffb1",
+      "export_sha256": "0c612f5cabdc1dc9b2d9041e8d347f24debe4586b606737f63c279663969ffb1",
+      "bytes": 916,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/layer96.json",
+      "source_path": "reports/egoexo_layer_compressibility_20261028/逐层96槽结果.json",
+      "original_sha256": "257736ce64c5726ca3ab3d1fd0edf4314e7b28dd66487f8132214e8f1d836f6b",
+      "export_sha256": "257736ce64c5726ca3ab3d1fd0edf4314e7b28dd66487f8132214e8f1d836f6b",
+      "bytes": 64105,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/layer96.csv",
+      "source_path": "reports/egoexo_layer_compressibility_20261028/逐层96槽结果.csv",
+      "original_sha256": "254a14890ad7d90de5057f48e76784f537d1a76dfa8acab32592efc58c52c703",
+      "export_sha256": "254a14890ad7d90de5057f48e76784f537d1a76dfa8acab32592efc58c52c703",
+      "bytes": 3181,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/layer96_report.txt",
+      "source_path": "reports/egoexo_layer_compressibility_20261028/逐层96槽结果.txt",
+      "original_sha256": "f0d685b5e1d6015002880d3fbbac82fc0ae3fcee4b8a2370c3deb1a7a057a903",
+      "export_sha256": "f0d685b5e1d6015002880d3fbbac82fc0ae3fcee4b8a2370c3deb1a7a057a903",
+      "bytes": 2613,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/kv_mac_budget.json",
+      "source_path": "reports/egoexo_layer_compressibility_20261028/K_V压缩理论收益上限.json",
+      "original_sha256": "9499e3ce18614a69190c74b0eb2e083a1fc022807524f122cb2bebb9c007b670",
+      "export_sha256": "9499e3ce18614a69190c74b0eb2e083a1fc022807524f122cb2bebb9c007b670",
+      "bytes": 2468,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "results/recent_20261028/layer96_benchmark_raw.json",
+      "source_path": "experiments/egoexo_layer_compressibility_20261028/benchmark_gpu3.json",
+      "original_sha256": "44748054e184eedf6b9f52627dd364916fb62a5a2985eeba9052cb457bdc028a",
+      "export_sha256": "44748054e184eedf6b9f52627dd364916fb62a5a2985eeba9052cb457bdc028a",
+      "bytes": 183255,
+      "kind": "aggregate_result"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/semantic_v2_frozen.json",
+      "source_path": "experiments/egoexo_semantic_processing_20261027/protocol_v2_frozen.json",
+      "original_sha256": "76601f9c3e1432b72ca053f0b701b845c13adf580d6f6a18a5d003204caf9b0d",
+      "export_sha256": "76601f9c3e1432b72ca053f0b701b845c13adf580d6f6a18a5d003204caf9b0d",
+      "bytes": 24955,
+      "kind": "historical_protocol"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/semantic_runtime_amendment.json",
+      "source_path": "experiments/egoexo_semantic_processing_20261027/runtime_amendment.json",
+      "original_sha256": "61a274ee47cd12879d92ea9c716ceb6b0ec17f704cc3176129d672557c71fb1a",
+      "export_sha256": "61a274ee47cd12879d92ea9c716ceb6b0ec17f704cc3176129d672557c71fb1a",
+      "bytes": 8051,
+      "kind": "historical_protocol"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/degradation_protocol.json",
+      "source_path": "experiments/egoexo_semantic_processing_20261027/post_training/degradation_protocol.json",
+      "original_sha256": "1d62eb687374d7aa34791b68c40083d9f816723e7fe48db3cce5a14a6488236e",
+      "export_sha256": "1d62eb687374d7aa34791b68c40083d9f816723e7fe48db3cce5a14a6488236e",
+      "bytes": 10556,
+      "kind": "historical_protocol"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/block10_frozen.json",
+      "source_path": "experiments/egoexo_block10_20261028/protocol_v2_frozen.json",
+      "original_sha256": "b6fa5d6f7ec042db491ce4df869363f6e2d3f048a7c012d9326ae7b949c4b62b",
+      "export_sha256": "b6fa5d6f7ec042db491ce4df869363f6e2d3f048a7c012d9326ae7b949c4b62b",
+      "bytes": 17160,
+      "kind": "historical_protocol"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/block10_runtime_choices.json",
+      "source_path": "experiments/egoexo_block10_20261028/runtime_choices.json",
+      "original_sha256": "8ef11b16989be4ef68c00d8735fcf6583cfe3d86eec5e0287852077ba565217a",
+      "export_sha256": "8ef11b16989be4ef68c00d8735fcf6583cfe3d86eec5e0287852077ba565217a",
+      "bytes": 623,
+      "kind": "historical_protocol"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/layer96_frozen.json",
+      "source_path": "experiments/egoexo_layer_compressibility_20261028/protocol_frozen.json",
+      "original_sha256": "b3573335e050957662cce99cb5769b664ab6d504d2d366b4abb2e5bf03eabd66",
+      "export_sha256": "b3573335e050957662cce99cb5769b664ab6d504d2d366b4abb2e5bf03eabd66",
+      "bytes": 11715,
+      "kind": "historical_protocol"
+    },
+    {
+      "path": "provenance/recent_20261028/protocols/layer96_preflight.json",
+      "source_path": "experiments/egoexo_layer_compressibility_20261028/preflight_gpu2_b32.json",
+      "original_sha256": "32e7d4b5ac06dc2a801e561ffffe2e928606a35c800408c23d6db50cf6e2c3a6",
+      "export_sha256": "32e7d4b5ac06dc2a801e561ffffe2e928606a35c800408c23d6db50cf6e2c3a6",
+      "bytes": 1897,
+      "kind": "historical_protocol"
+    }
+  ],
+  "shared_dependencies": [
+    {
+      "path": "scripts/egoexo_textalign/common.py",
+      "original_sha256": "e887b83df507786aea8e34708390dbe62a838625c13a36f41f07745f8d46f921",
+      "export_sha256": "551596eb544f5e17e418b692885882dbe891d2260b1916a4821655afea53d602",
+      "identical": false
+    },
+    {
+      "path": "scripts/egoexo_textalign/backend.py",
+      "original_sha256": "b9e6957566210e8e0f8aafbdbcc226c319f2f49ff47b619191c3343404714061",
+      "export_sha256": "b9e6957566210e8e0f8aafbdbcc226c319f2f49ff47b619191c3343404714061",
+      "identical": true
+    },
+    {
+      "path": "scripts/egoexo_textalign/model.py",
+      "original_sha256": "013776c160bf1d9a731962fc6011fbc758cc49e5c5966f959df9a35fc65d641e",
+      "export_sha256": "013776c160bf1d9a731962fc6011fbc758cc49e5c5966f959df9a35fc65d641e",
+      "identical": true
+    },
+    {
+      "path": "scripts/time_origin_reeval/run.py",
+      "original_sha256": "56afd08b5f72e933b61f2377c31f5e81b97eab85eb6c3c60378a5e11d6173ae4",
+      "export_sha256": "bad3457ecdd0f222d027626d5cd6f2632e586500a581a24c3c24f6320c856c40",
+      "identical": false
+    },
+    {
+      "path": "scripts/sampling_corrected/bounded_decode.py",
+      "original_sha256": "1125cb4346154e6653b7973ec458ce8fd22e3de736d154296be713dcd508d7cc",
+      "export_sha256": "1125cb4346154e6653b7973ec458ce8fd22e3de736d154296be713dcd508d7cc",
+      "identical": true
+    },
+    {
+      "path": "repos/EgoExoLearn/association_benchmark/models/timesformer.py",
+      "original_sha256": "d969ee544ced34db39b8d09cb4cea5659064fb2c0427143cca52320ae1cce159",
+      "export_sha256": "d969ee544ced34db39b8d09cb4cea5659064fb2c0427143cca52320ae1cce159",
+      "identical": true
+    }
+  ],
+  "historical_frozen_files_modified": false,
+  "external_assets_included": false
+}

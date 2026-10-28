@@ -1,0 +1,5 @@
+# Install CUDA PyTorch separately as described in README.
+-r requirements.txt
+matplotlib==3.9.4
+Pillow==10.2.0
+# Optional relation preparation needs spaCy + en_core_web_sm in an NLP environment.

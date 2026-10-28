@@ -1,0 +1,10 @@
+# Preserve historical source/protocol bytes used by the SHA256 manifests.
+/scripts/egoexo_relations/** -text
+/scripts/egoexo_tokenmerge/** -text
+/scripts/egoexo_semantic_processing/** -text
+/scripts/egoexo_block10/** -text
+/scripts/egoexo_layer_compressibility/** -text
+/provenance/recent_20261028/** -text
+/results/recent_20261028/** -text
+# CSV files retain their original standard CRLF record terminators.
+/results/recent_20261028/*.csv whitespace=cr-at-eol

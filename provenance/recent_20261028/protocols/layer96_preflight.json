@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "training": false,
+  "TEST_access": false,
+  "task_scores_computed": false,
+  "gpu": "2",
+  "seconds": 42.803126096725464,
+  "stem_max_abs": 0.0,
+  "dense_descriptor_max_abs": 0.0,
+  "identity_block_relative_L2": [
+    2.394850184828101e-07,
+    2.819898838879453e-07,
+    3.733669018401997e-07,
+    4.4215175876161084e-07,
+    4.7078538045752794e-07,
+    4.594761264797853e-07,
+    2.9731288009315904e-07,
+    1.4648247770310263e-07,
+    1.6319019380262034e-07,
+    1.7730010881678027e-07,
+    2.213102163750591e-07,
+    1.9845596455070336e-07
+  ],
+  "invariants": [
+    {
+      "operator": "random",
+      "budget": 128,
+      "min_mass": 0.0,
+      "max_mass": 11.0
+    },
+    {
+      "operator": "similarity",
+      "budget": 128,
+      "min_mass": 1.0,
+      "max_mass": 7.0
+    },
+    {
+      "operator": "random",
+      "budget": 96,
+      "min_mass": 1.0,
+      "max_mass": 14.0
+    },
+    {
+      "operator": "similarity",
+      "budget": 96,
+      "min_mass": 1.0,
+      "max_mass": 13.0
+    },
+    {
+      "operator": "random",
+      "budget": 64,
+      "min_mass": 1.0,
+      "max_mass": 15.0
+    },
+    {
+      "operator": "similarity",
+      "budget": 64,
+      "min_mass": 1.0,
+      "max_mass": 27.0
+    },
+    {
+      "operator": "random",
+      "budget": 48,
+      "min_mass": 1.0,
+      "max_mass": 16.0
+    },
+    {
+      "operator": "similarity",
+      "budget": 48,
+      "min_mass": 1.0,
+      "max_mass": 38.0
+    }
+  ],
+  "shared_vs_full_max_abs": {
+    "dense": 0.0,
+    "random_b00_m96": 0.0,
+    "similarity_b05_m96": 0.0,
+    "similarity_b11_m96": 0.0
+  },
+  "common_first10_weights_equal": true,
+  "precision": "FP32_TF32_disabled",
+  "batch": 32,
+  "conditions": 25,
+  "complete_scan_batch_seconds": 21.988363332115114,
+  "clips_per_second": 1.4553152281808253,
+  "peak_allocated_GiB": 12.061956882476807,
+  "peak_reserved_GiB": 19.638671875
+}

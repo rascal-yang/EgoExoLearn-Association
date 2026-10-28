@@ -1,0 +1,26 @@
+{
+  "name": "upfront_block10_runtime_choices",
+  "allocator_cap_gib": 19,
+  "checkpoint_policy_by_arm": {
+    "S1": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    },
+    "S2": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    }
+  },
+  "gpu_prefetch_depth_by_arm": {
+    "S1": 6,
+    "S2": 6
+  },
+  "allocator_conf": "max_split_size_mb:128",
+  "batch_unchanged": 48,
+  "precision_unchanged": "FP16_AMP_with_FP32_router_and_reductions",
+  "purpose": "Retain block11 activations; bounded real-batch prefetch; engineering choices made before protocol freeze."
+}

@@ -59,4 +59,4 @@ CUDA_VISIBLE_DEVICES=3 python scripts/egoexo_states/train.py --arm ordered_state
 
 `provenance/source_manifest.json`保存原工作区文件SHA256和导出文件SHA256。原训练/模型数学实现未重写；仅基础checkpoint路径改成环境变量/相对路径、上游路径改成仓库相对路径，以及StateModel增加可选M checkpoint参数。上游已有的checkpoint兼容补丁单独保存在 `provenance/upstream-local.patch`。
 
-新增的 `tools/evaluate.py` 是便携入口；`tools/reproduce_table.py` 从逐种子计数重算结果。上传不包括数据标注内容、权重、原视频、GPU日志或后续token压缩实验。
+新增的 `tools/evaluate.py` 是便携入口；`tools/reproduce_table.py` 从逐种子计数重算结果。上传不包括数据标注内容、权重、原视频或GPU日志。2026-10-28已补充后续路由和压缩实验的原始实现与汇总结果，依赖与协议边界见[近期实验说明](RECENT_EXPERIMENTS.md)。

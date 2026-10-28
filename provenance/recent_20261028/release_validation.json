@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "scope": "Export verification only; no new training or full model inference",
+  "source_manifest_sha256": "45c0dda7ee1a255b896f691d443f441900fdb8a2cffc52a63ec4cfe5424e5a5a",
+  "checks": {
+    "historical_python_sources_byte_identical": 77,
+    "archived_results_and_protocols_byte_identical": 23,
+    "checkpoint_hashes_recorded": 24,
+    "historical_source_syntax_passed": true,
+    "cpu_import_modules": [
+      "router",
+      "memory_attention",
+      "sp_model",
+      "posthoc_core",
+      "b10_model",
+      "lc_model",
+      "rel_model",
+      "tm_model"
+    ],
+    "cuda_initialized_during_import": false,
+    "headline_counts_and_means_recomputed": true,
+    "raw_paired_latency_arithmetic_recomputed": true,
+    "previous_baseline_table_recomputed": true,
+    "original_experiment_files_unchanged": true
+  },
+  "limits": [
+    "External datasets, checkpoints, caches and historical runtime assets are not included",
+    "Portable baseline path adjustments differ from original frozen-source hashes",
+    "No fresh training, GPU model inference or complete benchmark rerun performed for publication"
+  ]
+}

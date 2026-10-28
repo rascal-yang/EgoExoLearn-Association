@@ -1,0 +1,60 @@
+{
+  "status": "CPU_theoretical_budget_only_no_GPU_experiment_started",
+  "created_at": 1793154072.4847083,
+  "frames": 16,
+  "patches_per_frame": 196,
+  "width": 768,
+  "blocks": 12,
+  "dense12block_GMAC": 367.738785792,
+  "MLP_fraction_of_12block_MAC": 0.4830240488923271,
+  "rows": [
+    {
+      "memory_patch_slots": 196,
+      "dense_patch_sources": 196,
+      "patch_KV_reduction_percent": 0.0,
+      "single_block_saved_GMAC_before_routing": 0.0,
+      "saving_fraction_of_dense12blocks": 0.0,
+      "all12blocks_same_compression_arithmetic_saving_upper_fraction": 0.0
+    },
+    {
+      "memory_patch_slots": 128,
+      "dense_patch_sources": 196,
+      "patch_KV_reduction_percent": 34.693877551020414,
+      "single_block_saved_GMAC_before_routing": 1.61267712,
+      "saving_fraction_of_dense12blocks": 0.004385387623790547,
+      "all12blocks_same_compression_arithmetic_saving_upper_fraction": 0.05262465148548657
+    },
+    {
+      "memory_patch_slots": 96,
+      "dense_patch_sources": 196,
+      "patch_KV_reduction_percent": 51.02040816326531,
+      "single_block_saved_GMAC_before_routing": 2.371584,
+      "saving_fraction_of_dense12blocks": 0.006449099446750805,
+      "all12blocks_same_compression_arithmetic_saving_upper_fraction": 0.07738919336100966
+    },
+    {
+      "memory_patch_slots": 64,
+      "dense_patch_sources": 196,
+      "patch_KV_reduction_percent": 67.34693877551021,
+      "single_block_saved_GMAC_before_routing": 3.13049088,
+      "saving_fraction_of_dense12blocks": 0.008512811269711063,
+      "all12blocks_same_compression_arithmetic_saving_upper_fraction": 0.10215373523653275
+    },
+    {
+      "memory_patch_slots": 48,
+      "dense_patch_sources": 196,
+      "patch_KV_reduction_percent": 75.51020408163265,
+      "single_block_saved_GMAC_before_routing": 3.50994432,
+      "saving_fraction_of_dense12blocks": 0.009544667181191192,
+      "all12blocks_same_compression_arithmetic_saving_upper_fraction": 0.1145360061742943
+    }
+  ],
+  "assumptions": "Full queries, original temporal attention and MLP retained; spatial K/V sources reduced only; CLS once globally.",
+  "excludes": [
+    "patch embedding and final projection",
+    "normalization and softmax",
+    "routing, matching, grouping and aggregation",
+    "memory traffic and decoding"
+  ],
+  "claim": "Arithmetic ceiling under this operator; not measured latency or throughput. Full encoder saving fraction is smaller after adding unchanged stem/head costs."
+}

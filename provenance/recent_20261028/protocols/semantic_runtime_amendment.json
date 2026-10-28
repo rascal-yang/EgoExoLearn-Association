@@ -1,0 +1,224 @@
+{
+  "name": "memory20g_20261027",
+  "created_unix": 1793082777.0295608,
+  "user_instruction": "负载尽量拉高点早点跑完腾位置；显存拉到20G吧",
+  "base_protocol_sha256": "76601f9c3e1432b72ca053f0b701b845c13adf580d6f6a18a5d003204caf9b0d",
+  "training_math_unchanged": true,
+  "verification_passed": true,
+  "allocator_cap_gib": 19,
+  "device_total_memory_target_gib": 20,
+  "checkpoint_policy_by_arm": {
+    "R0": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    },
+    "R1": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    },
+    "R2": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    },
+    "R3": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    },
+    "R4": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    },
+    "R5": {
+      "full_blocks": [
+        10
+      ],
+      "spatial_only_blocks": []
+    }
+  },
+  "gpu_prefetch_depth_by_arm": {
+    "R0": 7,
+    "R1": 13,
+    "R2": 13,
+    "R3": 13,
+    "R4": 13,
+    "R5": 13
+  },
+  "batch": 48,
+  "frames": 16,
+  "epochs": 4,
+  "learning_rates_changed": false,
+  "precision_changed": false,
+  "losses_changed": false,
+  "sample_order_and_exposures_changed": false,
+  "baseline_completed_fits_retained": 6,
+  "optimization_scope": [
+    "Retain final-block activations instead of recomputing that block",
+    "Bounded useful GPU prefetch of future real batches; safe pinned-host reuse and CUDA stream ownership",
+    "Reuse exact identical final/best state evaluation after checking all tensors",
+    "Skip already completed fits when resuming; reduce scheduler idle polling to0.5seconds"
+  ],
+  "engineering_rejected_modes": "Retaining the first block without sufficient recomputation exceeded19/20GiB allocator caps; rejected before formal resume.",
+  "update_equivalence": {
+    "R0": {
+      "checkpoint_blocks": [
+        10
+      ],
+      "spatial_checkpoint_blocks": [],
+      "passed": true,
+      "seconds_with_cpu_comparison": 0.5931675210595131,
+      "peak_allocated_mib": 12948.42822265625,
+      "peak_reserved_mib": 17320.0,
+      "loss": 2.0995898246765137,
+      "output_max_error": 0.0,
+      "indices_exact": true,
+      "gradient_max_error": 0.0,
+      "update_max_error": 0.0,
+      "median_update_seconds": 0.45997636998072267
+    },
+    "R5": {
+      "checkpoint_blocks": [
+        10
+      ],
+      "spatial_checkpoint_blocks": [],
+      "passed": true,
+      "seconds_with_cpu_comparison": 0.8968286323361099,
+      "peak_allocated_mib": 12625.68896484375,
+      "peak_reserved_mib": 16078.0,
+      "loss": 2.5326693058013916,
+      "output_max_error": 0.0,
+      "indices_exact": true,
+      "gradient_max_error": 0.0,
+      "update_max_error": 0.0,
+      "median_update_seconds": 0.5203950207214803
+    },
+    "R2": {
+      "checkpoint_blocks": [
+        10
+      ],
+      "spatial_checkpoint_blocks": [],
+      "passed": true,
+      "seconds_with_cpu_comparison": 0.5360731850378215,
+      "peak_allocated_mib": 12595.05224609375,
+      "peak_reserved_mib": 16068.0,
+      "loss": 2.5519983768463135,
+      "output_max_error": 0.0,
+      "indices_exact": true,
+      "gradient_max_error": 0.0,
+      "update_max_error": 0.0,
+      "median_update_seconds": 0.49523547454737127
+    }
+  },
+  "prefetch_verification": {
+    "R0": {
+      "passed": true,
+      "depth": 7,
+      "checkpoints": [
+        10
+      ],
+      "allocator_cap_gib": 19,
+      "real_batches": 32,
+      "input_byte_checks_passed": true,
+      "sample_order_exact": true,
+      "global_cuda_rng_unchanged": true,
+      "median_update_seconds": 0.4604722042568028,
+      "observed_device_memory_mib": [
+        20014,
+        20014,
+        20014
+      ],
+      "peak_allocated_mib": 14839.7919921875,
+      "peak_reserved_mib": 19114.0
+    },
+    "R5": {
+      "passed": true,
+      "depth": 13,
+      "checkpoints": [
+        10
+      ],
+      "allocator_cap_gib": 19,
+      "real_batches": 32,
+      "input_byte_checks_passed": true,
+      "sample_order_exact": true,
+      "global_cuda_rng_unchanged": true,
+      "median_update_seconds": 0.5258256073575467,
+      "observed_device_memory_mib": [
+        20148,
+        20148,
+        20148
+      ],
+      "peak_allocated_mib": 15936.9345703125,
+      "peak_reserved_mib": 19248.0
+    },
+    "R2": {
+      "passed": true,
+      "depth": 13,
+      "checkpoints": [
+        10
+      ],
+      "allocator_cap_gib": 19,
+      "real_batches": 32,
+      "input_byte_checks_passed": true,
+      "sample_order_exact": true,
+      "global_cuda_rng_unchanged": true,
+      "median_update_seconds": 0.5002176088746637,
+      "observed_device_memory_mib": [
+        19862,
+        19862,
+        19862
+      ],
+      "peak_allocated_mib": 15903.3369140625,
+      "peak_reserved_mib": 18962.0
+    }
+  },
+  "source_overrides": {
+    "scripts/egoexo_semantic_processing/evaluate.py": {
+      "old_sha256": "fe70596a6cef5a41aaeda798047e41309d26ec1f6b3daf4413d20abe585c3a0a",
+      "new_sha256": "5d34f8ecb2b807d0efe1ece974567a1d3942b2321fb104660ffc1c8a121b770f"
+    },
+    "scripts/egoexo_semantic_processing/memory_attention.py": {
+      "old_sha256": "e1dc73dc732ba70654ce4ae246e0671e8013970d53d9f51da962399768a3b08b",
+      "new_sha256": "ac33afcb14556f7e0c0a80b5e04464f7285afad8150ec975c0163cef4a5da392"
+    },
+    "scripts/egoexo_semantic_processing/pipeline.py": {
+      "old_sha256": "6b532d77817e1b54bcc6519bc8a09d133741a3bb7e9a84de5909325525e9828e",
+      "new_sha256": "64d3fa41e36643cc0839addf7d6cbca5caad2c28efab9fb883b4c20a73af5b4b"
+    },
+    "scripts/egoexo_semantic_processing/sp_common.py": {
+      "old_sha256": "fff6ce4987f129d7341e6e91d851ffb2934a7f7b94adc1763e32485e0f9f4316",
+      "new_sha256": "a59bc6a4692ccf69261c9eacb6f07013c745eb9cb6f29a2fdf313dbe23f1e039"
+    },
+    "scripts/egoexo_semantic_processing/sp_data.py": {
+      "old_sha256": "9500d81d3ef745c5b504ded9bfeedb8fa41f9d9deba09b5b13ff3e194d359078",
+      "new_sha256": "6334c710951b754272eae00801e33e66d779b7b7caa9a780bbe4f5b0a1e3dda3"
+    },
+    "scripts/egoexo_semantic_processing/sp_model.py": {
+      "old_sha256": "bc5d99eb35ace0b76f9852088784a2714629b91b53cbd1657940db921a39753b",
+      "new_sha256": "5ef6038db994961c3b0d560d1353862d312b6ac5a17544015b3c8c20789c9c4f"
+    },
+    "scripts/egoexo_semantic_processing/train.py": {
+      "old_sha256": "e04b46134fe13e7a6767fd4f5aabea2b99c94c518b36a9760c43a66479f768ec",
+      "new_sha256": "5ea95eee817074fc09045761ca0d75fd912cbd5ca07421555d97f9c8f92774ec"
+    }
+  },
+  "additional_sources": {
+    "scripts/egoexo_semantic_processing/gpu_prefetch.py": "4015d7a37473c253cfd01a7f7b76910284b43c8e72b96514fe93b7bcb7f92ec3",
+    "scripts/egoexo_semantic_processing/memory20_probe.py": "163259b123ffe0bf7771a640b29478e422ef0b88d923a8a1dd6bde9974f8f417",
+    "scripts/egoexo_semantic_processing/prefetch20_probe.py": "4822b32b53ae0dd0cff61780202e229e5b079954178d793b77243d4c829bc5e9",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendments/memory20g_20261027/probe19_R0.json": "3fd9e820d575d9246fe18d982080890e0d7e62d5bec936558bfb5c3debc687fa",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendments/memory20g_20261027/probe19_R5_R2.json": "3d5885b477d5b764f2639035e391500747c7202cbfe0c51ea848833517068674",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendments/memory20g_20261027/probe_R0.json": "87be5d1a8ebda6ec717c47c7f28ce929a493e81c3838b387407d6af634022de4",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendments/memory20g_20261027/probe_R5_R2.json": "4f5d8ff6bb8da47bbace3ece477bdfd5195c2237a0e378541de3d7b66a3e15c0",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendments/memory20g_20261027/prefetch_R0.json": "f2c912006599b45c6187fa683ba8890565b20010fe074e871e751e9f089b65ae",
+    "experiments/egoexo_semantic_processing_20261027/runtime_amendments/memory20g_20261027/prefetch_R5_R2.json": "30c740054e971e61ffab8b4b52616f9f502eae8add3dc1bd05ed98d2caa8cf48"
+  }
+}

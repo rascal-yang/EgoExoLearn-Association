@@ -1,0 +1,151 @@
+{
+  "status": "frozen_exploratory_failure_diagnosis",
+  "created_at": 1793108840.3800108,
+  "authorized_by_user": "可以，你先找一下退化的原因",
+  "base_protocol_sha256": "76601f9c3e1432b72ca053f0b701b845c13adf580d6f6a18a5d003204caf9b0d",
+  "runtime_amendment_sha256": "61a274ee47cd12879d92ea9c716ceb6b0ec17f704cc3176129d672557c71fb1a",
+  "sources": {
+    "scripts/egoexo_semantic_processing/degradation_core.py": "c14732617babce5d7270279b7b5656d6ee56124f2e459a5785e0b0e31dfb92f9",
+    "scripts/egoexo_semantic_processing/degradation_run.py": "9f17cb6353df00efb98a695ed0fa640c0aebc54b20464a85eee35cf0e7f5c305",
+    "scripts/egoexo_semantic_processing/degradation_prefetch.py": "49f0efa2ce156e68b4e42b084ea241e218db9b3442685d06d8a14b0f65357270",
+    "scripts/egoexo_semantic_processing/degradation_summary.py": "e36da3779240e6ca3016502312c039b386babbc7d3d3cfb5d674aa6f196c49e9",
+    "scripts/egoexo_semantic_processing/degradation_pipeline.py": "a41914dd7538f9c4db4704d46ed5c9be4b70ce6710d192c647fa0e57f5e33eee",
+    "scripts/egoexo_semantic_processing/posthoc_core.py": "c3e3192d89b693d39c0d0f3755b1bbe5dab119a213609fded2afc4f9c6ea534e",
+    "scripts/egoexo_semantic_processing/post_pipeline.py": "922aa693fd4e9342b919e8d47d7438d4f7b4e26f8414870938ea4cb4c3d3cd17",
+    "reports/egoexo_semantic_processing_20261027/v2_固定256题诊断队列.json": "cbb2d1f4aab40769a07174d4f0558d6a66789728724dd72bcab1e4a55ce7546a",
+    "experiments/egoexo_textalign_20261025/val_episodes.npz": "a3c0359449dd8b3423bc913e8e52daa979a81ffbca1f571e2d443df3b3724eca",
+    "experiments/egoexo_textalign_20261025/plan.json": "575cc5268ef70a1f174119b5033344887c21c829cfab491be8d8eea6709d1d39",
+    "experiments/egoexo_semantic_processing_20261027/post_training/degradation/ring_smoke_seed43/complete.json": "6e8abbfaa676e7ce23a9ef14e2296c827a8e686dd3d9098dff7c9198acb002c7",
+    "experiments/egoexo_semantic_processing_20261027/post_training/degradation/smoke_seed29/complete.json": "f1b9f85ab52e0b441cfa673580efd910945e06ff136a79da3b63d7163925970e",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed17/complete.json": "dab696c06512376c94574c3e9af7c35d1700d77e0f29bdf935f728a04589e694",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed17/val_final/features.npz": "e4af9e335784c14641f2a07bac48c9fd39e19297c7b2081d0cc0a8aa2e04bda1",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed17/complete.json": "1cbd90ccab7f6902457e9e7bb8db9e112bdee9d08608f82d6cb974bc79c972dc",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed17/val_final/features.npz": "0e083ba0e0a1c5b8880f5d47dbf475ef81c9e69e095d59709a6fe982e0e071a4",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed17/val_final/routing.npz": "67c31dfbf6888024f97d64e97b5fc2842618f15b816cbabbcf3fe323e2124f40",
+    "experiments/egoexo_semantic_processing_20261027/post_training/internal/seed17/scores.npz": "98437d1a308352304a4320ac17c5fec63c3026071b67b9a6cf428aab75942ebb",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed17/history.json": "b360a52e990fdb298b501be3a8cebc55083d0dc69ffe46107aa5190822eb763b",
+    "experiments/egoexo_semantic_processing_20261027/fits/R1/seed17/history.json": "29a565a51d15e5eb0e5704aa21eefb3d81bc86d3535a5d1af8d95aac991a770d",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed17/history.json": "95a43d29dfa803712f3d5874f57f0c3e9e2d2e3fb4936cd268716af49e3cd77f",
+    "experiments/egoexo_semantic_processing_20261027/fits/R3/seed17/history.json": "7a9ef86076fe8959cdac5601ca8d357c252d684b5d608f471eaf178cd36c9ffa",
+    "experiments/egoexo_semantic_processing_20261027/fits/R4/seed17/history.json": "7b9f02c8251e20b13d2769e9cc678dc259e8642cdd907bcf87665b341a4fe50f",
+    "experiments/egoexo_semantic_processing_20261027/fits/R5/seed17/history.json": "612bcde682aa4249d689ce1aedc0b0b6f672833dee591ed81c347011b7b0f783",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed29/complete.json": "47e9a4857df71fb09233deb48a9c4b09d1a07dd077785b011aa7d0ccdc6850c4",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed29/val_final/features.npz": "7fb9bd3ec1f7a5c6d6e347de9ebc07fce1db746b72fd79def07763d9b0961d55",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed29/complete.json": "ba65eb61d11922d94c3de17ac08a0da69b1c45b96ad813111cdd13c4200ab899",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed29/val_final/features.npz": "2afdddb72b3a6c03ba8cea37fb59f25fe0a50b2a9723f1c77452f178cf00585b",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed29/val_final/routing.npz": "7b01063310886220451c07564f1d9aa79e541c448fac5307819c12933fb8fbd8",
+    "experiments/egoexo_semantic_processing_20261027/post_training/internal/seed29/scores.npz": "7c7f64d5f8db74d046736463113ed1eeb68b53e9d4ea26eac1de91c8951d985b",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed29/history.json": "427e3815ea75a252da271a29eba92978eaa3a9bad4fc1ae1bba7655d5e51ec93",
+    "experiments/egoexo_semantic_processing_20261027/fits/R1/seed29/history.json": "961aab260ef61a1f99a38196d9822af0210f63eb3eaf518e1fa1189cd2a1e976",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed29/history.json": "080558c45dd639a3dba7bd95bb9f61f3fe8c6bf1d18237c44100a72e2747e2ef",
+    "experiments/egoexo_semantic_processing_20261027/fits/R3/seed29/history.json": "998de606b501f6aa989d343c08dcdcbd5cba98e5a16bc7c1a711bdadee67e4e8",
+    "experiments/egoexo_semantic_processing_20261027/fits/R4/seed29/history.json": "0b7a3ddea03ad075e88166060e14439644dc92b8459f5f81d75c47ae8006814b",
+    "experiments/egoexo_semantic_processing_20261027/fits/R5/seed29/history.json": "ec79964dae2cd292067199b88a0e593fe43ab6ecf708c282e2be86f3aae9120c",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed43/complete.json": "4e4ee74c8ceb15e39331b3a54eff1ab5a79568d4b9eae446bc9eaf8ccc9d980d",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed43/val_final/features.npz": "ffca52edba5328945d20ddef4e88761ca30fd77f599498c62f3fe37f33f8a6bd",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed43/complete.json": "9538905a46982516bc0e5d0df7b4519bf10f97ef4e0411ab59f3eac968e50f34",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed43/val_final/features.npz": "fc67b289255dd7c44230a7f437f6510bbfd5cc8bb24aa0ca06f4fc68f986c92a",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed43/val_final/routing.npz": "642bd5f86fd94b4d4639a9e3f5dfbe4a2dd37edf403fb075822f94bb059aecd5",
+    "experiments/egoexo_semantic_processing_20261027/post_training/internal/seed43/scores.npz": "016cca088a5455df1e35fdc87f86a494b089f80f2f79123e4c43f2a9891c351c",
+    "experiments/egoexo_semantic_processing_20261027/fits/R0/seed43/history.json": "de6cdc7eace70a2804dd8f784fed8ceb6dea2fd17af6c0d4944ffa75c01ec097",
+    "experiments/egoexo_semantic_processing_20261027/fits/R1/seed43/history.json": "c7b56d197c9a5caba59612d7f53244cf5432f16259bbaa6bf5d76a2617751b2f",
+    "experiments/egoexo_semantic_processing_20261027/fits/R2/seed43/history.json": "f188e179be73907b21e68cd42c9e6cd41d72635f1e893b6c27cbb150504a2792",
+    "experiments/egoexo_semantic_processing_20261027/fits/R3/seed43/history.json": "a3cbe7785e3553580dc42b70c5fc08b1ac0ef18ba9f154b130170cae74fe9f49",
+    "experiments/egoexo_semantic_processing_20261027/fits/R4/seed43/history.json": "fab0c4becb59c3658fa1b6d15eede5d182dec2333df64cfaab9da85dff115f77",
+    "experiments/egoexo_semantic_processing_20261027/fits/R5/seed43/history.json": "d782e67bcac5a944dfd32a998dcf04637f1e77c6d61df3bf52a17bbd73fa0975"
+  },
+  "checkpoints": {
+    "R0_seed17": "dbdad45ce1a46cf2f72249876c816b612773928991e8faae61b305eb0d682ed7",
+    "R2_seed17": "37c346466c51eeeffaccfe5059fbe21d348f8ac619cfd1611ba1196b8331a3fa",
+    "R0_seed29": "ed2632c6d5b06762f47880f246b19af9b2df592a3ebfa998a8ed39654f8f15d6",
+    "R2_seed29": "998248993253edbd3a4edae07d0380cd76197163952ced0aa34b13afd1dbe6e5",
+    "R0_seed43": "103d751efba88f02bf56aac70cb1bcd7a45217eb1d965fec7e3784a2244d4db4",
+    "R2_seed43": "8325adcbe4476a308e7c42a8913dfc587dfc8a7316bca0f2da9e62e6527fa049"
+  },
+  "cohort": "previously fixed256, all3510 distinct clips across query and20 candidates",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "endpoint": "epoch4_final",
+  "no_training": true,
+  "TEST_access": false,
+  "factors": {
+    "blocks": [
+      "R0",
+      "R2"
+    ],
+    "readout": [
+      "R0",
+      "R2"
+    ],
+    "memories": [
+      "dense",
+      "saved_R2_memory",
+      "fixed_random32_plus_context"
+    ],
+    "R0_additional_layer_controls": [
+      "compact_block10_only",
+      "compact_block11_only"
+    ]
+  },
+  "membership": "saved final R2 indices fixed across weight/readout swaps; identical logmass/partition; do not route through the R0 production bypass",
+  "local_error_scope": "fixed206 unique query clips; native layer trajectories, CLS group probability/value exact decompositions, spatial output errors",
+  "metrics": [
+    "accuracy",
+    "correct-minus-hardest-wrong margin",
+    "per-seed repaired/broken",
+    "source-cluster descriptive95CI",
+    "population-weighted cohort summaries",
+    "correct similarity and hardest-negative similarity changes",
+    "local group probability and V approximation error",
+    "internal training curves and parameter displacement"
+  ],
+  "statistics": {
+    "bootstrap": 20000,
+    "seed": 20261027,
+    "cluster": "query_source_video",
+    "fixed_seeds_together": true,
+    "inference": "exploratory, unadjusted intervals; no exclusive causal claim"
+  },
+  "runtime": {
+    "batch": 32,
+    "precision": "FP32, existing FP16 prefix boundary",
+    "GPUs": [
+      2,
+      3
+    ],
+    "allocator_cap_gib": 19,
+    "prefetch_depth": 60,
+    "prefetch": "one contiguous FP16 prefix ring; producer/consumer CUDA events; byte-exact smoke on128 queries",
+    "allocator_conf": "max_split_size_mb:128",
+    "memory_preflight_note": "Depth73 failed19GiB allocator ceiling during engineering gate; depth60 passed full physical capacity,4 batches and both native replays exact. No diagnostic score was selected using these memory gates."
+  },
+  "jobs": [
+    {
+      "name": "seed17",
+      "program": "degradation_run.py",
+      "args": [
+        "--seed",
+        "17"
+      ]
+    },
+    {
+      "name": "seed29",
+      "program": "degradation_run.py",
+      "args": [
+        "--seed",
+        "29"
+      ]
+    },
+    {
+      "name": "seed43",
+      "program": "degradation_run.py",
+      "args": [
+        "--seed",
+        "43"
+      ]
+    }
+  ]
+}

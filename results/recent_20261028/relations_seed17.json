@@ -1,0 +1,161 @@
+{
+  "metrics": {
+    "A_continue_M": {
+      "passed": true,
+      "arm": "A_continue_M",
+      "seed": 17,
+      "epoch": 4,
+      "correct": 435,
+      "questions": 800,
+      "accuracy": 54.37499999999999,
+      "score": "cosine",
+      "frames": 16,
+      "precision": "FP32",
+      "diagnostics": [],
+      "TEST_access": false,
+      "human_grounding_evaluated": false
+    },
+    "B_slots": {
+      "passed": true,
+      "arm": "B_slots",
+      "seed": 17,
+      "epoch": 4,
+      "correct": 435,
+      "questions": 800,
+      "accuracy": 54.37499999999999,
+      "score": "cosine",
+      "frames": 16,
+      "precision": "FP32",
+      "diagnostics": [
+        {
+          "attention_entropy": 8.021578788757324,
+          "mean_offdiagonal_slot_cosine": 0.9962624311447144,
+          "scope": "First32 fixed validation clips; no grounding truth"
+        }
+      ],
+      "TEST_access": false,
+      "human_grounding_evaluated": false
+    },
+    "C_bound": {
+      "passed": true,
+      "arm": "C_bound",
+      "seed": 17,
+      "epoch": 4,
+      "correct": 433,
+      "questions": 800,
+      "accuracy": 54.125,
+      "score": "cosine",
+      "frames": 16,
+      "precision": "FP32",
+      "diagnostics": [
+        {
+          "attention_entropy": 7.87705135345459,
+          "mean_offdiagonal_slot_cosine": 0.9993736147880554,
+          "scope": "First32 fixed validation clips; no grounding truth"
+        }
+      ],
+      "TEST_access": false,
+      "human_grounding_evaluated": false
+    },
+    "D_unbound": {
+      "passed": true,
+      "arm": "D_unbound",
+      "seed": 17,
+      "epoch": 4,
+      "correct": 435,
+      "questions": 800,
+      "accuracy": 54.37499999999999,
+      "score": "cosine",
+      "frames": 16,
+      "precision": "FP32",
+      "diagnostics": [
+        {
+          "attention_entropy": 7.87622594833374,
+          "mean_offdiagonal_slot_cosine": 0.9993834495544434,
+          "scope": "First32 fixed validation clips; no grounding truth"
+        }
+      ],
+      "TEST_access": false,
+      "human_grounding_evaluated": false
+    },
+    "E_scrambled": {
+      "passed": true,
+      "arm": "E_scrambled",
+      "seed": 17,
+      "epoch": 4,
+      "correct": 435,
+      "questions": 800,
+      "accuracy": 54.37499999999999,
+      "score": "cosine",
+      "frames": 16,
+      "precision": "FP32",
+      "diagnostics": [
+        {
+          "attention_entropy": 7.876982688903809,
+          "mean_offdiagonal_slot_cosine": 0.999373733997345,
+          "scope": "First32 fixed validation clips; no grounding truth"
+        }
+      ],
+      "TEST_access": false,
+      "human_grounding_evaluated": false
+    },
+    "M16_initial": {
+      "correct": 430,
+      "accuracy": 53.75
+    }
+  },
+  "paired": {
+    "C_vs_A_continue_M": {
+      "delta_pp": -0.25,
+      "video_cluster_ci95_pp": [
+        -0.792606117908954,
+        0.4524886877828055
+      ],
+      "repaired": 3,
+      "broken": 5
+    },
+    "C_vs_B_slots": {
+      "delta_pp": -0.25,
+      "video_cluster_ci95_pp": [
+        -1.0230179028132993,
+        0.7561508169154256
+      ],
+      "repaired": 5,
+      "broken": 7
+    },
+    "C_vs_D_unbound": {
+      "delta_pp": -0.25,
+      "video_cluster_ci95_pp": [
+        -0.6796571343510693,
+        0.3129890453834116
+      ],
+      "repaired": 1,
+      "broken": 3
+    },
+    "C_vs_E_scrambled": {
+      "delta_pp": -0.25,
+      "video_cluster_ci95_pp": [
+        -0.6796571343510693,
+        0.3129890453834116
+      ],
+      "repaired": 1,
+      "broken": 3
+    },
+    "C_vs_M16_initial": {
+      "delta_pp": 0.375,
+      "video_cluster_ci95_pp": [
+        -1.965628728823853,
+        2.38411582988719
+      ],
+      "repaired": 43,
+      "broken": 40
+    }
+  },
+  "seeds": [
+    17
+  ],
+  "matched_exposures": true,
+  "TEST_access": false,
+  "human_relation_review_pending": true,
+  "interpretation": "Single-seed exploratory validation; not proof of relation grounding or final three-seed results"
+}

@@ -1,0 +1,303 @@
+{
+  "metrics": {
+    "dense16": {
+      "counts": [
+        430,
+        418,
+        431
+      ],
+      "mean_accuracy": 53.29166666666666,
+      "tokens": 3137
+    },
+    "merge98": {
+      "counts": [
+        390,
+        383,
+        394
+      ],
+      "mean_accuracy": 48.625,
+      "tokens": 1667
+    },
+    "merge49": {
+      "counts": [
+        319,
+        321,
+        331
+      ],
+      "mean_accuracy": 40.458333333333336,
+      "tokens": 932
+    },
+    "haar49": {
+      "counts": [
+        333,
+        326,
+        337
+      ],
+      "mean_accuracy": 41.5,
+      "tokens": 932
+    },
+    "random49": {
+      "counts": [
+        304,
+        304,
+        314
+      ],
+      "mean_accuracy": 38.416666666666664,
+      "tokens": 932
+    },
+    "exact49": {
+      "counts": [
+        322,
+        318,
+        330
+      ],
+      "mean_accuracy": 40.416666666666664,
+      "tokens": 932
+    }
+  },
+  "comparisons": {
+    "merge98_vs_dense16": {
+      "delta_pp": -4.666666666666666,
+      "ci95_video_cluster_pp": [
+        -6.8347737298512214,
+        -2.7959999770234676
+      ],
+      "repairs_per_seed": [
+        32,
+        31,
+        34
+      ],
+      "breaks_per_seed": [
+        72,
+        66,
+        71
+      ]
+    },
+    "merge49_vs_dense16": {
+      "delta_pp": -12.833333333333332,
+      "ci95_video_cluster_pp": [
+        -15.734007344607157,
+        -10.06056228415779
+      ],
+      "repairs_per_seed": [
+        26,
+        34,
+        33
+      ],
+      "breaks_per_seed": [
+        137,
+        131,
+        133
+      ]
+    },
+    "haar49_vs_dense16": {
+      "delta_pp": -11.791666666666666,
+      "ci95_video_cluster_pp": [
+        -14.535400923981083,
+        -9.027687823834198
+      ],
+      "repairs_per_seed": [
+        26,
+        30,
+        29
+      ],
+      "breaks_per_seed": [
+        123,
+        122,
+        123
+      ]
+    },
+    "random49_vs_dense16": {
+      "delta_pp": -14.875,
+      "ci95_video_cluster_pp": [
+        -18.51233294160492,
+        -11.647158810681319
+      ],
+      "repairs_per_seed": [
+        23,
+        32,
+        34
+      ],
+      "breaks_per_seed": [
+        149,
+        146,
+        151
+      ]
+    },
+    "exact49_vs_dense16": {
+      "delta_pp": -12.875,
+      "ci95_video_cluster_pp": [
+        -15.863323007969061,
+        -10.10566634992738
+      ],
+      "repairs_per_seed": [
+        30,
+        33,
+        33
+      ],
+      "breaks_per_seed": [
+        138,
+        133,
+        134
+      ]
+    },
+    "merge49_vs_random49": {
+      "delta_pp": 2.0416666666666665,
+      "ci95_video_cluster_pp": [
+        -1.0854152358058609,
+        5.302034655935581
+      ],
+      "repairs_per_seed": [
+        79,
+        79,
+        87
+      ],
+      "breaks_per_seed": [
+        64,
+        62,
+        70
+      ]
+    },
+    "merge49_vs_haar49": {
+      "delta_pp": -1.0416666666666665,
+      "ci95_video_cluster_pp": [
+        -2.2649782135076246,
+        -0.043058040151063515
+      ],
+      "repairs_per_seed": [
+        14,
+        18,
+        17
+      ],
+      "breaks_per_seed": [
+        28,
+        23,
+        23
+      ]
+    },
+    "exact49_vs_merge49": {
+      "delta_pp": -0.04166666666666665,
+      "ci95_video_cluster_pp": [
+        -0.7681083268836137,
+        0.6075616919403174
+      ],
+      "repairs_per_seed": [
+        9,
+        8,
+        8
+      ],
+      "breaks_per_seed": [
+        6,
+        11,
+        9
+      ]
+    }
+  },
+  "strata": {
+    "short_pair_le1s": {
+      "n": 428,
+      "accuracy": {
+        "dense16": 44.781931464174455,
+        "merge98": 39.56386292834891,
+        "merge49": 32.242990654205606,
+        "haar49": 32.78816199376947,
+        "random49": 29.98442367601246,
+        "exact49": 32.398753894081
+      }
+    },
+    "pair_1to3s": {
+      "n": 276,
+      "accuracy": {
+        "dense16": 55.193236714975846,
+        "merge98": 52.53623188405797,
+        "merge49": 44.68599033816425,
+        "haar49": 46.13526570048309,
+        "random49": 43.23671497584541,
+        "exact49": 44.565217391304344
+      }
+    },
+    "pair_gt3s": {
+      "n": 96,
+      "accuracy": {
+        "dense16": 85.76388888888889,
+        "merge98": 77.77777777777779,
+        "merge49": 64.93055555555556,
+        "haar49": 67.01388888888889,
+        "random49": 62.15277777777778,
+        "exact49": 64.23611111111111
+      }
+    },
+    "query_ego": {
+      "n": 400,
+      "accuracy": {
+        "dense16": 52.416666666666664,
+        "merge98": 47.333333333333336,
+        "merge49": 38.666666666666664,
+        "haar49": 40.08333333333333,
+        "random49": 34.66666666666667,
+        "exact49": 38.5
+      }
+    },
+    "query_exo": {
+      "n": 400,
+      "accuracy": {
+        "dense16": 54.166666666666664,
+        "merge98": 49.916666666666664,
+        "merge49": 42.25,
+        "haar49": 42.916666666666664,
+        "random49": 42.16666666666667,
+        "exact49": 42.333333333333336
+      }
+    },
+    "camera_proxy_low": {
+      "n": 478,
+      "accuracy": {
+        "dense16": 51.39470013947002,
+        "merge98": 46.93165969316597,
+        "merge49": 41.21338912133891,
+        "haar49": 42.11994421199442,
+        "random49": 38.14504881450488,
+        "exact49": 41.35285913528591
+      }
+    },
+    "camera_proxy_high": {
+      "n": 322,
+      "accuracy": {
+        "dense16": 56.10766045548654,
+        "merge98": 51.13871635610766,
+        "merge49": 39.33747412008282,
+        "haar49": 40.57971014492754,
+        "random49": 38.81987577639752,
+        "exact49": 39.02691511387164
+      }
+    }
+  },
+  "dense_reference_replay": {
+    "17": {
+      "max_score_error": 0.00028514862060546875,
+      "prediction_changes": 0,
+      "current_correct": 430,
+      "historical_correct": 430,
+      "note": "Current full float32 encoder; historical cache rounded block9 activations to float16"
+    },
+    "29": {
+      "max_score_error": 0.0003300011157989502,
+      "prediction_changes": 0,
+      "current_correct": 418,
+      "historical_correct": 418,
+      "note": "Current full float32 encoder; historical cache rounded block9 activations to float16"
+    },
+    "43": {
+      "max_score_error": 0.0002624392509460449,
+      "prediction_changes": 0,
+      "current_correct": 431,
+      "historical_correct": 431,
+      "note": "Current full float32 encoder; historical cache rounded block9 activations to float16"
+    }
+  },
+  "TEST_access": false,
+  "training_performed": false,
+  "score": "cosine",
+  "routing_uses_labels": false,
+  "camera_proxy_is_not_ground_truth": true
+}

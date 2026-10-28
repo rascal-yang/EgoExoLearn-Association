@@ -1,6 +1,19 @@
-# EgoExoLearn Association: M baseline and temporal/state models
+# EgoExoLearn Association: baselines, routing and compression experiments
 
-用于保存 EgoExoLearn Cross-view Association 上 **M baseline、普通时序聚合、新状态模型** 的训练/推理代码，以及对应的4帧与16帧结果。
+用于保存 EgoExoLearn Cross-view Association 上 **M baseline、时序/状态模型、内容/语义路由、block10单层K/V与逐层压缩测速** 的研究代码和已完成结果。
+
+## 2026-10-28：近期实验代码
+
+新增77个原始Python源文件，覆盖关系槽位、早期token合并、R0–R5及退化诊断、block10-only和12层96槽扫描；附原协议、24个checkpoint哈希、汇总结果与原始配对计时样本。详见[近期实验与复现边界](docs/RECENT_EXPERIMENTS.md)。
+
+```bash
+python tools/verify_recent_release.py
+python tools/reproduce_recent_results.py
+```
+
+两条命令不需要GPU，用于校验文件和重算主表算术，不会重新训练或评测模型。R0–R5两层方案发生退化，block10-only未建立稳定提升；逐层扫描仅在固定256题上筛选，单层完整编码器延迟节省不足0.5%。所有条件及边界均保留，不将负结果描述为方法成功。
+
+新代码保留历史执行约束；原数据、权重、缓存和机器相关协议另行准备。新论文联合方案仍在设计中。
 
 ## 已记录结果
 
@@ -30,12 +43,16 @@ python tools/reproduce_table.py
 | `scripts/egoexo_textalign/` | 公共视频/文本模型、文字特征、4帧缓存与基础后训练 |
 | `scripts/egoexo_mechanism/` | M 的损失、训练代码与时间干预评测；N/V是其历史消融 |
 | `scripts/egoexo_states/` | 普通时序聚合、新状态模型及16帧训练/评测 |
+| `scripts/egoexo_relations/`、`scripts/egoexo_tokenmerge/` | 关系绑定/槽位与早期共享静态token实验 |
+| `scripts/egoexo_semantic_processing/` | R0–R5、内容/语义路由、K/V算子、退化与像素干预 |
+| `scripts/egoexo_block10/` | 仅block10压缩的匹配训练/评测 |
+| `scripts/egoexo_layer_compressibility/` | 从RGB开始的12层扫描、完整编码器计时和汇总 |
 | `scripts/evaluate_states_fourframes.py` | 原始4帧适配与对照评测脚本 |
 | `scripts/sampling_corrected/bounded_decode.py` | 根据实际播放PTS取帧，并限制在标注时间窗口内 |
 | `tools/evaluate.py` | 可指定路径、GPU、帧数的原视频评测入口，不要求预先生成特征缓存 |
 | `results/`、`provenance/` | 逐种子汇总、权重哈希、代码来源及上游补丁 |
 
-后续没有取得收益的 token 压缩、多模型融合等实验不属于此版本。
+上面的4/16帧主表属于2026-10-26的早期发布；新路由和压缩结果在`results/recent_20261028/`单独归档，评测范围与数值路径不同，不混入该表。多模型融合等其他研究仍不属于此版本。
 
 ## 环境
 

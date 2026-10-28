@@ -1,0 +1,122 @@
+{
+  "endpoint": "epoch4_final",
+  "questions": 2200,
+  "models": {
+    "R0": {
+      "per_seed_accuracy": [
+        55.04545454545454,
+        55.77272727272727,
+        54.90909090909091
+      ],
+      "per_seed_correct": [
+        1211,
+        1227,
+        1208
+      ],
+      "mean_accuracy": 55.242424242424235,
+      "direction": {
+        "ego": 54.848484848484844,
+        "exo": 55.63636363636364
+      },
+      "metadata_task": {
+        "task1": 58.28488372093024,
+        "task2": 71.42857142857143,
+        "task3": 57.05128205128205,
+        "task4": 54.38320209973754,
+        "task5": 45.33333333333333,
+        "task6": 26.87074829931973,
+        "task7": 54.248366013071895
+      }
+    },
+    "R1": {
+      "per_seed_accuracy": [
+        51.590909090909086,
+        50.590909090909086,
+        51.090909090909086
+      ],
+      "per_seed_correct": [
+        1135,
+        1113,
+        1124
+      ],
+      "mean_accuracy": 51.090909090909086,
+      "direction": {
+        "ego": 50.030303030303024,
+        "exo": 52.15151515151515
+      },
+      "metadata_task": {
+        "task1": 56.395348837209305,
+        "task2": 71.42857142857143,
+        "task3": 50.80128205128205,
+        "task4": 50.55118110236221,
+        "task5": 34.66666666666667,
+        "task6": 20.408163265306122,
+        "task7": 48.36601307189542
+      }
+    },
+    "R2": {
+      "per_seed_accuracy": [
+        50.95454545454545,
+        50.18181818181818,
+        50.68181818181819
+      ],
+      "per_seed_correct": [
+        1121,
+        1104,
+        1115
+      ],
+      "mean_accuracy": 50.60606060606061,
+      "direction": {
+        "ego": 49.36363636363637,
+        "exo": 51.848484848484844
+      },
+      "metadata_task": {
+        "task1": 55.62015503875969,
+        "task2": 69.04761904761905,
+        "task3": 51.12179487179487,
+        "task4": 50.28871391076115,
+        "task5": 36.0,
+        "task6": 16.666666666666664,
+        "task7": 46.73202614379085
+      }
+    }
+  },
+  "comparisons": {
+    "R2-R0": {
+      "gain_pp": -4.636363636363637,
+      "source_cluster_interval97_5": [
+        -6.217122249230581,
+        -3.1045995405016638
+      ],
+      "per_seed_gain_pp": [
+        -4.09090909090909,
+        -5.590909090909091,
+        -4.227272727272724
+      ]
+    },
+    "R2-R1": {
+      "gain_pp": -0.4848484848484849,
+      "source_cluster_interval97_5": [
+        -1.372900529574458,
+        0.40180142683532716
+      ],
+      "per_seed_gain_pp": [
+        -0.6363636363636349,
+        -0.4090909090909034,
+        -0.4090909090909034
+      ]
+    }
+  },
+  "training_VAL_protocol_unchanged": true,
+  "TEST_used_for_selection": false,
+  "interval_audit": {
+    "unique_clips": 22733,
+    "shared_train_long_videos": 547,
+    "positive_duration_overlap_clips": 0,
+    "annotation_times_only": true
+  },
+  "precision": "FP32 with matched FP16 block9 boundary",
+  "historical_TEST_exposure": true,
+  "caveat": "Fixed candidate pool and three fixed seeds; historical TEST exposure; no pristine blind-test claim.",
+  "human_grounding_evidence": false
+}
