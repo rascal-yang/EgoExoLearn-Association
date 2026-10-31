@@ -10,6 +10,7 @@
 区域为助手视觉标注，不是独立人工真值；单种子开发集分析不能作为独立泛化或唯一因果机制证明。
 
 CPU检查：`python scripts/information_mechanism/self_check.py`。运行入口、参数和产物规则见事前计划。
+附加[只读核验方案](docs/INFORMATION_MECHANISM_AUDIT_20261031.txt)检查完整输入映射、独立评分、区域清洁回放及实际扰动量，保持原实验结果和冻结代码可追溯。
 
 ## 2026-10-28：近期实验代码
 
