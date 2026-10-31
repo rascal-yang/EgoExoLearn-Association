@@ -12,7 +12,7 @@ import tarfile
 import time
 
 import numpy as np
-from PIL import Image
+from PIL import Image,ImageDraw
 
 from info_common import atomic,decode,load_data,perturb,raw_rgb,roi_mask,sha
 
@@ -161,6 +161,21 @@ def main(a):
         source_png=run/'region_sources'/f'{rid:02d}.png'
         assert sha(source_png)==r['frame_sha256']
         assert np.array_equal(raw_rgb(frame),np.array(Image.open(source_png)))
+        if r['matched_analysis_eligible']:
+            nearest=int(abs(np.array(times['four'])-r['target_pts']).argmin())
+            panels=[('Clean + ROI outline',frame),('Nearest original 4',decoded['repeat4'][:,4*nearest]),
+                    ('ROI blur, sigma=4',perturb(frame,r['box'],4)),('ROI blur, sigma=8',perturb(frame,r['box'],8))]
+            if r['controls']:
+                panels += [('BG0 blur, sigma=4',perturb(frame,r['controls'][0]['box'],4)),
+                           ('BG0 blur, sigma=8',perturb(frame,r['controls'][0]['box'],8))]
+            gallery=Image.new('RGB',(224*len(panels),280),'#151515');draw=ImageDraw.Draw(gallery)
+            draw.text((3,3),f"r{rid:02d}, clip {cid}, {r['view']}, t+{r['relative_time']:.3f}s; single changed observation shown",fill='white')
+            for col,(label,value) in enumerate(panels):
+                im=Image.fromarray(raw_rgb(value))
+                if col==0:ImageDraw.Draw(im).rectangle(r['box'],outline='red',width=2)
+                gallery.paste(im,(224*col,56));draw.text((224*col+3,31),label,fill='white')
+            folder=out/'input_panels';folder.mkdir(exist_ok=True)
+            gallery.save(folder/f'r{rid:02d}.png')
         for name,box in [('roi',r['box'])]+[(f'bg{k}',v['box']) for k,v in enumerate(r['controls'])]:
             mask=roi_mask(box)
             assert mask.sum()==roi_mask(r['box']).sum()

@@ -33,3 +33,9 @@
   python scripts/information_mechanism/audit.py --self-check
   python scripts/information_mechanism/audit.py --state "$STATE" --output-dir "$LOCAL_RUN_DIR/audit"
 核验程序要求原监督进程已结束且analysis_complete与产物清单存在；不会把活跃memmap的未完成区域当结果。
+导出PNG/PDF与CSV（独立Python>=3.10绘图环境，版本见requirements-plotting.txt）：
+  python scripts/information_mechanism/figures.py --run-dir "$LOCAL_RUN_DIR" --audit-dir "$LOCAL_RUN_DIR/audit" --output-dir "$LOCAL_RUN_DIR/audit/figures"
+图中原生准确率为描述统计，置信区间仅标示预设配对差值；小区域队列逐例显示，不包装为总体定位能力。
+自动等待、核验、导图和持久化入口：
+  python scripts/information_mechanism/finish.py --state "$STATE" --plot-python /path/to/plotting/python
+该入口观察已知监督进程及终态产物，不自动重启推理；自身日志/状态放在主运行目录的同级路径。
