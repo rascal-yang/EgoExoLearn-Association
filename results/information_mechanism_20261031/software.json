@@ -1,0 +1,8 @@
+{
+  "python": "3.11.11",
+  "numpy": "2.2.6",
+  "matplotlib": "3.10.8",
+  "plotting_commit": "ae68a83ded20daf43fa527866f2c53d408d872b5",
+  "primary_commit": "9969f4836bf78959fce500e705922705e6bc8a32",
+  "audit_commit": "ae68a83ded20daf43fa527866f2c53d408d872b5"
+}

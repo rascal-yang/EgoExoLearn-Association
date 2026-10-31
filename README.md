@@ -4,10 +4,17 @@
 
 ## 2026-10-31：信息机制实验
 
-新增[事前实验计划](docs/INFORMATION_MECHANISM_20261031.txt)及 `scripts/information_mechanism/`。
-固定已有 P_base/P_rich 权重，比较完整800题中重复4帧与补充实拍画面（均16位置），再对盲选区域队列进行手物与匹配背景扰动。
-计划、实现和运行状态与已完成研究结果分开记录；这项新实验的结果须以对应运行归档为准。
-区域为助手视觉标注，不是独立人工真值；单种子开发集分析不能作为独立泛化或唯一因果机制证明。
+已完成固定 P_base/P_rich 权重的800题实验：[完整报告](results/information_mechanism_20261031/RESULTS.txt)、[统计图](results/information_mechanism_20261031/main_comparison.png)、[后续设计](docs/INFORMATION_MECHANISM_FOLLOWUP_20261031.txt)。[事前计划](docs/INFORMATION_MECHANISM_20261031.txt)与冻结代码保留。
+
+| 模型（seed17） | 重复4个观测、16位置 | 补充真实观测、16位置 |
+|---|---:|---:|
+| P_base | 49.750% | 52.875% |
+| P_rich | 54.375% | 57.750% |
+
+新增观测与富语义模型各有收益，但主要margin交互为负，准确率交互不确定，未建立正向协同。
+仅8/24个随机区域样本满足匹配背景条件；区域敏感性没有证明富语义更依赖手物证据。旧M案例在本次P模型clean输入下已经答错。
+两组都计算16位置，不能据此宣称4帧算力节省。单种子、已反复开发VAL、助手标注区域等边界见报告；没有进行TEST评测。
+历史uniform16逐题预测全部复现，新nested16结果不替换历史协议的数值。
 
 CPU检查：`python scripts/information_mechanism/self_check.py`。运行入口、参数和产物规则见事前计划。
 附加[只读核验方案](docs/INFORMATION_MECHANISM_AUDIT_20261031.txt)检查完整输入映射、独立评分、区域清洁回放及实际扰动量，保持原实验结果和冻结代码可追溯。

@@ -8,3 +8,4 @@
 /results/recent_20261028/** -text
 # CSV files retain their original standard CRLF record terminators.
 /results/recent_20261028/*.csv whitespace=cr-at-eol
+/results/information_mechanism_20261031/*.csv whitespace=cr-at-eol
