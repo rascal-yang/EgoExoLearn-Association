@@ -2,6 +2,15 @@
 
 用于保存 EgoExoLearn Cross-view Association 上 **M baseline、时序/状态模型、内容/语义路由、block10单层K/V与逐层压缩测速** 的研究代码和已完成结果。
 
+## 2026-10-31：信息机制实验
+
+新增[事前实验计划](docs/INFORMATION_MECHANISM_20261031.txt)及 `scripts/information_mechanism/`。
+固定已有 P_base/P_rich 权重，比较完整800题中重复4帧与补充实拍画面（均16位置），再对盲选区域队列进行手物与匹配背景扰动。
+计划、实现和运行状态与已完成研究结果分开记录；这项新实验的结果须以对应运行归档为准。
+区域为助手视觉标注，不是独立人工真值；单种子开发集分析不能作为独立泛化或唯一因果机制证明。
+
+CPU检查：`python scripts/information_mechanism/self_check.py`。运行入口、参数和产物规则见事前计划。
+
 ## 2026-10-28：近期实验代码
 
 新增77个原始Python源文件，覆盖关系槽位、早期token合并、R0–R5及退化诊断、block10-only和12层96槽扫描；附原协议、24个checkpoint哈希、汇总结果与原始配对计时样本。详见[近期实验与复现边界](docs/RECENT_EXPERIMENTS.md)。

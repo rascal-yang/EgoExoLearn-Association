@@ -1,0 +1,3122 @@
+{
+  "annotation_author": "assistant visual review, before new model scores",
+  "independent_human_GT": false,
+  "selection_sha256": "eb7f9aa33c12e82580fbc9429e193eb956bd46afaac50b4b68c93d175ace8412",
+  "labels_sha256": "33c8b20ee6325883a3a063193f079e1af68254a64a3ed5fd480e04e1fb83d13b",
+  "records": [
+    {
+      "row": 170,
+      "uid": "170",
+      "clip_id": 41075,
+      "key": [
+        "beea0ff0-ac78-11ee-819f-80615f12b59e",
+        77.0,
+        78.6
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "The left hand places the vegetables on the cutting board for later use.",
+      "record_id": 0,
+      "times": {
+        "four": [
+          77.2,
+          77.6,
+          78.0,
+          78.4
+        ],
+        "dense16": [
+          77.08,
+          77.16,
+          77.28,
+          77.36,
+          77.48,
+          77.56,
+          77.68,
+          77.76,
+          77.88,
+          77.96,
+          78.08,
+          78.16,
+          78.28,
+          78.36,
+          78.48,
+          78.56
+        ],
+        "repeat4": [
+          77.2,
+          77.2,
+          77.2,
+          77.2,
+          77.6,
+          77.6,
+          77.6,
+          77.6,
+          78.0,
+          78.0,
+          78.0,
+          78.0,
+          78.4,
+          78.4,
+          78.4,
+          78.4
+        ],
+        "nested16": [
+          77.08,
+          77.2,
+          77.28,
+          77.36,
+          77.48,
+          77.6,
+          77.68,
+          77.76,
+          77.88,
+          78.0,
+          78.08,
+          78.16,
+          78.28,
+          78.4,
+          78.48,
+          78.56
+        ]
+      },
+      "target_pts": 77.76,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.7600000000000051,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "14d9a4e8141b0a30bd6579fda48f1d444f52c5542858e01bb151930c631ed76a",
+      "box": [
+        40,
+        152,
+        108,
+        224
+      ],
+      "exclude": [],
+      "type": "hand_object",
+      "note": "Left hand and visible vegetable near lower edge; partial view.",
+      "controls": [
+        {
+          "box": [
+            156,
+            120,
+            224,
+            192
+          ],
+          "matching_score": 0.06786520287143835,
+          "brightness": 0.24572116136550903,
+          "gradient": 0.21999184787273407
+        },
+        {
+          "box": [
+            78,
+            34,
+            146,
+            106
+          ],
+          "matching_score": 0.14706647653290855,
+          "brightness": 0.2517068386077881,
+          "gradient": 0.24772325158119202
+        },
+        {
+          "box": [
+            116,
+            128,
+            184,
+            200
+          ],
+          "matching_score": 0.32713001293074356,
+          "brightness": 0.25595223903656006,
+          "gradient": 0.18186090886592865
+        }
+      ],
+      "roi_brightness": 0.25198793411254883,
+      "roi_gradient": 0.22400590777397156,
+      "area_fraction": 0.0975765306122449,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 375,
+      "uid": "375",
+      "clip_id": 41841,
+      "key": [
+        "bee9444e-ac78-11ee-819f-80615f12b59e",
+        142.9,
+        145.6
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "With the left hand holding the green pepper, and the right hand holding the knife, cut everything in half.",
+      "record_id": 1,
+      "times": {
+        "four": [
+          143.24,
+          143.92,
+          144.6,
+          145.28
+        ],
+        "dense16": [
+          143.0,
+          143.16,
+          143.36,
+          143.52,
+          143.68,
+          143.84,
+          144.0,
+          144.2,
+          144.36,
+          144.52,
+          144.68,
+          144.88,
+          145.04,
+          145.2,
+          145.36,
+          145.52
+        ],
+        "repeat4": [
+          143.24,
+          143.24,
+          143.24,
+          143.24,
+          143.92,
+          143.92,
+          143.92,
+          143.92,
+          144.6,
+          144.6,
+          144.6,
+          144.6,
+          145.28,
+          145.28,
+          145.28,
+          145.28
+        ],
+        "nested16": [
+          143.0,
+          143.24,
+          143.36,
+          143.52,
+          143.68,
+          143.92,
+          144.0,
+          144.2,
+          144.36,
+          144.6,
+          144.68,
+          144.88,
+          145.04,
+          145.28,
+          145.36,
+          145.52
+        ]
+      },
+      "target_pts": 144.2,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.299999999999983,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "f4a3c3a37230194d8371a3dcacfd1dec98d2215c5e15b6da50a885f059c31f63",
+      "box": [
+        92,
+        132,
+        166,
+        198
+      ],
+      "exclude": [
+        [
+          158,
+          150,
+          218,
+          222
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Left hand/pepper/knife contact on board; other hand excluded from controls.",
+      "controls": [
+        {
+          "box": [
+            140,
+            38,
+            214,
+            104
+          ],
+          "matching_score": 0.0006268527369008955,
+          "brightness": 0.35207048058509827,
+          "gradient": 0.21357400715351105
+        },
+        {
+          "box": [
+            150,
+            0,
+            224,
+            66
+          ],
+          "matching_score": 0.04823543070941878,
+          "brightness": 0.3510940968990326,
+          "gradient": 0.2199368178844452
+        },
+        {
+          "box": [
+            54,
+            58,
+            128,
+            124
+          ],
+          "matching_score": 0.15626199429328957,
+          "brightness": 0.35305339097976685,
+          "gradient": 0.2368849366903305
+        }
+      ],
+      "roi_brightness": 0.3520040512084961,
+      "roi_gradient": 0.2136012464761734,
+      "area_fraction": 0.0973373724489796,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 131,
+      "uid": "131",
+      "clip_id": 40922,
+      "key": [
+        "beea1504-ac78-11ee-819f-80615f12b59e",
+        100.2,
+        100.7
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "Put the pot down with your left hand.",
+      "record_id": 2,
+      "times": {
+        "four": [
+          100.28,
+          100.4,
+          100.52,
+          100.64
+        ],
+        "dense16": [
+          100.24,
+          100.28,
+          100.28,
+          100.32,
+          100.36,
+          100.4,
+          100.44,
+          100.44,
+          100.48,
+          100.52,
+          100.56,
+          100.56,
+          100.6,
+          100.64,
+          100.68,
+          100.68
+        ],
+        "repeat4": [
+          100.28,
+          100.28,
+          100.28,
+          100.28,
+          100.4,
+          100.4,
+          100.4,
+          100.4,
+          100.52,
+          100.52,
+          100.52,
+          100.52,
+          100.64,
+          100.64,
+          100.64,
+          100.64
+        ],
+        "nested16": [
+          100.24,
+          100.28,
+          100.28,
+          100.32,
+          100.36,
+          100.4,
+          100.44,
+          100.44,
+          100.48,
+          100.52,
+          100.56,
+          100.56,
+          100.6,
+          100.64,
+          100.68,
+          100.68
+        ]
+      },
+      "target_pts": 100.44,
+      "positions": [
+        6,
+        7
+      ],
+      "relative_time": 0.23999999999999488,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "3937c1b9eb32934d7b7f13f510a198ea9f28d41d9a1bd15ea9746714464f34f3",
+      "box": [
+        56,
+        150,
+        132,
+        224
+      ],
+      "exclude": [
+        [
+          140,
+          108,
+          224,
+          224
+        ]
+      ],
+      "type": "uncertain",
+      "note": "Hand at board is visible but named pot action is not confidently identified; exploratory only.",
+      "controls": [
+        {
+          "box": [
+            24,
+            30,
+            100,
+            104
+          ],
+          "matching_score": 0.3274943114034867,
+          "brightness": 0.3191285729408264,
+          "gradient": 0.2050258368253708
+        },
+        {
+          "box": [
+            68,
+            26,
+            144,
+            100
+          ],
+          "matching_score": 0.5596440667240966,
+          "brightness": 0.33119654655456543,
+          "gradient": 0.23573456704616547
+        },
+        {
+          "box": [
+            10,
+            68,
+            86,
+            142
+          ],
+          "matching_score": 0.7007788777242201,
+          "brightness": 0.2196824550628662,
+          "gradient": 0.16772714257240295
+        }
+      ],
+      "roi_brightness": 0.322853147983551,
+      "roi_gradient": 0.16622552275657654,
+      "area_fraction": 0.11208545918367346,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 16,
+      "uid": "16",
+      "clip_id": 40125,
+      "key": [
+        "bee9ddf0-ac78-11ee-819f-80615f12b59e",
+        93.8,
+        106.5
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "The left hand is pressing the ginger. The right hand is holding a knife to cut a few thin slices of ginger.",
+      "record_id": 3,
+      "times": {
+        "four": [
+          95.4,
+          98.6,
+          101.76,
+          104.92
+        ],
+        "dense16": [
+          94.2,
+          95.0,
+          95.8,
+          96.6,
+          97.4,
+          98.2,
+          98.96,
+          99.76,
+          100.56,
+          101.36,
+          102.16,
+          102.96,
+          103.76,
+          104.52,
+          105.32,
+          106.12
+        ],
+        "repeat4": [
+          95.4,
+          95.4,
+          95.4,
+          95.4,
+          98.6,
+          98.6,
+          98.6,
+          98.6,
+          101.76,
+          101.76,
+          101.76,
+          101.76,
+          104.92,
+          104.92,
+          104.92,
+          104.92
+        ],
+        "nested16": [
+          94.2,
+          95.0,
+          95.4,
+          96.6,
+          97.4,
+          98.6,
+          98.96,
+          99.76,
+          100.56,
+          101.76,
+          102.16,
+          102.96,
+          103.76,
+          104.92,
+          105.32,
+          106.12
+        ]
+      },
+      "target_pts": 99.76,
+      "positions": [
+        7
+      ],
+      "relative_time": 5.960000000000008,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "41953c454a699aaeeadc533c56fc0f0d30cce00a6ab298558c753517a8689ac6",
+      "box": [
+        80,
+        150,
+        154,
+        224
+      ],
+      "exclude": [
+        [
+          158,
+          118,
+          224,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Left hand and ginger on board; knife/right hand excluded.",
+      "controls": [
+        {
+          "box": [
+            146,
+            0,
+            220,
+            74
+          ],
+          "matching_score": 1.0179653879037434,
+          "brightness": 0.3701106309890747,
+          "gradient": 0.1738172173500061
+        },
+        {
+          "box": [
+            0,
+            68,
+            74,
+            142
+          ],
+          "matching_score": 1.2062014809484332,
+          "brightness": 0.38819822669029236,
+          "gradient": 0.10483646392822266
+        },
+        {
+          "box": [
+            100,
+            0,
+            174,
+            74
+          ],
+          "matching_score": 1.285050610910908,
+          "brightness": 0.3714657425880432,
+          "gradient": 0.20786143839359283
+        }
+      ],
+      "roi_brightness": 0.2670491933822632,
+      "roi_gradient": 0.13819274306297302,
+      "area_fraction": 0.10913584183673469,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 212,
+      "uid": "212",
+      "clip_id": 41148,
+      "key": [
+        "bee9c14e-ac78-11ee-819f-80615f12b59e",
+        382.1,
+        383.3
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "Pick up the spoon with your right hand.",
+      "record_id": 4,
+      "times": {
+        "four": [
+          382.28,
+          382.56,
+          382.88,
+          383.16
+        ],
+        "dense16": [
+          382.16,
+          382.24,
+          382.32,
+          382.4,
+          382.44,
+          382.52,
+          382.6,
+          382.68,
+          382.76,
+          382.84,
+          382.92,
+          383.0,
+          383.04,
+          383.12,
+          383.2,
+          383.28
+        ],
+        "repeat4": [
+          382.28,
+          382.28,
+          382.28,
+          382.28,
+          382.56,
+          382.56,
+          382.56,
+          382.56,
+          382.88,
+          382.88,
+          382.88,
+          382.88,
+          383.16,
+          383.16,
+          383.16,
+          383.16
+        ],
+        "nested16": [
+          382.16,
+          382.28,
+          382.32,
+          382.4,
+          382.44,
+          382.56,
+          382.6,
+          382.68,
+          382.76,
+          382.84,
+          382.88,
+          383.0,
+          383.04,
+          383.12,
+          383.16,
+          383.28
+        ]
+      },
+      "target_pts": 382.68,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.5799999999999841,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "fa94c719911fe5638c8cf02f356d041bfde9e47918a79338f740260faba892e6",
+      "box": [
+        112,
+        174,
+        180,
+        224
+      ],
+      "exclude": [],
+      "type": "uncertain",
+      "note": "Target spoon/hand at lower border poorly visible; report exploratory only.",
+      "controls": [
+        {
+          "box": [
+            156,
+            66,
+            224,
+            116
+          ],
+          "matching_score": 0.3786577123322887,
+          "brightness": 0.08265632390975952,
+          "gradient": 0.11294516175985336
+        },
+        {
+          "box": [
+            32,
+            112,
+            100,
+            162
+          ],
+          "matching_score": 0.6466227438191466,
+          "brightness": 0.1480070799589157,
+          "gradient": 0.15565791726112366
+        },
+        {
+          "box": [
+            142,
+            104,
+            210,
+            154
+          ],
+          "matching_score": 0.7414929333499581,
+          "brightness": 0.1306043416261673,
+          "gradient": 0.1801585853099823
+        }
+      ],
+      "roi_brightness": 0.12994106113910675,
+      "roi_gradient": 0.10808724910020828,
+      "area_fraction": 0.06776147959183673,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 174,
+      "uid": "174",
+      "clip_id": 41079,
+      "key": [
+        "bee9e804-ac78-11ee-819f-80615f12b59e",
+        1260.1,
+        1262.2
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "With the left hand gripping the handle of the pot, lift up the pot.",
+      "record_id": 5,
+      "times": {
+        "four": [
+          1260.4,
+          1260.92,
+          1261.44,
+          1261.96
+        ],
+        "dense16": [
+          1260.2,
+          1260.32,
+          1260.44,
+          1260.56,
+          1260.72,
+          1260.84,
+          1260.96,
+          1261.12,
+          1261.24,
+          1261.36,
+          1261.48,
+          1261.64,
+          1261.76,
+          1261.88,
+          1262.04,
+          1262.16
+        ],
+        "repeat4": [
+          1260.4,
+          1260.4,
+          1260.4,
+          1260.4,
+          1260.92,
+          1260.92,
+          1260.92,
+          1260.92,
+          1261.44,
+          1261.44,
+          1261.44,
+          1261.44,
+          1261.96,
+          1261.96,
+          1261.96,
+          1261.96
+        ],
+        "nested16": [
+          1260.2,
+          1260.4,
+          1260.44,
+          1260.56,
+          1260.72,
+          1260.84,
+          1260.92,
+          1261.12,
+          1261.24,
+          1261.44,
+          1261.48,
+          1261.64,
+          1261.76,
+          1261.96,
+          1262.04,
+          1262.16
+        ]
+      },
+      "target_pts": 1261.12,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.0199999999999818,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "a9a9ec3ccbea08d80bba6023700e84ff7cc0a01c761b9932a1654815e8fac376",
+      "box": [
+        72,
+        122,
+        138,
+        190
+      ],
+      "exclude": [
+        [
+          162,
+          102,
+          224,
+          186
+        ],
+        [
+          30,
+          20,
+          148,
+          142
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Left hand at pan handle; pan body and spatula/right-hand regions excluded from controls.",
+      "controls": [
+        {
+          "box": [
+            158,
+            0,
+            224,
+            68
+          ],
+          "matching_score": 0.15815840874884446,
+          "brightness": 0.3182964622974396,
+          "gradient": 0.3745885491371155
+        }
+      ],
+      "roi_brightness": 0.3334254324436188,
+      "roi_gradient": 0.3600028157234192,
+      "area_fraction": 0.08944515306122448,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 116,
+      "uid": "116",
+      "clip_id": 40878,
+      "key": [
+        "bee9b690-ac78-11ee-819f-80615f12b59e",
+        241.5,
+        242.5
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "Left hand  Pick up the bowl.",
+      "record_id": 6,
+      "times": {
+        "four": [
+          241.64,
+          241.88,
+          242.16,
+          242.4
+        ],
+        "dense16": [
+          241.56,
+          241.6,
+          241.68,
+          241.72,
+          241.8,
+          241.88,
+          241.92,
+          242.0,
+          242.04,
+          242.12,
+          242.16,
+          242.24,
+          242.32,
+          242.36,
+          242.44,
+          242.48
+        ],
+        "repeat4": [
+          241.64,
+          241.64,
+          241.64,
+          241.64,
+          241.88,
+          241.88,
+          241.88,
+          241.88,
+          242.16,
+          242.16,
+          242.16,
+          242.16,
+          242.4,
+          242.4,
+          242.4,
+          242.4
+        ],
+        "nested16": [
+          241.56,
+          241.64,
+          241.68,
+          241.72,
+          241.8,
+          241.88,
+          241.92,
+          242.0,
+          242.04,
+          242.16,
+          242.16,
+          242.24,
+          242.32,
+          242.4,
+          242.44,
+          242.48
+        ]
+      },
+      "target_pts": 242.0,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.5,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "804f8a558e9b29d3c0fa5a71e85a05875e85e4382caf0232a971014c5036ab2a",
+      "box": [
+        0,
+        96,
+        72,
+        166
+      ],
+      "exclude": [
+        [
+          70,
+          58,
+          126,
+          124
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Left hand contacts small white bowl/lid; precise object identity uncertain.",
+      "controls": [
+        {
+          "box": [
+            150,
+            62,
+            222,
+            132
+          ],
+          "matching_score": 0.016480470050741755,
+          "brightness": 0.34800252318382263,
+          "gradient": 0.10865206271409988
+        },
+        {
+          "box": [
+            150,
+            154,
+            222,
+            224
+          ],
+          "matching_score": 0.0376710820559699,
+          "brightness": 0.349092960357666,
+          "gradient": 0.10652967542409897
+        },
+        {
+          "box": [
+            94,
+            154,
+            166,
+            224
+          ],
+          "matching_score": 0.30775882845363667,
+          "brightness": 0.3948967456817627,
+          "gradient": 0.1079542338848114
+        }
+      ],
+      "roi_brightness": 0.35030093789100647,
+      "roi_gradient": 0.10873928666114807,
+      "area_fraction": 0.10044642857142858,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 140,
+      "uid": "140",
+      "clip_id": 40952,
+      "key": [
+        "bee98134-ac78-11ee-819f-80615f12b59e",
+        589.5,
+        590.1
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "Put down the salt with your right hand.",
+      "record_id": 7,
+      "times": {
+        "four": [
+          589.6,
+          589.76,
+          589.88,
+          590.04
+        ],
+        "dense16": [
+          589.52,
+          589.56,
+          589.6,
+          589.64,
+          589.68,
+          589.72,
+          589.76,
+          589.8,
+          589.84,
+          589.88,
+          589.92,
+          589.96,
+          590.0,
+          590.04,
+          590.08,
+          590.08
+        ],
+        "repeat4": [
+          589.6,
+          589.6,
+          589.6,
+          589.6,
+          589.76,
+          589.76,
+          589.76,
+          589.76,
+          589.88,
+          589.88,
+          589.88,
+          589.88,
+          590.04,
+          590.04,
+          590.04,
+          590.04
+        ],
+        "nested16": [
+          589.52,
+          589.56,
+          589.6,
+          589.64,
+          589.68,
+          589.72,
+          589.76,
+          589.8,
+          589.84,
+          589.88,
+          589.92,
+          589.96,
+          590.0,
+          590.04,
+          590.08,
+          590.08
+        ]
+      },
+      "target_pts": 589.8,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.2999999999999545,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "14889cda48df0daf8eb59ddf243530fb3254c213e5f6ba0b143ca5f78a524a09",
+      "box": [
+        148,
+        118,
+        224,
+        210
+      ],
+      "exclude": [
+        [
+          40,
+          126,
+          98,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Right hand holding salt packet next to cooker; spatula/other arm excluded.",
+      "controls": [
+        {
+          "box": [
+            136,
+            18,
+            212,
+            110
+          ],
+          "matching_score": 0.7854770627306306,
+          "brightness": 0.29104307293891907,
+          "gradient": 0.2076989859342575
+        },
+        {
+          "box": [
+            16,
+            26,
+            92,
+            118
+          ],
+          "matching_score": 0.812766567337577,
+          "brightness": 0.3256453573703766,
+          "gradient": 0.23890255391597748
+        },
+        {
+          "box": [
+            62,
+            26,
+            138,
+            118
+          ],
+          "matching_score": 1.216474518082328,
+          "brightness": 0.43064582347869873,
+          "gradient": 0.29336920380592346
+        }
+      ],
+      "roi_brightness": 0.2911528944969177,
+      "roi_gradient": 0.3578212559223175,
+      "area_fraction": 0.13934948979591838,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 172,
+      "uid": "172",
+      "clip_id": 41077,
+      "key": [
+        "bee9fa38-ac78-11ee-819f-80615f12b59e",
+        88.0,
+        90.3
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "With the left hand, put the vegetables on the cutting board.",
+      "record_id": 8,
+      "times": {
+        "four": [
+          88.32,
+          88.88,
+          89.44,
+          90.04
+        ],
+        "dense16": [
+          88.08,
+          88.24,
+          88.36,
+          88.52,
+          88.68,
+          88.8,
+          88.96,
+          89.08,
+          89.24,
+          89.4,
+          89.52,
+          89.68,
+          89.8,
+          89.96,
+          90.12,
+          90.24
+        ],
+        "repeat4": [
+          88.32,
+          88.32,
+          88.32,
+          88.32,
+          88.88,
+          88.88,
+          88.88,
+          88.88,
+          89.44,
+          89.44,
+          89.44,
+          89.44,
+          90.04,
+          90.04,
+          90.04,
+          90.04
+        ],
+        "nested16": [
+          88.08,
+          88.32,
+          88.36,
+          88.52,
+          88.68,
+          88.88,
+          88.96,
+          89.08,
+          89.24,
+          89.4,
+          89.44,
+          89.68,
+          89.8,
+          89.96,
+          90.04,
+          90.24
+        ]
+      },
+      "target_pts": 89.08,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.0799999999999983,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "b390bf1906bc80ed050e4593febf383eeb6e5f65513c3eedc35d85af763ce5eb",
+      "box": [
+        60,
+        158,
+        144,
+        224
+      ],
+      "exclude": [
+        [
+          12,
+          72,
+          112,
+          144
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Hands/vegetables at lower border; cutting-board region also excluded from controls.",
+      "controls": [
+        {
+          "box": [
+            132,
+            76,
+            216,
+            142
+          ],
+          "matching_score": 0.40299937688084453,
+          "brightness": 0.30758145451545715,
+          "gradient": 0.22803901135921478
+        }
+      ],
+      "roi_brightness": 0.2546790540218353,
+      "roi_gradient": 0.2202228158712387,
+      "area_fraction": 0.11049107142857142,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 359,
+      "uid": "359",
+      "clip_id": 41712,
+      "key": [
+        "bee97bc6-ac78-11ee-819f-80615f12b59e",
+        165.4,
+        165.7
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "Pick up the remaining ginger pieces with your left hand.",
+      "record_id": 9,
+      "times": {
+        "four": [
+          165.44,
+          165.52,
+          165.6,
+          165.68
+        ],
+        "dense16": [
+          165.44,
+          165.44,
+          165.48,
+          165.48,
+          165.52,
+          165.52,
+          165.56,
+          165.56,
+          165.56,
+          165.6,
+          165.6,
+          165.64,
+          165.64,
+          165.68,
+          165.68,
+          165.68
+        ],
+        "repeat4": [
+          165.44,
+          165.44,
+          165.44,
+          165.44,
+          165.52,
+          165.52,
+          165.52,
+          165.52,
+          165.6,
+          165.6,
+          165.6,
+          165.6,
+          165.68,
+          165.68,
+          165.68,
+          165.68
+        ],
+        "nested16": [
+          165.44,
+          165.44,
+          165.48,
+          165.48,
+          165.52,
+          165.52,
+          165.56,
+          165.56,
+          165.56,
+          165.6,
+          165.6,
+          165.64,
+          165.64,
+          165.68,
+          165.68,
+          165.68
+        ]
+      },
+      "target_pts": 165.56,
+      "positions": [
+        6,
+        7,
+        8
+      ],
+      "relative_time": 0.1599999999999966,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "79762e80224fc3734883aa631eb0097fdc4b90bb6d0ff69a187bee0ad9220d2b",
+      "box": [
+        78,
+        160,
+        160,
+        224
+      ],
+      "exclude": [],
+      "type": "uncertain",
+      "note": "Knife hand visible, named left-hand ginger action not confidently localized; exploratory only.",
+      "controls": [
+        {
+          "box": [
+            66,
+            10,
+            148,
+            74
+          ],
+          "matching_score": 0.5856159432604309,
+          "brightness": 0.3015812933444977,
+          "gradient": 0.15832450985908508
+        },
+        {
+          "box": [
+            0,
+            18,
+            82,
+            82
+          ],
+          "matching_score": 0.6322368426978213,
+          "brightness": 0.29793253540992737,
+          "gradient": 0.16102200746536255
+        },
+        {
+          "box": [
+            142,
+            52,
+            224,
+            116
+          ],
+          "matching_score": 1.0383287809945674,
+          "brightness": 0.4477647840976715,
+          "gradient": 0.11027003824710846
+        }
+      ],
+      "roi_brightness": 0.3014254868030548,
+      "roi_gradient": 0.10557786375284195,
+      "area_fraction": 0.10459183673469388,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 349,
+      "uid": "349",
+      "clip_id": 41567,
+      "key": [
+        "bee9b88e-ac78-11ee-819f-80615f12b59e",
+        149.1,
+        170.4
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "With the left hand pressing down on the ginger slice, And the right hand holding a knife to cut the ginger slice into ginger shreds.",
+      "record_id": 10,
+      "times": {
+        "four": [
+          151.8,
+          157.12,
+          162.44,
+          167.76
+        ],
+        "dense16": [
+          149.8,
+          151.12,
+          152.44,
+          153.76,
+          155.12,
+          156.44,
+          157.76,
+          159.12,
+          160.44,
+          161.76,
+          163.08,
+          164.44,
+          165.76,
+          167.08,
+          168.44,
+          169.76
+        ],
+        "repeat4": [
+          151.8,
+          151.8,
+          151.8,
+          151.8,
+          157.12,
+          157.12,
+          157.12,
+          157.12,
+          162.44,
+          162.44,
+          162.44,
+          162.44,
+          167.76,
+          167.76,
+          167.76,
+          167.76
+        ],
+        "nested16": [
+          149.8,
+          151.8,
+          152.44,
+          153.76,
+          155.12,
+          157.12,
+          157.76,
+          159.12,
+          160.44,
+          162.44,
+          163.08,
+          164.44,
+          165.76,
+          167.08,
+          167.76,
+          169.76
+        ]
+      },
+      "target_pts": 159.12,
+      "positions": [
+        7
+      ],
+      "relative_time": 10.02000000000001,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "fc6f78ec4665d0b6e5b73568207f78ca41b10214436d975364d1be93472fe623",
+      "box": [
+        94,
+        146,
+        164,
+        222
+      ],
+      "exclude": [
+        [
+          156,
+          166,
+          202,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Left hand/ginger cutting contact; right hand excluded.",
+      "controls": [
+        {
+          "box": [
+            4,
+            128,
+            74,
+            204
+          ],
+          "matching_score": 0.40744885615362886,
+          "brightness": 0.2433706670999527,
+          "gradient": 0.12273619323968887
+        },
+        {
+          "box": [
+            70,
+            56,
+            140,
+            132
+          ],
+          "matching_score": 0.6992261031797722,
+          "brightness": 0.3483572006225586,
+          "gradient": 0.16271254420280457
+        },
+        {
+          "box": [
+            154,
+            10,
+            224,
+            86
+          ],
+          "matching_score": 1.0011082389257382,
+          "brightness": 0.31656935811042786,
+          "gradient": 0.23232212662696838
+        }
+      ],
+      "roi_brightness": 0.24516700208187103,
+      "roi_gradient": 0.1614440232515335,
+      "area_fraction": 0.10602678571428571,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 19,
+      "uid": "19",
+      "clip_id": 40170,
+      "key": [
+        "bee9b956-ac78-11ee-819f-80615f12b59e",
+        286.4,
+        287.9
+      ],
+      "view": "ego",
+      "cohort": "random_query",
+      "caption": "Pick up the remaining pieces of meat with your left hand.",
+      "record_id": 11,
+      "times": {
+        "four": [
+          286.6,
+          287.0,
+          287.36,
+          287.72
+        ],
+        "dense16": [
+          286.48,
+          286.56,
+          286.64,
+          286.76,
+          286.84,
+          286.92,
+          287.04,
+          287.12,
+          287.2,
+          287.32,
+          287.4,
+          287.48,
+          287.6,
+          287.68,
+          287.76,
+          287.88
+        ],
+        "repeat4": [
+          286.6,
+          286.6,
+          286.6,
+          286.6,
+          287.0,
+          287.0,
+          287.0,
+          287.0,
+          287.36,
+          287.36,
+          287.36,
+          287.36,
+          287.72,
+          287.72,
+          287.72,
+          287.72
+        ],
+        "nested16": [
+          286.48,
+          286.6,
+          286.64,
+          286.76,
+          286.84,
+          287.0,
+          287.04,
+          287.12,
+          287.2,
+          287.36,
+          287.4,
+          287.48,
+          287.6,
+          287.72,
+          287.76,
+          287.88
+        ]
+      },
+      "target_pts": 287.12,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.7200000000000273,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "13378bd0c865d64890013b4924fdc7a0cc04c9761bab1ff9cab7c0aa77d3431f",
+      "box": [
+        106,
+        150,
+        178,
+        224
+      ],
+      "exclude": [
+        [
+          174,
+          128,
+          224,
+          218
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Left hand reaches prepared meat near cleaver; right hand excluded.",
+      "controls": [
+        {
+          "box": [
+            88,
+            16,
+            160,
+            90
+          ],
+          "matching_score": 0.012106463717669498,
+          "brightness": 0.37120693922042847,
+          "gradient": 0.20589233934879303
+        },
+        {
+          "box": [
+            18,
+            22,
+            90,
+            96
+          ],
+          "matching_score": 0.0403747727396846,
+          "brightness": 0.37448757886886597,
+          "gradient": 0.20680736005306244
+        },
+        {
+          "box": [
+            132,
+            22,
+            204,
+            96
+          ],
+          "matching_score": 0.10291615611369069,
+          "brightness": 0.3641960024833679,
+          "gradient": 0.2153492122888565
+        }
+      ],
+      "roi_brightness": 0.3696531057357788,
+      "roi_gradient": 0.20564308762550354,
+      "area_fraction": 0.10618622448979592,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 442,
+      "uid": "442",
+      "clip_id": 40145,
+      "key": [
+        "2d6f657a-56c4-11ee-88ee-80615f12b59e",
+        89.7,
+        92.6
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "One hand presses down on a flat piece of ginger, while the other hand holds a kitchen knife and cuts the flat piece of ginger into minced ginger.",
+      "record_id": 12,
+      "times": {
+        "four": [
+          90.08,
+          90.8,
+          91.52,
+          92.24
+        ],
+        "dense16": [
+          89.8,
+          90.0,
+          90.16,
+          90.36,
+          90.52,
+          90.72,
+          90.88,
+          91.08,
+          91.28,
+          91.44,
+          91.64,
+          91.8,
+          92.0,
+          92.16,
+          92.36,
+          92.52
+        ],
+        "repeat4": [
+          90.08,
+          90.08,
+          90.08,
+          90.08,
+          90.8,
+          90.8,
+          90.8,
+          90.8,
+          91.52,
+          91.52,
+          91.52,
+          91.52,
+          92.24,
+          92.24,
+          92.24,
+          92.24
+        ],
+        "nested16": [
+          89.8,
+          90.08,
+          90.16,
+          90.36,
+          90.52,
+          90.8,
+          90.88,
+          91.08,
+          91.28,
+          91.44,
+          91.52,
+          91.8,
+          92.0,
+          92.24,
+          92.36,
+          92.52
+        ]
+      },
+      "target_pts": 91.08,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.3799999999999955,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "e3059f941ec202cbf2146d5830a056b141353e05fb825ccaa19153a3e07fa4aa",
+      "box": [
+        114,
+        94,
+        216,
+        194
+      ],
+      "exclude": [
+        [
+          0,
+          20,
+          114,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Close-up ginger/pressing hand; knife and other hand excluded, background availability may fail.",
+      "controls": [],
+      "roi_brightness": 0.5789616107940674,
+      "roi_gradient": 0.1305360347032547,
+      "area_fraction": 0.2032844387755102,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 621,
+      "uid": "621",
+      "clip_id": 40523,
+      "key": [
+        "2d66f8a4-56c4-11ee-88ee-80615f12b59e",
+        327.7,
+        327.9
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Put the spoon down with your left hand.",
+      "record_id": 13,
+      "times": {
+        "four": [
+          327.76,
+          327.8,
+          327.84,
+          327.88
+        ],
+        "dense16": [
+          327.72,
+          327.72,
+          327.76,
+          327.76,
+          327.76,
+          327.8,
+          327.8,
+          327.8,
+          327.84,
+          327.84,
+          327.84,
+          327.88,
+          327.88,
+          327.88,
+          327.88,
+          327.88
+        ],
+        "repeat4": [
+          327.76,
+          327.76,
+          327.76,
+          327.76,
+          327.8,
+          327.8,
+          327.8,
+          327.8,
+          327.84,
+          327.84,
+          327.84,
+          327.84,
+          327.88,
+          327.88,
+          327.88,
+          327.88
+        ],
+        "nested16": [
+          327.72,
+          327.76,
+          327.76,
+          327.76,
+          327.76,
+          327.8,
+          327.8,
+          327.8,
+          327.84,
+          327.84,
+          327.84,
+          327.88,
+          327.88,
+          327.88,
+          327.88,
+          327.88
+        ]
+      },
+      "target_pts": 327.72,
+      "positions": [
+        0
+      ],
+      "relative_time": 0.020000000000038654,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "0d589fe8e483497bc6b2e0b8f077f698d5e2a52c31e9af2b66400b776783a5b2",
+      "box": [
+        72,
+        56,
+        148,
+        162
+      ],
+      "exclude": [
+        [
+          0,
+          0,
+          25,
+          224
+        ],
+        [
+          150,
+          0,
+          224,
+          32
+        ]
+      ],
+      "type": "object_only",
+      "note": "Spoon in food; no hand visible. Exclude text/watermark.",
+      "controls": [],
+      "roi_brightness": 0.7030859589576721,
+      "roi_gradient": 0.13432538509368896,
+      "area_fraction": 0.1605548469387755,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 786,
+      "uid": "786",
+      "clip_id": 41388,
+      "key": [
+        "2cc97e76-56c4-11ee-88ee-80615f12b59e",
+        4.500000000000001,
+        7.1000000000000005
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Fold the dry tofu in half with both hands.",
+      "record_id": 14,
+      "times": {
+        "four": [
+          4.84,
+          5.48,
+          6.16,
+          6.8
+        ],
+        "dense16": [
+          4.6,
+          4.76,
+          4.92,
+          5.08,
+          5.24,
+          5.4,
+          5.56,
+          5.72,
+          5.92,
+          6.08,
+          6.24,
+          6.4,
+          6.56,
+          6.72,
+          6.88,
+          7.04
+        ],
+        "repeat4": [
+          4.84,
+          4.84,
+          4.84,
+          4.84,
+          5.48,
+          5.48,
+          5.48,
+          5.48,
+          6.16,
+          6.16,
+          6.16,
+          6.16,
+          6.8,
+          6.8,
+          6.8,
+          6.8
+        ],
+        "nested16": [
+          4.6,
+          4.84,
+          4.92,
+          5.08,
+          5.24,
+          5.48,
+          5.56,
+          5.72,
+          5.92,
+          6.16,
+          6.24,
+          6.4,
+          6.56,
+          6.8,
+          6.88,
+          7.04
+        ]
+      },
+      "target_pts": 5.72,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.2199999999999989,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "6841737424a7284140c04941f17fb417b8e4b316e48b8d440069ceae7ae6c81c",
+      "box": [
+        54,
+        8,
+        182,
+        84
+      ],
+      "exclude": [
+        [
+          0,
+          158,
+          224,
+          224
+        ],
+        [
+          0,
+          0,
+          76,
+          32
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Hands folding tofu at upper edge; subtitles/watermark excluded.",
+      "controls": [],
+      "roi_brightness": 0.5889562368392944,
+      "roi_gradient": 0.1780746877193451,
+      "area_fraction": 0.19387755102040816,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 597,
+      "uid": "597",
+      "clip_id": 41130,
+      "key": [
+        "2ccf187c-56c4-11ee-88ee-80615f12b59e",
+        28.7,
+        29.500000000000004
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Take the spatula in your right hand and stir it in the pot.",
+      "record_id": 15,
+      "times": {
+        "four": [
+          28.8,
+          29.0,
+          29.2,
+          29.4
+        ],
+        "dense16": [
+          28.76,
+          28.8,
+          28.84,
+          28.88,
+          28.96,
+          29.0,
+          29.04,
+          29.08,
+          29.16,
+          29.2,
+          29.24,
+          29.28,
+          29.36,
+          29.4,
+          29.44,
+          29.48
+        ],
+        "repeat4": [
+          28.8,
+          28.8,
+          28.8,
+          28.8,
+          29.0,
+          29.0,
+          29.0,
+          29.0,
+          29.2,
+          29.2,
+          29.2,
+          29.2,
+          29.4,
+          29.4,
+          29.4,
+          29.4
+        ],
+        "nested16": [
+          28.76,
+          28.8,
+          28.8,
+          28.88,
+          28.96,
+          29.0,
+          29.04,
+          29.08,
+          29.16,
+          29.2,
+          29.2,
+          29.28,
+          29.36,
+          29.4,
+          29.44,
+          29.48
+        ]
+      },
+      "target_pts": 29.08,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.379999999999999,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "b2e3b20b26368b746138b05f6c2dbeb42851714d0eb1960b878013f9273bac52",
+      "box": [
+        72,
+        48,
+        164,
+        142
+      ],
+      "exclude": [
+        [
+          0,
+          138,
+          224,
+          202
+        ],
+        [
+          0,
+          202,
+          40,
+          224
+        ]
+      ],
+      "type": "object_only",
+      "note": "Spatula/food state in pan; hand outside crop. Exclude captions.",
+      "controls": [],
+      "roi_brightness": 0.6409244537353516,
+      "roi_gradient": 0.26181456446647644,
+      "area_fraction": 0.17235331632653061,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 450,
+      "uid": "450",
+      "clip_id": 40154,
+      "key": [
+        "2d87949c-56c4-11ee-88ee-80615f12b59e",
+        90.7,
+        91.5
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Pour the prepared eggs into the pan with your left hand.",
+      "record_id": 16,
+      "times": {
+        "four": [
+          90.8,
+          91.0,
+          91.2,
+          91.4
+        ],
+        "dense16": [
+          90.76,
+          90.8,
+          90.84,
+          90.88,
+          90.96,
+          91.0,
+          91.04,
+          91.08,
+          91.16,
+          91.2,
+          91.24,
+          91.28,
+          91.36,
+          91.4,
+          91.44,
+          91.48
+        ],
+        "repeat4": [
+          90.8,
+          90.8,
+          90.8,
+          90.8,
+          91.0,
+          91.0,
+          91.0,
+          91.0,
+          91.2,
+          91.2,
+          91.2,
+          91.2,
+          91.4,
+          91.4,
+          91.4,
+          91.4
+        ],
+        "nested16": [
+          90.76,
+          90.8,
+          90.84,
+          90.88,
+          90.96,
+          91.0,
+          91.04,
+          91.08,
+          91.16,
+          91.2,
+          91.2,
+          91.28,
+          91.36,
+          91.4,
+          91.4,
+          91.48
+        ]
+      },
+      "target_pts": 91.08,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.37999999999999545,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "b2fc2e360041e77277470c0e1186fb9f6b7498a53e56d1fa3117ea4d8e7989e0",
+      "box": [
+        64,
+        58,
+        160,
+        176
+      ],
+      "exclude": [
+        [
+          0,
+          128,
+          40,
+          224
+        ],
+        [
+          174,
+          158,
+          224,
+          224
+        ]
+      ],
+      "type": "object_only",
+      "note": "Egg/food state close-up; hand outside view. Exclude text/watermark.",
+      "controls": [],
+      "roi_brightness": 0.5739685893058777,
+      "roi_gradient": 0.5600529313087463,
+      "area_fraction": 0.22576530612244897,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 534,
+      "uid": "534",
+      "clip_id": 40946,
+      "key": [
+        "2c58e350-56c4-11ee-88ee-80615f12b59e",
+        134.7,
+        137.5
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Use your right hand to turn the fire to low and cook for five minutes.",
+      "record_id": 17,
+      "times": {
+        "four": [
+          135.08,
+          135.76,
+          136.48,
+          137.16
+        ],
+        "dense16": [
+          134.8,
+          135.0,
+          135.16,
+          135.32,
+          135.52,
+          135.68,
+          135.84,
+          136.04,
+          136.2,
+          136.4,
+          136.56,
+          136.72,
+          136.92,
+          137.08,
+          137.24,
+          137.44
+        ],
+        "repeat4": [
+          135.08,
+          135.08,
+          135.08,
+          135.08,
+          135.76,
+          135.76,
+          135.76,
+          135.76,
+          136.48,
+          136.48,
+          136.48,
+          136.48,
+          137.16,
+          137.16,
+          137.16,
+          137.16
+        ],
+        "nested16": [
+          134.8,
+          135.08,
+          135.16,
+          135.32,
+          135.52,
+          135.76,
+          135.84,
+          136.04,
+          136.2,
+          136.48,
+          136.56,
+          136.72,
+          136.92,
+          137.16,
+          137.24,
+          137.44
+        ]
+      },
+      "target_pts": 136.04,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.3400000000000034,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "a5beed77b91365a7c6482220e41af5ea15aa40b749930d09817105811e25e9ac",
+      "box": [
+        42,
+        80,
+        136,
+        194
+      ],
+      "exclude": [
+        [
+          0,
+          186,
+          224,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Fingers and cooker knob; background text excluded.",
+      "controls": [],
+      "roi_brightness": 0.33013716340065,
+      "roi_gradient": 0.1240709200501442,
+      "area_fraction": 0.21356823979591838,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 631,
+      "uid": "631",
+      "clip_id": 40842,
+      "key": [
+        "2cfe12a8-56c4-11ee-88ee-80615f12b59e",
+        19.1,
+        21.2
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Use your hand to place the vegetables on the cutting board.",
+      "record_id": 18,
+      "times": {
+        "four": [
+          19.4,
+          19.92,
+          20.44,
+          20.96
+        ],
+        "dense16": [
+          19.2,
+          19.32,
+          19.44,
+          19.56,
+          19.72,
+          19.84,
+          19.96,
+          20.12,
+          20.24,
+          20.36,
+          20.48,
+          20.64,
+          20.76,
+          20.88,
+          21.04,
+          21.16
+        ],
+        "repeat4": [
+          19.4,
+          19.4,
+          19.4,
+          19.4,
+          19.92,
+          19.92,
+          19.92,
+          19.92,
+          20.44,
+          20.44,
+          20.44,
+          20.44,
+          20.96,
+          20.96,
+          20.96,
+          20.96
+        ],
+        "nested16": [
+          19.2,
+          19.4,
+          19.44,
+          19.56,
+          19.72,
+          19.92,
+          19.96,
+          20.12,
+          20.24,
+          20.36,
+          20.44,
+          20.64,
+          20.76,
+          20.96,
+          21.04,
+          21.16
+        ]
+      },
+      "target_pts": 20.12,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.0199999999999996,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "0950af21e9cfcd926c2b19f7405214a160aaf18202bca895229f29e784ca9570",
+      "box": [
+        72,
+        124,
+        138,
+        192
+      ],
+      "exclude": [
+        [
+          0,
+          192,
+          224,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Chef hands/board interaction in wide shot; subtitle band excluded.",
+      "controls": [
+        {
+          "box": [
+            16,
+            4,
+            82,
+            72
+          ],
+          "matching_score": 0.008007644579961554,
+          "brightness": 0.31771865487098694,
+          "gradient": 0.4189930260181427
+        },
+        {
+          "box": [
+            158,
+            110,
+            224,
+            178
+          ],
+          "matching_score": 0.0419536259906117,
+          "brightness": 0.31919488310813904,
+          "gradient": 0.40779778361320496
+        },
+        {
+          "box": [
+            64,
+            46,
+            130,
+            114
+          ],
+          "matching_score": 0.17313610295533294,
+          "brightness": 0.3223101794719696,
+          "gradient": 0.3777521848678589
+        }
+      ],
+      "roi_brightness": 0.317640095949173,
+      "roi_gradient": 0.41682514548301697,
+      "area_fraction": 0.08944515306122448,
+      "matched_analysis_eligible": true
+    },
+    {
+      "row": 743,
+      "uid": "743",
+      "clip_id": 41497,
+      "key": [
+        "2ce98798-56c4-11ee-88ee-80615f12b59e",
+        164.6,
+        167.5
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Twist the knob of the gas stove with your right hand to turn the gas stove on.",
+      "record_id": 19,
+      "times": {
+        "four": [
+          165.0,
+          165.72,
+          166.44,
+          167.16
+        ],
+        "dense16": [
+          164.72,
+          164.88,
+          165.08,
+          165.24,
+          165.44,
+          165.6,
+          165.8,
+          165.96,
+          166.16,
+          166.36,
+          166.52,
+          166.72,
+          166.88,
+          167.08,
+          167.24,
+          167.44
+        ],
+        "repeat4": [
+          165.0,
+          165.0,
+          165.0,
+          165.0,
+          165.72,
+          165.72,
+          165.72,
+          165.72,
+          166.44,
+          166.44,
+          166.44,
+          166.44,
+          167.16,
+          167.16,
+          167.16,
+          167.16
+        ],
+        "nested16": [
+          164.72,
+          164.88,
+          165.0,
+          165.24,
+          165.44,
+          165.6,
+          165.72,
+          165.96,
+          166.16,
+          166.44,
+          166.52,
+          166.72,
+          166.88,
+          167.16,
+          167.24,
+          167.44
+        ]
+      },
+      "target_pts": 165.96,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.3600000000000136,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "29b6e5e1cd81eb4de7432cccfb8ceaab070c188477d437ed39d545a3b4207437",
+      "box": [
+        22,
+        86,
+        202,
+        156
+      ],
+      "exclude": [
+        [
+          0,
+          156,
+          224,
+          224
+        ]
+      ],
+      "type": "state_context",
+      "note": "Visible burner flame, hand/knob absent. Not hand-object evidence; separate descriptive stratum.",
+      "controls": [
+        {
+          "box": [
+            44,
+            8,
+            224,
+            78
+          ],
+          "matching_score": 0.4355302066350754,
+          "brightness": 0.18318207561969757,
+          "gradient": 0.0999269112944603
+        }
+      ],
+      "roi_brightness": 0.1911614090204239,
+      "roi_gradient": 0.13024967908859253,
+      "area_fraction": 0.25111607142857145,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 763,
+      "uid": "763",
+      "clip_id": 41638,
+      "key": [
+        "2d058376-56c4-11ee-88ee-80615f12b59e",
+        180.4,
+        180.9
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Pick up the pot.",
+      "record_id": 20,
+      "times": {
+        "four": [
+          180.48,
+          180.6,
+          180.72,
+          180.84
+        ],
+        "dense16": [
+          180.44,
+          180.48,
+          180.48,
+          180.52,
+          180.56,
+          180.6,
+          180.64,
+          180.64,
+          180.68,
+          180.72,
+          180.76,
+          180.76,
+          180.8,
+          180.84,
+          180.88,
+          180.88
+        ],
+        "repeat4": [
+          180.48,
+          180.48,
+          180.48,
+          180.48,
+          180.6,
+          180.6,
+          180.6,
+          180.6,
+          180.72,
+          180.72,
+          180.72,
+          180.72,
+          180.84,
+          180.84,
+          180.84,
+          180.84
+        ],
+        "nested16": [
+          180.44,
+          180.48,
+          180.48,
+          180.52,
+          180.56,
+          180.6,
+          180.64,
+          180.64,
+          180.68,
+          180.72,
+          180.76,
+          180.76,
+          180.8,
+          180.84,
+          180.88,
+          180.88
+        ]
+      },
+      "target_pts": 180.64,
+      "positions": [
+        6,
+        7
+      ],
+      "relative_time": 0.23999999999998067,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "0a2c8a0d5dad0f742436884ebe99c09fe577c6b7efd4ce2ff3948765bfcc9326",
+      "box": [
+        6,
+        122,
+        96,
+        202
+      ],
+      "exclude": [
+        [
+          36,
+          4,
+          224,
+          164
+        ],
+        [
+          0,
+          50,
+          32,
+          116
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Hand/pan handle near lower-left, much task content fills remainder; may lack controls.",
+      "controls": [],
+      "roi_brightness": 0.5579308867454529,
+      "roi_gradient": 0.2860729396343231,
+      "area_fraction": 0.1434948979591837,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 575,
+      "uid": "575",
+      "clip_id": 40568,
+      "key": [
+        "2d5b0648-56c4-11ee-88ee-80615f12b59e",
+        23.9,
+        25.8
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "The left hand places the needed ginger on the cutting board for later use.",
+      "record_id": 21,
+      "times": {
+        "four": [
+          24.16,
+          24.64,
+          25.12,
+          25.6
+        ],
+        "dense16": [
+          23.96,
+          24.08,
+          24.2,
+          24.32,
+          24.44,
+          24.56,
+          24.68,
+          24.8,
+          24.92,
+          25.04,
+          25.16,
+          25.28,
+          25.4,
+          25.52,
+          25.64,
+          25.76
+        ],
+        "repeat4": [
+          24.16,
+          24.16,
+          24.16,
+          24.16,
+          24.64,
+          24.64,
+          24.64,
+          24.64,
+          25.12,
+          25.12,
+          25.12,
+          25.12,
+          25.6,
+          25.6,
+          25.6,
+          25.6
+        ],
+        "nested16": [
+          23.96,
+          24.16,
+          24.2,
+          24.32,
+          24.44,
+          24.56,
+          24.64,
+          24.8,
+          24.92,
+          25.12,
+          25.16,
+          25.28,
+          25.4,
+          25.6,
+          25.64,
+          25.76
+        ]
+      },
+      "target_pts": 24.8,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.9000000000000021,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "953aa214fdfeb4fde79aad642ad8aed001c8772610426788463aaf81bebce6cb",
+      "box": [
+        72,
+        150,
+        132,
+        216
+      ],
+      "exclude": [
+        [
+          0,
+          188,
+          224,
+          224
+        ]
+      ],
+      "type": "uncertain",
+      "note": "Hand/ginger region overlaps burned-in subtitles; exploratory only, no clean semantic-region claim.",
+      "controls": [
+        {
+          "box": [
+            164,
+            108,
+            224,
+            174
+          ],
+          "matching_score": 0.5972338177713672,
+          "brightness": 0.47212183475494385,
+          "gradient": 0.43651607632637024
+        },
+        {
+          "box": [
+            8,
+            24,
+            68,
+            90
+          ],
+          "matching_score": 0.8330037757599961,
+          "brightness": 0.4165459871292114,
+          "gradient": 0.4757364094257355
+        },
+        {
+          "box": [
+            46,
+            28,
+            106,
+            94
+          ],
+          "matching_score": 1.2026407374129169,
+          "brightness": 0.36220547556877136,
+          "gradient": 0.4733133316040039
+        }
+      ],
+      "roi_brightness": 0.47132623195648193,
+      "roi_gradient": 0.6579439043998718,
+      "area_fraction": 0.07892219387755102,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 767,
+      "uid": "767",
+      "clip_id": 41401,
+      "key": [
+        "2ca5017c-56c4-11ee-88ee-80615f12b59e",
+        0.0,
+        1.0
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "The right hand picks up a piece of dried tofu from the plate.",
+      "record_id": 22,
+      "times": {
+        "four": [
+          0.16,
+          0.4,
+          0.64,
+          0.88
+        ],
+        "dense16": [
+          0.04,
+          0.12,
+          0.16,
+          0.24,
+          0.32,
+          0.36,
+          0.44,
+          0.48,
+          0.56,
+          0.6,
+          0.68,
+          0.72,
+          0.8,
+          0.88,
+          0.92,
+          0.96
+        ],
+        "repeat4": [
+          0.16,
+          0.16,
+          0.16,
+          0.16,
+          0.4,
+          0.4,
+          0.4,
+          0.4,
+          0.64,
+          0.64,
+          0.64,
+          0.64,
+          0.88,
+          0.88,
+          0.88,
+          0.88
+        ],
+        "nested16": [
+          0.04,
+          0.16,
+          0.16,
+          0.24,
+          0.32,
+          0.4,
+          0.44,
+          0.48,
+          0.56,
+          0.64,
+          0.68,
+          0.72,
+          0.8,
+          0.88,
+          0.92,
+          0.96
+        ]
+      },
+      "target_pts": 0.48,
+      "positions": [
+        7
+      ],
+      "relative_time": 0.48,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "ce4373922c759e60ae22d417fdd039c02a63c26fc4e26a033e2c35a1d612e023",
+      "box": [
+        74,
+        8,
+        158,
+        132
+      ],
+      "exclude": [
+        [
+          160,
+          42,
+          224,
+          210
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Fingers grasp tofu strip; other vegetables excluded from background controls.",
+      "controls": [],
+      "roi_brightness": 0.6055179834365845,
+      "roi_gradient": 0.21380390226840973,
+      "area_fraction": 0.20758928571428573,
+      "matched_analysis_eligible": false
+    },
+    {
+      "row": 409,
+      "uid": "409",
+      "clip_id": 40073,
+      "key": [
+        "2dcecfce-56c4-11ee-88ee-80615f12b59e",
+        37.7,
+        41.3
+      ],
+      "view": "exo",
+      "cohort": "random_query",
+      "caption": "Take a spoon with your right hand and add two spoons of soy sauce to the prepared bowl.",
+      "record_id": 23,
+      "times": {
+        "four": [
+          38.16,
+          39.08,
+          39.96,
+          40.88
+        ],
+        "dense16": [
+          37.84,
+          38.04,
+          38.28,
+          38.52,
+          38.72,
+          38.96,
+          39.2,
+          39.4,
+          39.64,
+          39.84,
+          40.08,
+          40.32,
+          40.52,
+          40.76,
+          41.0,
+          41.2
+        ],
+        "repeat4": [
+          38.16,
+          38.16,
+          38.16,
+          38.16,
+          39.08,
+          39.08,
+          39.08,
+          39.08,
+          39.96,
+          39.96,
+          39.96,
+          39.96,
+          40.88,
+          40.88,
+          40.88,
+          40.88
+        ],
+        "nested16": [
+          37.84,
+          38.04,
+          38.16,
+          38.52,
+          38.72,
+          39.08,
+          39.2,
+          39.4,
+          39.64,
+          39.84,
+          39.96,
+          40.32,
+          40.52,
+          40.88,
+          41.0,
+          41.2
+        ]
+      },
+      "target_pts": 39.4,
+      "positions": [
+        7
+      ],
+      "relative_time": 1.6999999999999957,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "ff3bb3d4aa654ed12a1d38940c20ed0e720a73b98b3092d5372e9bc4de873ad6",
+      "box": [
+        54,
+        16,
+        146,
+        150
+      ],
+      "exclude": [
+        [
+          0,
+          188,
+          224,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Spoon and visible hand above sauce bowl; subtitle band excluded.",
+      "controls": [],
+      "roi_brightness": 0.4186224043369293,
+      "roi_gradient": 0.28482475876808167,
+      "area_fraction": 0.2456951530612245,
+      "matched_analysis_eligible": false
+    },
+    {
+      "clip_id": 41082,
+      "key": [
+        "bee93e68-ac78-11ee-819f-80615f12b59e",
+        690.6,
+        692.5
+      ],
+      "view": "ego",
+      "cohort": "known_case",
+      "uses": [
+        {
+          "row": 177,
+          "uid": "177",
+          "role": "query"
+        },
+        {
+          "row": 577,
+          "uid": "577",
+          "role": "positive"
+        }
+      ],
+      "caption": "Historical chopsticks example; outcome-selected",
+      "record_id": 24,
+      "times": {
+        "four": [
+          690.84,
+          691.32,
+          691.8,
+          692.28
+        ],
+        "dense16": [
+          690.68,
+          690.8,
+          690.92,
+          691.04,
+          691.16,
+          691.28,
+          691.4,
+          691.52,
+          691.64,
+          691.76,
+          691.88,
+          692.0,
+          692.12,
+          692.24,
+          692.36,
+          692.48
+        ],
+        "repeat4": [
+          690.84,
+          690.84,
+          690.84,
+          690.84,
+          691.32,
+          691.32,
+          691.32,
+          691.32,
+          691.8,
+          691.8,
+          691.8,
+          691.8,
+          692.28,
+          692.28,
+          692.28,
+          692.28
+        ],
+        "nested16": [
+          690.68,
+          690.84,
+          690.92,
+          691.04,
+          691.16,
+          691.32,
+          691.4,
+          691.52,
+          691.64,
+          691.76,
+          691.8,
+          692.0,
+          692.12,
+          692.24,
+          692.28,
+          692.48
+        ]
+      },
+      "target_pts": 690.68,
+      "positions": [
+        0
+      ],
+      "relative_time": 0.07999999999992724,
+      "status": "visually_reviewed_frozen",
+      "frame_sha256": "64bfd97072bbdf3684dc4a3ca39aea387b59f9353c1ed064c09aecec863502f7",
+      "box": [
+        110,
+        168,
+        176,
+        224
+      ],
+      "exclude": [
+        [
+          0,
+          154,
+          78,
+          224
+        ]
+      ],
+      "type": "hand_object",
+      "note": "Known 0.08s chopsticks example: right hand/contact at bottom edge. Exclude left utensil group. Outcome-selected, not population sample.",
+      "controls": [
+        {
+          "box": [
+            88,
+            80,
+            154,
+            136
+          ],
+          "matching_score": 0.009936619038082078,
+          "brightness": 0.20163099467754364,
+          "gradient": 0.18343880772590637
+        },
+        {
+          "box": [
+            54,
+            90,
+            120,
+            146
+          ],
+          "matching_score": 0.052922097993211126,
+          "brightness": 0.2055576890707016,
+          "gradient": 0.18755777180194855
+        },
+        {
+          "box": [
+            120,
+            0,
+            186,
+            56
+          ],
+          "matching_score": 0.06554595962300432,
+          "brightness": 0.19973109662532806,
+          "gradient": 0.19160237908363342
+        }
+      ],
+      "roi_brightness": 0.20128265023231506,
+      "roi_gradient": 0.18440952897071838,
+      "area_fraction": 0.07366071428571429,
+      "matched_analysis_eligible": true
+    }
+  ],
+  "visual_review": {
+    "reviewer": "assistant",
+    "time_utc": "2026-10-31T09:35:39.968728+00:00",
+    "before_new_model_scores": true,
+    "independent_human_ground_truth": false,
+    "note": "All control overlays reviewed; uncertain task identity and subtitle-overlap cases excluded from matched analysis, close-ups without controls retained. Background includes scene context, not guaranteed irrelevant."
+  }
+}

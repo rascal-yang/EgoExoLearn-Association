@@ -1,0 +1,32 @@
+{
+  "annotation_author": "assistant visual review, before new model scores",
+  "not_independent_human_ground_truth": true,
+  "coordinate_system": "224x224 model RGB, xyxy, exclusive upper edges",
+  "regions": [
+    {"record_id":0,"box":[40,152,108,224],"exclude":[],"type":"hand_object","note":"Left hand and visible vegetable near lower edge; partial view."},
+    {"record_id":1,"box":[92,132,166,198],"exclude":[[158,150,218,222]],"type":"hand_object","note":"Left hand/pepper/knife contact on board; other hand excluded from controls."},
+    {"record_id":2,"box":[56,150,132,224],"exclude":[[140,108,224,224]],"type":"uncertain","note":"Hand at board is visible but named pot action is not confidently identified; exploratory only."},
+    {"record_id":3,"box":[80,150,154,224],"exclude":[[158,118,224,224]],"type":"hand_object","note":"Left hand and ginger on board; knife/right hand excluded."},
+    {"record_id":4,"box":[112,174,180,224],"exclude":[],"type":"uncertain","note":"Target spoon/hand at lower border poorly visible; report exploratory only."},
+    {"record_id":5,"box":[72,122,138,190],"exclude":[[162,102,224,186],[30,20,148,142]],"type":"hand_object","note":"Left hand at pan handle; pan body and spatula/right-hand regions excluded from controls."},
+    {"record_id":6,"box":[0,96,72,166],"exclude":[[70,58,126,124]],"type":"hand_object","note":"Left hand contacts small white bowl/lid; precise object identity uncertain."},
+    {"record_id":7,"box":[148,118,224,210],"exclude":[[40,126,98,224]],"type":"hand_object","note":"Right hand holding salt packet next to cooker; spatula/other arm excluded."},
+    {"record_id":8,"box":[60,158,144,224],"exclude":[[12,72,112,144]],"type":"hand_object","note":"Hands/vegetables at lower border; cutting-board region also excluded from controls."},
+    {"record_id":9,"box":[78,160,160,224],"exclude":[],"type":"uncertain","note":"Knife hand visible, named left-hand ginger action not confidently localized; exploratory only."},
+    {"record_id":10,"box":[94,146,164,222],"exclude":[[156,166,202,224]],"type":"hand_object","note":"Left hand/ginger cutting contact; right hand excluded."},
+    {"record_id":11,"box":[106,150,178,224],"exclude":[[174,128,224,218]],"type":"hand_object","note":"Left hand reaches prepared meat near cleaver; right hand excluded."},
+    {"record_id":12,"box":[114,94,216,194],"exclude":[[0,20,114,224]],"type":"hand_object","note":"Close-up ginger/pressing hand; knife and other hand excluded, background availability may fail."},
+    {"record_id":13,"box":[72,56,148,162],"exclude":[[0,0,25,224],[150,0,224,32]],"type":"object_only","note":"Spoon in food; no hand visible. Exclude text/watermark."},
+    {"record_id":14,"box":[54,8,182,84],"exclude":[[0,158,224,224],[0,0,76,32]],"type":"hand_object","note":"Hands folding tofu at upper edge; subtitles/watermark excluded."},
+    {"record_id":15,"box":[72,48,164,142],"exclude":[[0,138,224,202],[0,202,40,224]],"type":"object_only","note":"Spatula/food state in pan; hand outside crop. Exclude captions."},
+    {"record_id":16,"box":[64,58,160,176],"exclude":[[0,128,40,224],[174,158,224,224]],"type":"object_only","note":"Egg/food state close-up; hand outside view. Exclude text/watermark."},
+    {"record_id":17,"box":[42,80,136,194],"exclude":[[0,186,224,224]],"type":"hand_object","note":"Fingers and cooker knob; background text excluded."},
+    {"record_id":18,"box":[72,124,138,192],"exclude":[[0,192,224,224]],"type":"hand_object","note":"Chef hands/board interaction in wide shot; subtitle band excluded."},
+    {"record_id":19,"box":[22,86,202,156],"exclude":[[0,156,224,224]],"type":"state_context","note":"Visible burner flame, hand/knob absent. Not hand-object evidence; separate descriptive stratum."},
+    {"record_id":20,"box":[6,122,96,202],"exclude":[[36,4,224,164],[0,50,32,116]],"type":"hand_object","note":"Hand/pan handle near lower-left, much task content fills remainder; may lack controls."},
+    {"record_id":21,"box":[72,150,132,216],"exclude":[[0,188,224,224]],"type":"uncertain","note":"Hand/ginger region overlaps burned-in subtitles; exploratory only, no clean semantic-region claim."},
+    {"record_id":22,"box":[74,8,158,132],"exclude":[[160,42,224,210]],"type":"hand_object","note":"Fingers grasp tofu strip; other vegetables excluded from background controls."},
+    {"record_id":23,"box":[54,16,146,150],"exclude":[[0,188,224,224]],"type":"hand_object","note":"Spoon and visible hand above sauce bowl; subtitle band excluded."},
+    {"record_id":24,"box":[110,168,176,224],"exclude":[[0,154,78,224]],"type":"hand_object","note":"Known 0.08s chopsticks example: right hand/contact at bottom edge. Exclude left utensil group. Outcome-selected, not population sample."}
+  ]
+}
